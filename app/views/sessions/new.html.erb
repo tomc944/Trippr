@@ -1,0 +1,28 @@
+<body>
+	<form action="<%= session_url %>" method="post">
+		<input type="hidden" 
+					 name="authenticity_token"
+					 value="<%= form_authenticity_token %>">
+
+	  <label for="inputUsername">User name</label>
+		<input type="username" 
+					 name="user[username]"
+					 id="inputUsername"
+					 placeholder="Username">
+
+	  <br>
+
+	  <label for="inputPassword">Password</label>
+	  <input type="password" 
+	 				 name="user[password]"
+	 				 for="inputPassword"
+	 				 placeholder="Password">
+
+		<br>
+
+		<button type="submit">Submit!</button>
+	</form>
+
+
+
+</body>
