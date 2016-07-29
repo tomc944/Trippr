@@ -1,4 +1,4 @@
-# README
+# Trippr
 
 Trippr is an improved Trip Reporting Web Application. Most Trip Reports for climbing, backpacking, and off-route travel are posted on forums (such as SuperTopo, Mountain Project, or blogs) with in-line photos, which creates an ambiguity between the photo's information and the narrative it's referencing. Similarly, in-line photos break up the narrative of a Trip Report and can sometimes distract people from the written content. Trippr is largely inspired by Medium, an article sharing application that allows highlighting of important words, phrases, or paragraphs.
 
