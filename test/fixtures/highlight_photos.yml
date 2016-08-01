@@ -1,13 +1,12 @@
 # == Schema Information
 #
-# Table name: highlights
+# Table name: highlight_photos
 #
-#  id         :integer          not null, primary key
-#  highlight  :text             not null
-#  post_id    :integer          not null
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  author_id  :integer
+#  id           :integer          not null, primary key
+#  photo_id     :integer          not null
+#  highlight_id :integer          not null
+#  created_at   :datetime         not null
+#  updated_at   :datetime         not null
 #
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html

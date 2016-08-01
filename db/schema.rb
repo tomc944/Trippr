@@ -10,24 +10,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160801011951) do
+ActiveRecord::Schema.define(version: 20160801213520) do
+
+  create_table "highlight_photos", force: :cascade do |t|
+    t.integer  "photo_id",     null: false
+    t.integer  "highlight_id", null: false
+    t.datetime "created_at",   null: false
+    t.datetime "updated_at",   null: false
+    t.index ["photo_id", "highlight_id"], name: "index_highlight_photos_on_photo_id_and_highlight_id", unique: true
+  end
 
   create_table "highlights", force: :cascade do |t|
-    t.text     "highlight",      null: false
-    t.integer  "post_id",        null: false
-    t.datetime "created_at",     null: false
-    t.datetime "updated_at",     null: false
-    t.integer  "highlighter_id"
-    t.index ["highlighter_id"], name: "index_highlights_on_highlighter_id"
+    t.text     "highlight",  null: false
+    t.integer  "post_id",    null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "author_id"
+    t.index ["author_id"], name: "index_highlights_on_author_id"
     t.index ["post_id"], name: "index_highlights_on_post_id"
   end
 
   create_table "photos", force: :cascade do |t|
-    t.string   "url",          null: false
-    t.integer  "highlight_id", null: false
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
-    t.index ["highlight_id"], name: "index_photos_on_highlight_id"
+    t.string   "url",        null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer  "post_id"
+    t.integer  "author_id"
+    t.index ["author_id"], name: "index_photos_on_author_id"
+    t.index ["post_id"], name: "index_photos_on_post_id"
   end
 
   create_table "posts", force: :cascade do |t|

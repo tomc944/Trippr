@@ -18,6 +18,7 @@ class AuthoredApi::PostsController < ApplicationController
 			redirect_to new_authored_api_post_url
 			render json: @post.errors.full_messages, status: 422
 		end
+	end
 	
 	def new
 		render :new
