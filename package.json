@@ -21,6 +21,7 @@
     "babel-core": "^6.1.4",
     "babel-loader": "^6.1.0",
     "babel-preset-react": "^6.1.4",
+    "exif": "^0.6.0",
     "flux": "^2.1.1",
     "history": "^1.17.0",
     "react": "^0.14.2",
