@@ -18,4 +18,9 @@ class Highlight < ApplicationRecord
 
 	has_many :highlight_photos
 	has_many :photos, through: :highlight_photos, source: :photo
-end
+
+	private
+	def self.highlights_belonging_to_post(post_id)
+		self.where(post_id: post_id)
+	end
+end	

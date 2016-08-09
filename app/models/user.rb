@@ -29,15 +29,21 @@ require 'byebug'
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
+
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :trackable, :validatable,
          :confirmable, :lockable
 
   has_many :total_highlights, class_name: "Highlight", foreign_key: :author_id
+  
   has_many :authored_posts, class_name: "Post", foreign_key: :author_id
-  has_many :authored_photos, class_name: "Photo", foreign_key: :author_id
-
+  
   has_many :total_photos, class_name: "Photo", foreign_key: :author_id
+
+  ### Distinction of Types
+    # Total photos refer to all Photos uploaded by a User
+    # Authored photos refer to all Photos uploaded by a User on his/her own post
+    # Guest photos refer to all Photos uploaded by a User not on his/her own post
 
   def authored_photos
     authored_objs(total_photos)
@@ -57,20 +63,9 @@ class User < ApplicationRecord
 
   private
   def authored_objs(total_objects)
-    total_objs = total_objects.includes(:post)
-
-    # refactor with better ActiveRecord Querying
-
-    authored_objs = []
-
-    total_objs.each do |obj|
-      post = obj.post
-
-      if post.author_id == obj.author_id
-        authored_objs << obj
-      end
-    end
-
-    authored_objs
+    # not sure if there is a sleek Active Record Query method to handle this, but
+    # this should do for now. We include :post in order to remove N+1 queries.
+    
+    total_objects.includes(:post).select { |obj| obj.post.author_id == obj.author_id }
   end
 end

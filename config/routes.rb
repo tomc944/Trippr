@@ -11,7 +11,7 @@ Rails.application.routes.draw do
 	end
 
 	concern :image_highlightable do
-		resources :highlights, only: [:create, :index, :destroy], concerns: :imageable
+		resources :highlights, only: [:create, :index, :destroy] #, concerns: :imageable
 	end
   
   # Different APIs for authors and commenters -----------------------------------

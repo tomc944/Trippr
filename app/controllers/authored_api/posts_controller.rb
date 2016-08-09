@@ -1,7 +1,12 @@
 class AuthoredApi::PostsController < ApplicationController
 	def index
-		@posts = Post.all
-	end
+		# do we want to show all Posts as a feed OR
+		# will this be a landing page for only the author's posts
+		if params[:authored_posts]
+			@posts = current_user.authored_posts
+		else
+			@posts = Post.all
+		end
 
 	def show
 		@post = post_lookup
@@ -25,6 +30,7 @@ class AuthoredApi::PostsController < ApplicationController
 	end
 
 	def update
+		# needs to be finished
 		@post = post_lookup
 	end
 
@@ -34,6 +40,7 @@ class AuthoredApi::PostsController < ApplicationController
 
 	def destroy
 		@post = post_lookup
+		@post.delete
 	end
 
 	private
