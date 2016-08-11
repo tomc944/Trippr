@@ -5,7 +5,6 @@ Trippr is an improved Trip Reporting Web Application. Most Trip Reports for clim
 Trippr will allow authors to create reports in a large text form. Once the report has been written, the author will highlight a section of text that will be linked to a photo. After the text and highlighting are completed, the report will be published. When viewing the trip report, users can hover over the highlight and the photo will appear in a sidebar or pop-up modal - thus, there is no ambiguity between the content and the displayed photo.
 
 
-
 ### MVP Features
 - [ ]  Single page auth for users
 - [ ]  Guests can view reports but not upload photos
@@ -23,5 +22,7 @@ Trippr will allow authors to create reports in a large text form. Once the repor
 
 ## Design Docs
 * [View Wireframes][views]
+* [Database Schema][db]
 
 [views]: ./docs/views.md
+[db]: ./docs/db.md
