@@ -8,7 +8,7 @@ class AuthoredApi::HighlightsController < ApplicationController
 		@highlight.author_id = current_user.id
 
 		if @highlight.save
-			# need to then allow the uploading of photos
+			render :show
 		else
 			# not exactly sure if this is where we are going to redirect at
 			# the moment

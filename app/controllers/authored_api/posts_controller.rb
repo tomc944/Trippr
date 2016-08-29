@@ -5,8 +5,9 @@ class AuthoredApi::PostsController < ApplicationController
 		if params[:authored_posts]
 			@posts = current_user.authored_posts
 		else
-			@posts = Post.all
+			@posts = Post.includes(:highlights, :photos)
 		end
+	end
 
 	def show
 		@post = post_lookup
@@ -17,30 +18,25 @@ class AuthoredApi::PostsController < ApplicationController
 		@post[:author_id] = current_user.id
 
 		if @post.save
-			# figure out how highlighting will be handled 
+			# figure out how highlighting will be handled
 			# after creation of post
 		else
 			redirect_to new_authored_api_post_url
 			render json: @post.errors.full_messages, status: 422
 		end
 	end
-	
-	def new
-		render :new
-	end
 
 	def update
 		# needs to be finished
 		@post = post_lookup
-	end
-
-	def edit
-		@post = post_lookup
+		@post.update!(post_params)
+		render :show
 	end
 
 	def destroy
 		@post = post_lookup
-		@post.delete
+		@post.destroy!
+		render json: { id: params[:id] }
 	end
 
 	private

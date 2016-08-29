@@ -23,4 +23,4 @@ class Highlight < ApplicationRecord
 	def self.highlights_belonging_to_post(post_id)
 		self.where(post_id: post_id)
 	end
-end	
+end
