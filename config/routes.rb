@@ -22,12 +22,6 @@ Rails.application.routes.draw do
 		end
 	end
 
-	namespace :commenter_api, defaults: { format: :json } do
-	 	shallow do
-	 		concerns :image_highlightable
-	 	end
-	end
-
 	# ------------------------------------------------------------------------------
 	root to: 'static_pages#root'
 end
