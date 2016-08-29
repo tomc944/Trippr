@@ -20,8 +20,7 @@ class AuthoredApi::HighlightsController < ApplicationController
 	def index
 		# this only gives us all of the highlights
 		# pertaining to a particular post
-		post_id = params[:post_id]
-		@highlights = Highlight.highlights_belonging_to_post(post_id)
+		@highlights = Highlight.where(post_id: params[:post_id])
 	end
 
 	def show
@@ -30,6 +29,7 @@ class AuthoredApi::HighlightsController < ApplicationController
 
 	def destroy
 		highlight_lookup.destroy
+		render json: { id: params[:id] }
 	end
 
 	private

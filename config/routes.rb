@@ -7,11 +7,11 @@ Rails.application.routes.draw do
 	# Reusable concerns for both APIs (avoids deep-nesting) -----------------------
 
 	concern :imageable do
-		resources :images, except: [:edit, :update, :new]
+		resources :photos, except: [:edit, :update, :new]
 	end
 
 	concern :image_highlightable do
-		resources :highlights, only: [:create, :index, :destroy], concerns: :imageable
+		resources :highlights, only: [:create, :index, :destroy, :show], concerns: :imageable
 	end
 
   # Different APIs for authors and commenters -----------------------------------

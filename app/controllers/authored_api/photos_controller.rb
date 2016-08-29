@@ -1,4 +1,4 @@
-class AuthoredApi::ImagesController < ApplicationController
+class AuthoredApi::PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
 
