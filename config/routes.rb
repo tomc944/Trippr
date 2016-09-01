@@ -20,6 +20,8 @@ Rails.application.routes.draw do
 		shallow do
 			resources :posts, except: [:edit, :new], concerns: :image_highlightable
 		end
+
+    resources :highlights, only: [:index]
 	end
 
 	# ------------------------------------------------------------------------------

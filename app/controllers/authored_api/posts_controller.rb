@@ -18,8 +18,7 @@ class AuthoredApi::PostsController < ApplicationController
 		@post[:author_id] = current_user.id
 
 		if @post.save
-			# figure out how highlighting will be handled
-			# after creation of post
+			render :show
 		else
 			redirect_to new_authored_api_post_url
 			render json: @post.errors.full_messages, status: 422
@@ -45,6 +44,6 @@ class AuthoredApi::PostsController < ApplicationController
 	end
 
 	def post_params
-		params.require(:post).permit(:title, :body)
+		params.require(:post).permit(:title, :post, :author_id)
 	end
 end

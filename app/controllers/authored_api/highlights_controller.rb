@@ -18,9 +18,11 @@ class AuthoredApi::HighlightsController < ApplicationController
 	end
 
 	def index
-		# this only gives us all of the highlights
-		# pertaining to a particular post
-		@highlights = Highlight.where(post_id: params[:post_id])
+		if params[:post_id]
+			@highlights = Highlight.where(post_id: params[:post_id])
+		else
+			@highlights = Highlight.all
+		end
 	end
 
 	def show
