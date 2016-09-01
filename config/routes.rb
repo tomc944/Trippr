@@ -1,23 +1,24 @@
 Rails.application.routes.draw do
-  
-	# Authentication gem - no need for explicit routes-----------------------------
-  
-  devise_for :users
-	
+
+	# Auth resources ---------------------------------------------------------
+
+  resources :users, only: [:new, :create, :update]
+  resource :session, only: [:new, :create, :destroy]
+
 	# Reusable concerns for both APIs (avoids deep-nesting) -----------------------
-	
-	concern :imageable do 
+
+	concern :imageable do
 		resources :images, except: [:edit, :update, :new]
 	end
 
 	concern :image_highlightable do
 		resources :highlights, only: [:create, :index, :destroy] #, concerns: :imageable
 	end
-  
+
   # Different APIs for authors and commenters -----------------------------------
 
 	namespace :authored_api, defaults: { format: :json } do
-		shallow do 
+		shallow do
 			resources :posts, concerns: :image_highlightable
 		end
 	end
