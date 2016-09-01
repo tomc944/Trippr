@@ -8,7 +8,7 @@ class AuthoredApi::HighlightsController < ApplicationController
 		@highlight.author_id = current_user.id
 
 		if @highlight.save
-			# need to then allow the uploading of photos
+			render :show
 		else
 			# not exactly sure if this is where we are going to redirect at
 			# the moment
@@ -18,10 +18,11 @@ class AuthoredApi::HighlightsController < ApplicationController
 	end
 
 	def index
-		# this only gives us all of the highlights
-		# pertaining to a particular post
-		post_id = params[:post_id]
-		@highlights = Highlight.highlights_belonging_to_post(post_id)
+		if params[:post_id]
+			@highlights = Highlight.where(post_id: params[:post_id])
+		else
+			@highlights = Highlight.all
+		end
 	end
 
 	def show
@@ -30,6 +31,7 @@ class AuthoredApi::HighlightsController < ApplicationController
 
 	def destroy
 		highlight_lookup.destroy
+		render json: { id: params[:id] }
 	end
 
 	private

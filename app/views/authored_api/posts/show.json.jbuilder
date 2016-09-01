@@ -1,1 +1,1 @@
-json.partial!('api/posts/post', post: @post)
+json.partial!('authored_api/posts/post', post: @post)
