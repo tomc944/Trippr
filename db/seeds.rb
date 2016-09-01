@@ -6,8 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-require 'set'
-
 20.times do
 	Post.create!(post: 		 							Faker::Lorem.paragraph,
 							title: 		 							Faker::Book.title,
