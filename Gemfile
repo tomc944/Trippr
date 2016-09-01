@@ -29,7 +29,7 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'annotate'
 
-gem 'devise'
+gem 'bcrypt'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 

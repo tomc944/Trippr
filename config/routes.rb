@@ -1,8 +1,9 @@
 Rails.application.routes.draw do
 
-	# Authentication gem - no need for explicit routes-----------------------------
+	# Auth resources ---------------------------------------------------------
 
-  devise_for :users
+  resources :users, only: [:new, :create, :update]
+  resource :session, only: [:new, :create, :destroy]
 
 	# Reusable concerns for both APIs (avoids deep-nesting) -----------------------
 
