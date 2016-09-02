@@ -23,4 +23,4 @@ const NavbarComponent = React.createClass({
   }
 })
 
-module.exports = NavbarComponent;
+export default NavbarComponent;

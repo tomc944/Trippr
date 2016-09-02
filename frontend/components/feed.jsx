@@ -1,14 +1,14 @@
 import React from 'react'
 import { render } from 'react-dom'
 
-const FooterComponent = React.createClass({
+const Feed = React.createClass({
   render() {
     return (
       <div>
-        Footer!
+        Feed!
       </div>
     )
   }
 })
 
-export default FooterComponent;
+export default Feed;
