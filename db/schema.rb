@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160901221243) do
+ActiveRecord::Schema.define(version: 20160901234923) do
 
   create_table "highlight_photos", force: :cascade do |t|
     t.integer  "photo_id",     null: false
@@ -21,11 +21,13 @@ ActiveRecord::Schema.define(version: 20160901221243) do
   end
 
   create_table "highlights", force: :cascade do |t|
-    t.text     "highlight",  null: false
-    t.integer  "post_id",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
+    t.text     "highlight",              null: false
+    t.integer  "post_id",                null: false
+    t.datetime "created_at",             null: false
+    t.datetime "updated_at",             null: false
     t.integer  "author_id"
+    t.integer  "start_word", default: 0, null: false
+    t.integer  "end_word",   default: 0, null: false
     t.index ["author_id"], name: "index_highlights_on_author_id"
     t.index ["post_id"], name: "index_highlights_on_post_id"
   end

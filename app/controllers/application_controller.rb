@@ -1,11 +1,12 @@
 class ApplicationController < ActionController::Base
-  protect_from_forgery prepend: true
+  # protect_from_forgery prepend: true
 
   helper_method :current_user, :signed_in?
 
   private
 
   def current_user
+    debugger
     @current_user ||= User.find_by_session_token(session[:session_token])
   end
 

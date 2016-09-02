@@ -5,7 +5,9 @@ class AuthoredApi::HighlightsController < ApplicationController
 		# current_user should be availabe as a method available
 		# from devise, but we need to double-check this
 
+		debugger
 		@highlight.author_id = current_user.id
+
 
 		if @highlight.save
 			render :show
@@ -40,6 +42,6 @@ class AuthoredApi::HighlightsController < ApplicationController
 	end
 
 	def highlight_params
-		params.require(:highlight).permit(:highlight, :post_id)
+		params.require(:highlight).permit(:highlight, :post_id, :start_word, :end_word)
 	end
 end
