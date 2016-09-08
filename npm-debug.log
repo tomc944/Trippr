@@ -1,0 +1,228 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/Cellar/node/6.3.0/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install' ]
+2 info using npm@3.10.3
+3 info using node@v6.3.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData react
+20 silly mapToRegistry name react
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry data Result {
+23 silly mapToRegistry   raw: 'react',
+23 silly mapToRegistry   scope: null,
+23 silly mapToRegistry   escapedName: 'react',
+23 silly mapToRegistry   name: 'react',
+23 silly mapToRegistry   rawSpec: '',
+23 silly mapToRegistry   spec: 'latest',
+23 silly mapToRegistry   type: 'tag' }
+24 silly mapToRegistry uri https://registry.npmjs.org/react
+25 silly fetchNamedPackageData react-dom
+26 silly mapToRegistry name react-dom
+27 silly mapToRegistry using default registry
+28 silly mapToRegistry registry https://registry.npmjs.org/
+29 silly mapToRegistry data Result {
+29 silly mapToRegistry   raw: 'react-dom',
+29 silly mapToRegistry   scope: null,
+29 silly mapToRegistry   escapedName: 'react-dom',
+29 silly mapToRegistry   name: 'react-dom',
+29 silly mapToRegistry   rawSpec: '',
+29 silly mapToRegistry   spec: 'latest',
+29 silly mapToRegistry   type: 'tag' }
+30 silly mapToRegistry uri https://registry.npmjs.org/react-dom
+31 verbose request uri https://registry.npmjs.org/react
+32 verbose request no auth needed
+33 info attempt registry request try #1 at 6:55:44 PM
+34 verbose request id 996e1061a4abea42
+35 verbose etag "6TRQ30GOE1FAF3HFNRNE7Z6F4"
+36 http request GET https://registry.npmjs.org/react
+37 verbose request uri https://registry.npmjs.org/react-dom
+38 verbose request no auth needed
+39 info attempt registry request try #1 at 6:55:44 PM
+40 verbose etag "810QU9SNXTZ42CGL6KPZ3G1WM"
+41 http request GET https://registry.npmjs.org/react-dom
+42 http 304 https://registry.npmjs.org/react-dom
+43 verbose headers { date: 'Fri, 02 Sep 2016 01:51:32 GMT',
+43 verbose headers   via: '1.1 varnish',
+43 verbose headers   'cache-control': 'max-age=300',
+43 verbose headers   etag: '"810QU9SNXTZ42CGL6KPZ3G1WM"',
+43 verbose headers   age: '50',
+43 verbose headers   connection: 'keep-alive',
+43 verbose headers   'x-served-by': 'cache-sjc3640-SJC',
+43 verbose headers   'x-cache': 'HIT',
+43 verbose headers   'x-cache-hits': '1',
+43 verbose headers   'x-timer': 'S1472781092.319471,VS0,VE0',
+43 verbose headers   vary: 'Accept-Encoding' }
+44 silly get cb [ 304,
+44 silly get   { date: 'Fri, 02 Sep 2016 01:51:32 GMT',
+44 silly get     via: '1.1 varnish',
+44 silly get     'cache-control': 'max-age=300',
+44 silly get     etag: '"810QU9SNXTZ42CGL6KPZ3G1WM"',
+44 silly get     age: '50',
+44 silly get     connection: 'keep-alive',
+44 silly get     'x-served-by': 'cache-sjc3640-SJC',
+44 silly get     'x-cache': 'HIT',
+44 silly get     'x-cache-hits': '1',
+44 silly get     'x-timer': 'S1472781092.319471,VS0,VE0',
+44 silly get     vary: 'Accept-Encoding' } ]
+45 verbose etag https://registry.npmjs.org/react-dom from cache
+46 verbose get saving react-dom to /Users/thomasclaiborne/.npm/registry.npmjs.org/react-dom/.cache.json
+47 verbose correctMkdir /Users/thomasclaiborne/.npm correctMkdir not in flight; initializing
+48 http 200 https://registry.npmjs.org/react
+49 verbose headers { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+49 verbose headers   etag: '"2M5KHU9VH96MBM8K3RYNBCXKT"',
+49 verbose headers   'content-type': 'application/json',
+49 verbose headers   'content-encoding': 'gzip',
+49 verbose headers   'cache-control': 'max-age=300',
+49 verbose headers   'content-length': '14307',
+49 verbose headers   'accept-ranges': 'bytes',
+49 verbose headers   date: 'Fri, 02 Sep 2016 01:51:32 GMT',
+49 verbose headers   via: '1.1 varnish',
+49 verbose headers   age: '24',
+49 verbose headers   connection: 'keep-alive',
+49 verbose headers   'x-served-by': 'cache-sjc3138-SJC',
+49 verbose headers   'x-cache': 'HIT',
+49 verbose headers   'x-cache-hits': '1',
+49 verbose headers   'x-timer': 'S1472781092.307047,VS0,VE0',
+49 verbose headers   vary: 'Accept-Encoding' }
+50 silly get cb [ 200,
+50 silly get   { server: 'CouchDB/1.6.1 (Erlang OTP/R16B03)',
+50 silly get     etag: '"2M5KHU9VH96MBM8K3RYNBCXKT"',
+50 silly get     'content-type': 'application/json',
+50 silly get     'content-encoding': 'gzip',
+50 silly get     'cache-control': 'max-age=300',
+50 silly get     'content-length': '14307',
+50 silly get     'accept-ranges': 'bytes',
+50 silly get     date: 'Fri, 02 Sep 2016 01:51:32 GMT',
+50 silly get     via: '1.1 varnish',
+50 silly get     age: '24',
+50 silly get     connection: 'keep-alive',
+50 silly get     'x-served-by': 'cache-sjc3138-SJC',
+50 silly get     'x-cache': 'HIT',
+50 silly get     'x-cache-hits': '1',
+50 silly get     'x-timer': 'S1472781092.307047,VS0,VE0',
+50 silly get     vary: 'Accept-Encoding' } ]
+51 verbose get saving react to /Users/thomasclaiborne/.npm/registry.npmjs.org/react/.cache.json
+52 verbose correctMkdir /Users/thomasclaiborne/.npm correctMkdir not in flight; initializing
+53 silly fetchNamedPackageData No valid target from cache, forcing network
+54 verbose request uri https://registry.npmjs.org/react-dom
+55 verbose request no auth needed
+56 info attempt registry request try #1 at 6:55:44 PM
+57 http request GET https://registry.npmjs.org/react-dom
+58 silly fetchPackageMetaData Error: No compatible version found: react@^15.13.0
+58 silly fetchPackageMetaData Valid install targets:
+58 silly fetchPackageMetaData 15.3.1, 15.3.1-rc.2, 15.3.1-rc.1, 15.3.0, 15.3.0-rc.3, 15.3.0-rc.2, 15.3.0-rc.1, 15.2.1, 15.2.0, 15.2.0-rc.2, 15.2.0-rc.1, 15.1.0, 15.1.0-alpha.1, 15.0.3-alpha.2, 15.0.3-alpha.1, 15.0.2, 15.0.2-alpha.4, 15.0.2-alpha.3, 15.0.2-alpha.2, 15.0.2-alpha.1, 15.0.1, 15.0.0, 15.0.0-rc.2, 15.0.0-rc.1, 0.15.0-alpha.1, 0.14.8, 0.14.7, 0.14.6, 0.14.5, 0.14.4, 0.14.3, 0.14.2, 0.14.1, 0.14.0, 0.14.0-rc1, 0.14.0-beta3, 0.14.0-beta2, 0.14.0-beta1, 0.14.0-alpha3, 0.14.0-alpha2, 0.14.0-alpha1, 0.13.3, 0.13.2, 0.13.1, 0.13.0, 0.13.0-rc2, 0.13.0-rc1, 0.13.0-beta.2, 0.13.0-beta.1, 0.13.0-alpha.2, 0.13.0-alpha.1, 0.12.2, 0.12.1, 0.12.0, 0.12.0-rc1, 0.11.2, 0.11.1, 0.11.0, 0.11.0-rc1, 0.10.0, 0.10.0-rc1, 0.9.0, 0.9.0-rc1, 0.8.0, 0.7.1, 0.7.0, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.3.5, 0.3.4, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0, 0.1.2, 0.0.3, 0.0.2, 0.0.1
+58 silly fetchPackageMetaData
+58 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+58 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+58 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+58 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+58 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+58 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+58 silly fetchPackageMetaData  error for react@^15.13.0 Error: No compatible version found: react@^15.13.0
+58 silly fetchPackageMetaData Valid install targets:
+58 silly fetchPackageMetaData 15.3.1, 15.3.1-rc.2, 15.3.1-rc.1, 15.3.0, 15.3.0-rc.3, 15.3.0-rc.2, 15.3.0-rc.1, 15.2.1, 15.2.0, 15.2.0-rc.2, 15.2.0-rc.1, 15.1.0, 15.1.0-alpha.1, 15.0.3-alpha.2, 15.0.3-alpha.1, 15.0.2, 15.0.2-alpha.4, 15.0.2-alpha.3, 15.0.2-alpha.2, 15.0.2-alpha.1, 15.0.1, 15.0.0, 15.0.0-rc.2, 15.0.0-rc.1, 0.15.0-alpha.1, 0.14.8, 0.14.7, 0.14.6, 0.14.5, 0.14.4, 0.14.3, 0.14.2, 0.14.1, 0.14.0, 0.14.0-rc1, 0.14.0-beta3, 0.14.0-beta2, 0.14.0-beta1, 0.14.0-alpha3, 0.14.0-alpha2, 0.14.0-alpha1, 0.13.3, 0.13.2, 0.13.1, 0.13.0, 0.13.0-rc2, 0.13.0-rc1, 0.13.0-beta.2, 0.13.0-beta.1, 0.13.0-alpha.2, 0.13.0-alpha.1, 0.12.2, 0.12.1, 0.12.0, 0.12.0-rc1, 0.11.2, 0.11.1, 0.11.0, 0.11.0-rc1, 0.10.0, 0.10.0-rc1, 0.9.0, 0.9.0-rc1, 0.8.0, 0.7.1, 0.7.0, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.3.5, 0.3.4, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0, 0.1.2, 0.0.3, 0.0.2, 0.0.1
+58 silly fetchPackageMetaData
+58 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+58 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+58 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+58 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+58 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+58 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+59 http 200 https://registry.npmjs.org/react-dom
+60 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+60 verbose headers   etag: '"810QU9SNXTZ42CGL6KPZ3G1WM"',
+60 verbose headers   'content-type': 'application/json',
+60 verbose headers   'content-encoding': 'gzip',
+60 verbose headers   'cache-control': 'max-age=300',
+60 verbose headers   'content-length': '6807',
+60 verbose headers   'accept-ranges': 'bytes',
+60 verbose headers   date: 'Fri, 02 Sep 2016 01:51:32 GMT',
+60 verbose headers   via: '1.1 varnish',
+60 verbose headers   age: '50',
+60 verbose headers   connection: 'keep-alive',
+60 verbose headers   'x-served-by': 'cache-sjc3640-SJC',
+60 verbose headers   'x-cache': 'HIT',
+60 verbose headers   'x-cache-hits': '2',
+60 verbose headers   'x-timer': 'S1472781092.424721,VS0,VE0',
+60 verbose headers   vary: 'Accept-Encoding' }
+61 silly get cb [ 200,
+61 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+61 silly get     etag: '"810QU9SNXTZ42CGL6KPZ3G1WM"',
+61 silly get     'content-type': 'application/json',
+61 silly get     'content-encoding': 'gzip',
+61 silly get     'cache-control': 'max-age=300',
+61 silly get     'content-length': '6807',
+61 silly get     'accept-ranges': 'bytes',
+61 silly get     date: 'Fri, 02 Sep 2016 01:51:32 GMT',
+61 silly get     via: '1.1 varnish',
+61 silly get     age: '50',
+61 silly get     connection: 'keep-alive',
+61 silly get     'x-served-by': 'cache-sjc3640-SJC',
+61 silly get     'x-cache': 'HIT',
+61 silly get     'x-cache-hits': '2',
+61 silly get     'x-timer': 'S1472781092.424721,VS0,VE0',
+61 silly get     vary: 'Accept-Encoding' } ]
+62 verbose get saving react-dom to /Users/thomasclaiborne/.npm/registry.npmjs.org/react-dom/.cache.json
+63 verbose correctMkdir /Users/thomasclaiborne/.npm correctMkdir not in flight; initializing
+64 silly fetchPackageMetaData Error: No compatible version found: react-dom@^15.13.0
+64 silly fetchPackageMetaData Valid install targets:
+64 silly fetchPackageMetaData 15.3.1, 15.3.1-rc.2, 15.3.1-rc.1, 15.3.0, 15.3.0-rc.3, 15.3.0-rc.2, 15.3.0-rc.1, 15.2.1, 15.2.0, 15.2.0-rc.2, 15.2.0-rc.1, 15.1.0, 15.1.0-alpha.1, 15.0.3-alpha.2, 15.0.3-alpha.1, 15.0.2, 15.0.2-alpha.4, 15.0.2-alpha.3, 15.0.2-alpha.2, 15.0.2-alpha.1, 15.0.1, 15.0.0, 15.0.0-rc.2, 15.0.0-rc.1, 0.15.0-alpha.1, 0.14.8, 0.14.7, 0.14.6, 0.14.5, 0.14.4, 0.14.3, 0.14.2, 0.14.1, 0.14.0, 0.14.0-rc1, 0.14.0-beta3, 0.14.0-beta2, 0.14.0-beta1, 0.1.0
+64 silly fetchPackageMetaData
+64 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+64 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+64 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+64 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+64 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+64 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+64 silly fetchPackageMetaData  error for react-dom@^15.13.0 Error: No compatible version found: react-dom@^15.13.0
+64 silly fetchPackageMetaData Valid install targets:
+64 silly fetchPackageMetaData 15.3.1, 15.3.1-rc.2, 15.3.1-rc.1, 15.3.0, 15.3.0-rc.3, 15.3.0-rc.2, 15.3.0-rc.1, 15.2.1, 15.2.0, 15.2.0-rc.2, 15.2.0-rc.1, 15.1.0, 15.1.0-alpha.1, 15.0.3-alpha.2, 15.0.3-alpha.1, 15.0.2, 15.0.2-alpha.4, 15.0.2-alpha.3, 15.0.2-alpha.2, 15.0.2-alpha.1, 15.0.1, 15.0.0, 15.0.0-rc.2, 15.0.0-rc.1, 0.15.0-alpha.1, 0.14.8, 0.14.7, 0.14.6, 0.14.5, 0.14.4, 0.14.3, 0.14.2, 0.14.1, 0.14.0, 0.14.0-rc1, 0.14.0-beta3, 0.14.0-beta2, 0.14.0-beta1, 0.1.0
+64 silly fetchPackageMetaData
+64 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+64 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+64 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+64 silly fetchPackageMetaData     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+64 silly fetchPackageMetaData     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+64 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:123:15)
+65 silly rollbackFailedOptional Starting
+66 silly rollbackFailedOptional Finishing
+67 silly runTopLevelLifecycles Starting
+68 silly runTopLevelLifecycles Finishing
+69 silly install printInstalled
+70 verbose stack Error: No compatible version found: react@^15.13.0
+70 verbose stack Valid install targets:
+70 verbose stack 15.3.1, 15.3.1-rc.2, 15.3.1-rc.1, 15.3.0, 15.3.0-rc.3, 15.3.0-rc.2, 15.3.0-rc.1, 15.2.1, 15.2.0, 15.2.0-rc.2, 15.2.0-rc.1, 15.1.0, 15.1.0-alpha.1, 15.0.3-alpha.2, 15.0.3-alpha.1, 15.0.2, 15.0.2-alpha.4, 15.0.2-alpha.3, 15.0.2-alpha.2, 15.0.2-alpha.1, 15.0.1, 15.0.0, 15.0.0-rc.2, 15.0.0-rc.1, 0.15.0-alpha.1, 0.14.8, 0.14.7, 0.14.6, 0.14.5, 0.14.4, 0.14.3, 0.14.2, 0.14.1, 0.14.0, 0.14.0-rc1, 0.14.0-beta3, 0.14.0-beta2, 0.14.0-beta1, 0.14.0-alpha3, 0.14.0-alpha2, 0.14.0-alpha1, 0.13.3, 0.13.2, 0.13.1, 0.13.0, 0.13.0-rc2, 0.13.0-rc1, 0.13.0-beta.2, 0.13.0-beta.1, 0.13.0-alpha.2, 0.13.0-alpha.1, 0.12.2, 0.12.1, 0.12.0, 0.12.0-rc1, 0.11.2, 0.11.1, 0.11.0, 0.11.0-rc1, 0.10.0, 0.10.0-rc1, 0.9.0, 0.9.0-rc1, 0.8.0, 0.7.1, 0.7.0, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.3.5, 0.3.4, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0, 0.1.2, 0.0.3, 0.0.2, 0.0.1
+70 verbose stack
+70 verbose stack     at pickVersionFromRegistryDocument (/usr/local/lib/node_modules/npm/lib/fetch-package-metadata.js:170:16)
+70 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/iferr/index.js:13:50
+70 verbose stack     at /usr/local/lib/node_modules/npm/lib/utils/pulse-till-done.js:20:8
+70 verbose stack     at saved (/usr/local/lib/node_modules/npm/lib/cache/caching-client.js:174:7)
+70 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/graceful-fs/polyfills.js:210:7
+70 verbose stack     at FSReqWrap.oncomplete (fs.js:123:15)
+71 verbose cwd /Users/thomasclaiborne/Desktop/Trippr
+72 error Darwin 15.5.0
+73 error argv "/usr/local/Cellar/node/6.3.0/bin/node" "/usr/local/bin/npm" "install"
+74 error node v6.3.0
+75 error npm  v3.10.3
+76 error No compatible version found: react@^15.13.0
+76 error Valid install targets:
+76 error 15.3.1, 15.3.1-rc.2, 15.3.1-rc.1, 15.3.0, 15.3.0-rc.3, 15.3.0-rc.2, 15.3.0-rc.1, 15.2.1, 15.2.0, 15.2.0-rc.2, 15.2.0-rc.1, 15.1.0, 15.1.0-alpha.1, 15.0.3-alpha.2, 15.0.3-alpha.1, 15.0.2, 15.0.2-alpha.4, 15.0.2-alpha.3, 15.0.2-alpha.2, 15.0.2-alpha.1, 15.0.1, 15.0.0, 15.0.0-rc.2, 15.0.0-rc.1, 0.15.0-alpha.1, 0.14.8, 0.14.7, 0.14.6, 0.14.5, 0.14.4, 0.14.3, 0.14.2, 0.14.1, 0.14.0, 0.14.0-rc1, 0.14.0-beta3, 0.14.0-beta2, 0.14.0-beta1, 0.14.0-alpha3, 0.14.0-alpha2, 0.14.0-alpha1, 0.13.3, 0.13.2, 0.13.1, 0.13.0, 0.13.0-rc2, 0.13.0-rc1, 0.13.0-beta.2, 0.13.0-beta.1, 0.13.0-alpha.2, 0.13.0-alpha.1, 0.12.2, 0.12.1, 0.12.0, 0.12.0-rc1, 0.11.2, 0.11.1, 0.11.0, 0.11.0-rc1, 0.10.0, 0.10.0-rc1, 0.9.0, 0.9.0-rc1, 0.8.0, 0.7.1, 0.7.0, 0.6.3, 0.6.2, 0.6.1, 0.6.0, 0.5.2, 0.5.1, 0.5.0, 0.3.5, 0.3.4, 0.3.0, 0.2.6, 0.2.5, 0.2.4, 0.2.3, 0.2.2, 0.2.1, 0.2.0, 0.1.2, 0.0.3, 0.0.2, 0.0.1
+77 error If you need help, you may report this error at:
+77 error     <https://github.com/npm/npm/issues>
+78 verbose exit [ 1, true ]

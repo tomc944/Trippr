@@ -1,0 +1,4 @@
+module.exports = {
+  RECEIVE_POST: "RECEIVE_POST",
+  RECEIVE_POSTS: "RECEIVE_POSTS"
+}

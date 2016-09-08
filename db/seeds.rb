@@ -12,7 +12,7 @@
 							 session_token:					Faker::Lorem.characters(32))
 end
 
-20.times do
+100.times do
 	Post.create!(post: 		 							Faker::Lorem.paragraph,
 							title: 		 							Faker::Book.title,
 							author_id: 							Faker::Number.between(1, 10))
@@ -28,16 +28,16 @@ end
 								 	 end_word:					ender)
 end
 
-20.times do
+200.times do
 	Photo.create(url: 									Faker::Internet::url,
-							 post_id:       				Faker::Number.between(1, 20),
+							 post_id:       				Faker::Number.between(1, 100),
 							 author_id:     				Faker::Number.between(1, 10))
 end
 
-array2 = (1..100).to_a.shuffle!
+array2 = (1..1000).to_a.shuffle!
 
-100.times do
-	num1 = 1 + rand(20)
+1000.times do
+	num1 = 1 + rand(200)
 	num2 = array2.pop
 
 	HighlightPhoto.create(photo_id: 		num1,

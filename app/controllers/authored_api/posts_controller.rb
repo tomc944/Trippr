@@ -14,7 +14,8 @@ class AuthoredApi::PostsController < ApplicationController
 	end
 
 	def create
-		@post = Post.create(post_params)
+		debugger
+		@post = Post.new(post_params)
 		@post[:author_id] = current_user.id
 
 		if @post.save
