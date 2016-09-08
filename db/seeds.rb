@@ -6,16 +6,26 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+10.times do
+	User.create!(username:							Faker::Internet.user_name,
+							 password_digest:       Faker::Lorem.characters(32),
+							 session_token:					Faker::Lorem.characters(32))
+end
+
 100.times do
 	Post.create!(post: 		 							Faker::Lorem.paragraph,
 							title: 		 							Faker::Book.title,
 							author_id: 							Faker::Number.between(1, 10))
 end
 
-1000.times do
+100.times do
+	starter = Faker::Number.between(1,30)
+	ender = starter + Faker::Number.between(1,10)
 	Highlight.create(highlight: 				Faker::Hipster.sentence,
-									 post_id:   				Faker::Number.between(1, 100),
-									 author_id: 				Faker::Number.between(1, 10))
+									 post_id:   				Faker::Number.between(1, 20),
+									 author_id: 				Faker::Number.between(1, 10),
+									 start_word:				starter,
+								 	 end_word:					ender)
 end
 
 200.times do

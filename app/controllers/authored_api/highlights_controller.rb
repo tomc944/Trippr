@@ -5,7 +5,8 @@ class AuthoredApi::HighlightsController < ApplicationController
 		# current_user should be availabe as a method available
 		# from devise, but we need to double-check this
 
-		@highlight.author_id = current_user.i
+
+		@highlight.author_id = current_user.id
 
 		if @highlight.save
 			render :show
