@@ -12,6 +12,9 @@ const PostActions = {
   addPost: (post) => {
     PostUtil.addPost(post, PostActions.receivePost);
   },
+  addHighlightToPost: (highlight) => {
+    PostUtil.addHighlightToPost(highlight, PostActions.receiveNewHighlight)
+  },
   receivePost: (post) => {
     AppDispatcher.dispatch({
       actionType: PostConstants.RECEIVE_POST,
@@ -22,6 +25,12 @@ const PostActions = {
     AppDispatcher.dispatch({
       actionType: PostConstants.RECEIVE_POSTS,
       posts: posts
+    })
+  },
+  receiveNewHighlight: (highlight) => {
+    AppDispatcher.dispatch({
+      actionType: PostConstants.RECEIVE_NEW_HIGHLIGHT,
+      highlight: highlight
     })
   }
 }

@@ -30,9 +30,12 @@ const PostDetail = React.createClass({
     if (highlight.anchorOffset < highlight.focusOffset) {
       startIndex = highlight.anchorOffset;
       endIndex = highlight.focusOffset;
+    } else if (highlight.anchorOffset > highlight.focusOffset) {
+      endIndex = highlight.anchorOffset;
+      startIndex = highlight.focusOffset;
+    } else {
+      return
     }
-    debugger
-
     this._handleHighlight(startIndex,endIndex);
   },
   _highlightable() {
@@ -43,7 +46,6 @@ const PostDetail = React.createClass({
     }
   },
   _toggleHighlightable() {
-    console.log("toggled!")
     if (this.state.highlightable === true) {
       document.getElementById('postText').removeEventListener("mouseup", this._getHighlightIndices)
       this.setState({highlightable: false});
@@ -53,6 +55,41 @@ const PostDetail = React.createClass({
     }
   },
   _handleHighlight(startIdx, endIdx) {
+    var overlappingHighlight = this._overlappingHighlight(startIdx,endIdx)
+    if (overlappingHighlight) {
+      this._addPhotoToHighlight(overlappingHighlight);
+    } else {
+      this._createHighlight(startIdx, endIdx);
+    }
+  },
+  _overlappingHighlight(startIdx, endIdx) {
+    var overlappedHighlight;
+    this.state.post.highlights.forEach(function(highlight) {
+      if (highlight.start_idx >= startIdx && highlight.start_idx <= endIdx) {
+        overlappedHighlight = highlight;
+      } else if (highlight.end_idx >= startIdx && highlight.end_idx <= endIdx) {
+        overlappedHighlight = highlight;
+      } else if (highlight.start_idx <= startIdx && highlight.end_idx >= endIdx) {
+        overlappedHighlight = highlight;
+      }
+    })
+    if (overlappedHighlight) {
+      return overlappedHighlight;
+    } else {
+      return false;
+    }
+  },
+  _createHighlight(startIdx, endIdx) {
+    var highlight = {}
+    highlight.post_id = this.state.post.id;
+    highlight.start_idx = startIdx;
+    highlight.end_idx = endIdx
+    PostActions.addHighlightToPost(highlight);
+  },
+  _addPhotoToHighlight(highlight) {
+
+  },
+  _createPostBody() {
 
   },
 

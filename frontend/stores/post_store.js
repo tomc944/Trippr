@@ -13,6 +13,9 @@ PostStore.__onDispatch = (payload) => {
     case PostConstants.RECEIVE_POSTS:
       _receivePosts(payload.posts);
       break;
+    case PostConstants.RECEIVE_NEW_HIGHLIGHT:
+      _receiveNewHighlight(payload.highlight);
+      break;
   }
 }
 
@@ -31,6 +34,21 @@ const _receivePost = (post) => {
 
 const _receivePosts = (posts) => {
   _posts = posts;
+  PostStore.__emitChange();
+}
+
+const _receiveNewHighlight = (highlight) => {
+  var post = PostStore.find(highlight.post_id);
+  post.highlights.push(highlight);
+  post.highlights.sort(function (a, b) {
+    if (a.start_idx > b.start_idx) {
+      return 1;
+    } else if (a.start_idx < b.start_idx) {
+      return -1;
+    } else {
+      return 0;
+    }
+  });
   PostStore.__emitChange();
 }
 
