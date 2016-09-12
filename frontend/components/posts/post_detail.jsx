@@ -25,18 +25,29 @@ const PostDetail = React.createClass({
   },
   _getHighlightIndices() {
     var highlight = window.getSelection();
+    var overallAnchorOffset = this._getHighlightOffset(highlight.anchorNode.parentElement) + highlight.anchorOffset;
+    var overallFocusOffset = this._getHighlightOffset(highlight.focusNode.parentElement) + highlight.focusOffset;
     var startIndex;
     var endIndex;
-    if (highlight.anchorOffset < highlight.focusOffset) {
-      startIndex = highlight.anchorOffset;
-      endIndex = highlight.focusOffset;
-    } else if (highlight.anchorOffset > highlight.focusOffset) {
-      endIndex = highlight.anchorOffset;
-      startIndex = highlight.focusOffset;
+    if (overallAnchorOffset < overallFocusOffset) {
+      startIndex = overallAnchorOffset;
+      endIndex = overallFocusOffset;
+    } else if (overallAnchorOffset > overallFocusOffset) {
+      endIndex = overallAnchorOffset;
+      startIndex = overallFocusOffset;
     } else {
       return
     }
-    this._handleHighlight(startIndex,endIndex);
+    this._handleHighlight(startIndex, endIndex);
+  },
+  _getHighlightOffset(node) {
+    node = node.previousSibling
+    var offset = 0;
+    while (node !== null) {
+      offset += node.innerHTML.length;
+      node = node.previousSibling;
+    }
+    return offset;
   },
   _highlightable() {
     if (this.state.highlightable === true) {
@@ -65,11 +76,11 @@ const PostDetail = React.createClass({
   _overlappingHighlight(startIdx, endIdx) {
     var overlappedHighlight;
     this.state.post.highlights.forEach(function(highlight) {
-      if (highlight.start_idx >= startIdx && highlight.start_idx <= endIdx) {
+      if (startIdx >= highlight.start_idx && startIdx <= highlight.end_idx) {
         overlappedHighlight = highlight;
-      } else if (highlight.end_idx >= startIdx && highlight.end_idx <= endIdx) {
+      } else if (endIdx >= highlight.start_idx && endIdx <= highlight.end_idx) {
         overlappedHighlight = highlight;
-      } else if (highlight.start_idx <= startIdx && highlight.end_idx >= endIdx) {
+      } else if (highlight.start_idx >= startIdx && highlight.end_idx <= endIdx) {
         overlappedHighlight = highlight;
       }
     })
@@ -90,7 +101,20 @@ const PostDetail = React.createClass({
 
   },
   _createPostBody() {
-
+    var body = [];
+    var index = 0;
+    if (this.state.post.post !== undefined) {
+      var text = this.state.post.post
+      this.state.post.highlights.forEach(function(highlight) {
+        body.push(<span>{text.slice(index,highlight.start_idx)}</span>);
+        body.push(<span style={{background: 'rgba(0,255,255,0.3)'}} id={highlight.id}>
+          {text.slice(highlight.start_idx,highlight.end_idx)}
+        </span>);
+        index = highlight.end_idx;
+      })
+      body.push(<span>{text.slice(index)}</span>)
+    }
+    return body
   },
 
   render () {
@@ -98,7 +122,7 @@ const PostDetail = React.createClass({
       <div>
         <h1>{this.state.post.title}</h1>
         <h4 onClick = {this._toggleHighlightable}>{this._highlightable()}</h4>
-        <p id='postText'>{this.state.post.post}</p>
+        <p id='postText'>{this._createPostBody()}</p>
 
       </div>
     )
