@@ -1,11 +1,6 @@
 class AuthoredApi::HighlightsController < ApplicationController
 	def create
 		@highlight = Highlight.new(highlight_params)
-
-		# current_user should be availabe as a method available
-		# from devise, but we need to double-check this
-
-
 		@highlight.author_id = current_user.id
 
 		if @highlight.save
@@ -41,6 +36,6 @@ class AuthoredApi::HighlightsController < ApplicationController
 	end
 
 	def highlight_params
-		params.require(:highlight).permit(:highlight, :post_id, :start_word, :end_word)
+		params.require(:highlight).permit(:post_id, :start_idx, :end_idx)
 	end
 end
