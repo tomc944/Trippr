@@ -94,7 +94,7 @@ const PostDetail = React.createClass({
     var highlight = {}
     highlight.post_id = this.state.post.id;
     highlight.start_idx = startIdx;
-    highlight.end_idx = endIdx
+    highlight.end_idx = endIdx;
     PostActions.addHighlightToPost(highlight);
   },
   _addPhotoToHighlight(highlight) {
@@ -103,10 +103,13 @@ const PostDetail = React.createClass({
   _createPostBody() {
     var body = [];
     var index = 0;
-    if (this.state.post.post !== undefined) {
+    if (!!this.state.post.post) {
       var text = this.state.post.post
-      this.state.post.highlights.forEach(function(highlight) {
+      var highlights = this._sortHighlights()
+      highlights.forEach(function(highlight) {
         body.push(<span>{text.slice(index,highlight.start_idx)}</span>);
+        // TODO: Place span with className so we don't put style in code
+
         body.push(<span style={{background: 'rgba(0,255,255,0.3)'}} id={highlight.id}>
           {text.slice(highlight.start_idx,highlight.end_idx)}
         </span>);
@@ -115,6 +118,19 @@ const PostDetail = React.createClass({
       body.push(<span>{text.slice(index)}</span>)
     }
     return body
+  },
+  _sortHighlights() {
+    var highlights = this.state.post.highlights
+    highlights.sort(function (a, b) {
+      if (a.start_idx > b.start_idx) {
+        return 1;
+      } else if (a.start_idx < b.start_idx) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+    return highlights;
   },
 
   render () {
