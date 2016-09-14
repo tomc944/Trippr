@@ -13,7 +13,7 @@ const Routes = (
 			<IndexRoute component={Feed} />
 			<Route path="posts" component={PostIndex} />
 			<Route path="posts/new" component={PostForm} />
-			<Route path="post/:id" component={PostDetail} />
+			<Route path="posts/:id" component={PostDetail} />
 		</Route>
 	</Router>
 );
