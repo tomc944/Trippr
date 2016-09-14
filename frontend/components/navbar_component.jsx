@@ -9,7 +9,7 @@ const NavbarComponent = React.createClass({
       <Navbar inverse>
         <Navbar.Header>
           <Navbar.Brand>
-            <a href="#/">Trippr</a>
+            Trippr
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
