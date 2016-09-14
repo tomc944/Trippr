@@ -13,6 +13,9 @@ PostStore.__onDispatch = (payload) => {
     case PostConstants.RECEIVE_POSTS:
       _receivePosts(payload.posts);
       break;
+    case PostConstants.RECEIVE_NEW_HIGHLIGHT:
+      _receiveNewHighlight(payload.highlight);
+      break;
   }
 }
 
@@ -31,6 +34,12 @@ const _receivePost = (post) => {
 
 const _receivePosts = (posts) => {
   _posts = posts;
+  PostStore.__emitChange();
+}
+
+const _receiveNewHighlight = (highlight) => {
+  var post = PostStore.find(highlight.post_id);
+  post.highlights.push(highlight);
   PostStore.__emitChange();
 }
 

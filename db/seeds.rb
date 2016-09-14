@@ -13,19 +13,23 @@
 end
 
 100.times do
-	Post.create!(post: 		 							Faker::Lorem.paragraph,
+	Post.create!(post: 		 							Faker::Lorem.paragraph(20,false,4),
 							title: 		 							Faker::Book.title,
 							author_id: 							Faker::Number.between(1, 10))
 end
 
-100.times do
+20.times do |i|
+	post_id = i
 	starter = Faker::Number.between(1,30)
 	ender = starter + Faker::Number.between(1,10)
-	Highlight.create(highlight: 				Faker::Hipster.sentence,
-									 post_id:   				Faker::Number.between(1, 20),
-									 author_id: 				Faker::Number.between(1, 10),
-									 start_word:				starter,
-								 	 end_word:					ender)
+	10.times do
+		Highlight.create(post_id:   				post_id,
+										 author_id: 				Faker::Number.between(1, 10),
+										 start_idx: 				starter,
+										 end_idx: 					ender)
+		starter = ender + Faker::Number.between(1,20)
+		ender = starter + Faker::Number.between(1,10)
+	end
 end
 
 200.times do
@@ -34,9 +38,9 @@ end
 							 author_id:     				Faker::Number.between(1, 10))
 end
 
-array2 = (1..1000).to_a.shuffle!
+array2 = (0..99).to_a.shuffle!
 
-1000.times do
+100.times do
 	num1 = 1 + rand(200)
 	num2 = array2.pop
 
