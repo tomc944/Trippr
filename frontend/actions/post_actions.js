@@ -12,8 +12,8 @@ const PostActions = {
   addPost: (post) => {
     PostUtil.addPost(post, PostActions.receivePost);
   },
-  addHighlightToPost: (highlight) => {
-    PostUtil.addHighlightToPost(highlight, PostActions.receiveNewHighlight)
+  addHighlightToPost: (highlight, firstImage) => {
+    PostUtil.addHighlightToPost(highlight, firstImage, PostActions.receiveNewHighlight)
   },
   receivePost: (post) => {
     AppDispatcher.dispatch({

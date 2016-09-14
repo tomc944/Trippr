@@ -3,12 +3,24 @@ class AuthoredApi::HighlightsController < ApplicationController
 		@highlight = Highlight.new(highlight_params)
 		@highlight.author_id = current_user.id
 
+		@photo = Photo.new(photo_params)
+		@photo.author_id = current_user.id
+		@photo.post_id = @highlight.post_id
+
 		if @highlight.save
-			render :show
+			if @photo.save
+				highlight_photo_params = {photo_id: @photo.id, highlight_id: @highlight.id}
+				@highlight_photo = HighlightPhoto.new(highlight_photo_params)
+
+				if @highlight_photo.save
+					render :show
+				else
+					render json: @highlight_photo.errors.full_messages, status: 422
+				end
+			else
+				render json: @photo.errors.full_messages, status: 422
+			end
 		else
-			# not exactly sure if this is where we are going to redirect at
-			# the moment
-			redirect_to new_authored_api_post_url
 			render json: @highlight.errors.full_messages, status: 422
 		end
 	end
@@ -36,6 +48,10 @@ class AuthoredApi::HighlightsController < ApplicationController
 	end
 
 	def highlight_params
-		params.require(:highlight).permit(:post_id, :start_idx, :end_idx)
+		params.require(:highlight).permit(:post_id, :start_idx, :end_idx, :first_image)
+	end
+
+	def photo_params
+		params.require(:first_image).permit(:url)
 	end
 end
