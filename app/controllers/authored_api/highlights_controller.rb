@@ -7,19 +7,16 @@ class AuthoredApi::HighlightsController < ApplicationController
 		@photo.author_id = current_user.id
 		@photo.post_id = @highlight.post_id
 
-		if @highlight.save
-			if @photo.save
-				highlight_photo_params = {photo_id: @photo.id, highlight_id: @highlight.id}
-				@highlight_photo = HighlightPhoto.new(highlight_photo_params)
+		completed_transaction = @highlight.transaction do
+			@highlight.save
+			@photo.save
+			highlight_photo_params = {photo_id: @photo.id, highlight_id: @highlight.id}
+			@highlight_photo = HighlightPhoto.new(highlight_photo_params)
+			@highlight_photo.save
+		end
 
-				if @highlight_photo.save
-					render :show
-				else
-					render json: @highlight_photo.errors.full_messages, status: 422
-				end
-			else
-				render json: @photo.errors.full_messages, status: 422
-			end
+		if completed_transaction
+			render :show
 		else
 			render json: @highlight.errors.full_messages, status: 422
 		end
