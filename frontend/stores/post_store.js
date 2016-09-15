@@ -4,6 +4,7 @@ import PostConstants from '../constants/post_constants';
 
 const PostStore = new Store(AppDispatcher);
 let _posts = {};
+let _areMorePosts = true;
 
 PostStore.__onDispatch = (payload) => {
   switch(payload.actionType) {
@@ -16,7 +17,15 @@ PostStore.__onDispatch = (payload) => {
     case PostConstants.RECEIVE_NEW_HIGHLIGHT:
       _receiveNewHighlight(payload.highlight);
       break;
+    case PostConstants.ALL_POSTS_LOADED:
+      _areMorePosts = false;
+      PostStore.__emitChange();
+      break;
   }
+}
+
+PostStore.areMorePosts = () => {
+  return _areMorePosts;
 }
 
 PostStore.find = (id) => {

@@ -9,6 +9,10 @@ class AuthoredApi::PostsController < ApplicationController
 		end
 	end
 
+	def by_page
+		@posts = Post.page(params[:page_num]).all.includes(:highlights, :photos)
+	end
+
 	def show
 		@post = post_lookup
 	end

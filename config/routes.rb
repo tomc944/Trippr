@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 			resources :posts, except: [:edit, :new], concerns: :image_highlightable
 		end
 
+    get 'posts/by_page/:page_num', :to => 'posts#by_page'
+
     resources :highlights, only: [:index]
 	end
 

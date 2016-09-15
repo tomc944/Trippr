@@ -16,4 +16,6 @@ class Post < ApplicationRecord
 	belongs_to :user, foreign_key: :author_id
 	has_many :highlights
 	has_many :photos
+
+	paginates_per 20
 end

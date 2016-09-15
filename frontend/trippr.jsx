@@ -11,7 +11,6 @@ const Routes = (
 	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Feed} />
-			<Route path="posts" component={PostIndex} />
 			<Route path="posts/new" component={PostForm} />
 			<Route path="posts/:id" component={PostDetail} />
 		</Route>
