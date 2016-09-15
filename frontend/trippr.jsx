@@ -4,7 +4,6 @@ import { Router, Route, IndexRoute, hashHistory } from 'react-router';
 import App from './components/app';
 import Feed from './components/feed';
 import PostDetail from './components/posts/post_detail';
-import PostIndex from './components/posts/post_index';
 import PostForm from './components/posts/post_form';
 
 const Routes = (

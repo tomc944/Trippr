@@ -10,7 +10,7 @@ const PostUtil = {
     request.done((posts) => {
       successCB(posts);
     })
-    request.fail((error) => {
+    request.fail(() => {
       failureCB();
     })
   },
