@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import Modal from 'react-modal';
 import App from './components/app';
 import Feed from './components/feed';
 import PostDetail from './components/posts/post_detail';
@@ -17,6 +18,7 @@ const Routes = (
 );
 
 document.addEventListener('DOMContentLoaded', () => {
+	Modal.setAppElement(document.body);
 	const root = document.getElementById('content');
 	if (root) { render(Routes, root); }
 });

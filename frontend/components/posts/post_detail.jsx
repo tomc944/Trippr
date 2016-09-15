@@ -1,13 +1,17 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Modal from 'react-modal';
 import PostStore from '../../stores/post_store';
 import PostActions from '../../actions/post_actions';
+import ModalStyle from '../../modal_style';
+import HighlightPhotoIndex from '../photos/highlight_photo_index';
 
 const PostDetail = React.createClass({
   getInitialState() {
     return {
       post: PostStore.find(this.grabId()),
-      highlightable: false
+      highlightable: false,
+      modalOpen: false
     }
   },
   grabId() {
@@ -102,9 +106,6 @@ const PostDetail = React.createClass({
       }
     })
   },
-  _addPhotoToHighlight(highlight) {
-
-  },
   _createPostBody() {
     var body = [];
     var index = 0;
@@ -115,11 +116,13 @@ const PostDetail = React.createClass({
         body.push(<span>{text.slice(index,highlight.start_idx)}</span>);
         // TODO: Place span with className so we don't put style in code
 
-        body.push(<span style={{background: 'rgba(0,255,255,0.3)'}} id={highlight.id}>
+        body.push(<span style={{background: 'rgba(0,255,255,0.3)'}}
+                        id={highlight.id}
+                        onClick={this._openModal.bind(this, highlight)}>
           {text.slice(highlight.start_idx,highlight.end_idx)}
         </span>);
         index = highlight.end_idx;
-      })
+      }, this);
       body.push(<span>{text.slice(index)}</span>)
     }
     return body
@@ -137,6 +140,14 @@ const PostDetail = React.createClass({
     });
     return highlights;
   },
+  _openModal(highlight) {
+    debugger;
+    this.refs.text = 'hello!';
+    this.setState({ modalOpen: true});
+  },
+  _onModalClose() {
+    this.setState({ modalOpen: false});
+  },
 
   render () {
     return (
@@ -144,6 +155,14 @@ const PostDetail = React.createClass({
         <h1>{this.state.post.title}</h1>
         <h4 onClick = {this._toggleHighlightable}>{this._highlightable()}</h4>
         <p id='postText'>{this._createPostBody()}</p>
+
+      <Modal
+        isOpen={this.state.modalOpen}
+        onRequestClose={this._onModalClose}
+        style={ModalStyle}>
+        <button onClick={this._onModalClose}>close</button>
+        <HighlightPhotoIndex/>
+      </Modal>
 
       </div>
     )
