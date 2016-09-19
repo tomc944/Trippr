@@ -39,6 +39,8 @@ gem 'kaminari'
 
 group :production do
 	gem 'thin'
+	gem 'newrelic_rpm'
+	gem 'rails_12factor'
 end
 
 # Use Capistrano for deployment
