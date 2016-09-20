@@ -11,7 +11,8 @@ const PostDetail = React.createClass({
     return {
       post: PostStore.find(this.grabId()),
       highlightable: false,
-      modalOpen: false
+      modalOpen: false,
+      modalHighlight: null
     }
   },
   grabId() {
@@ -141,12 +142,12 @@ const PostDetail = React.createClass({
     return highlights;
   },
   _openModal(highlight) {
-    debugger;
-    this.refs.text = 'hello!';
-    this.setState({ modalOpen: true});
+    this.setState({ modalOpen: true,
+                    modalHighlight: highlight});
   },
   _onModalClose() {
-    this.setState({ modalOpen: false});
+    this.setState({ modalOpen: false,
+                    modalHighlight: null});
   },
 
   render () {
@@ -161,7 +162,7 @@ const PostDetail = React.createClass({
         onRequestClose={this._onModalClose}
         style={ModalStyle}>
         <button onClick={this._onModalClose}>close</button>
-        <HighlightPhotoIndex/>
+        <HighlightPhotoIndex highlight={this.state.modalHighlight}/>
       </Modal>
 
       </div>
