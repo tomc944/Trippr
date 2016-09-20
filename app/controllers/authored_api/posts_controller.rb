@@ -9,12 +9,19 @@ class AuthoredApi::PostsController < ApplicationController
 		end
 	end
 
+	def by_page
+		@posts = Post.page(params[:page_num]).all.includes(:highlights, :photos)
+
+		if @posts.empty?
+			render json: "empty"
+		end
+	end
+
 	def show
 		@post = post_lookup
 	end
 
 	def create
-		debugger
 		@post = Post.new(post_params)
 		@post[:author_id] = current_user.id
 

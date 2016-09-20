@@ -35,6 +35,8 @@ gem 'bcrypt'
 
 gem 'sdoc', '~> 0.4.0', group: :doc
 
+gem 'kaminari'
+
 group :production do
 	gem 'thin'
 end

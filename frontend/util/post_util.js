@@ -2,8 +2,17 @@ const PostUtil = {
   fetchPost(id, successCB) {
     $.get("/authored_api/posts/" + id, successCB)
   },
-  fetchPosts(successCB) {
-    $.get('/authored_api/posts', successCB)
+  fetchPosts(pageNum, successCB, failureCB) {
+    const request = $.ajax({
+      url: '/authored_api/posts/by_page/' + pageNum,
+      method: "GET"
+    })
+    request.done((posts) => {
+      successCB(posts);
+    })
+    request.fail(() => {
+      failureCB();
+    })
   },
   addPost(post, successCB) {
     const request = $.ajax({
