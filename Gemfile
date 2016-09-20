@@ -29,6 +29,8 @@ gem 'jbuilder', '~> 2.5'
 
 gem 'figaro'
 
+gem 'cloudinary'
+
 gem 'annotate'
 
 gem 'bcrypt'
@@ -39,6 +41,7 @@ gem 'kaminari'
 
 group :production do
 	gem 'thin'
+	gem 'newrelic_rpm'
 end
 
 # Use Capistrano for deployment
@@ -49,13 +52,16 @@ group :development, :test do
   gem 'byebug', platform: :mri
 end
 
+group :development, :production do
+	gem 'faker'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
   gem 'better_errors'
   gem 'pry-rails'
   gem 'binding_of_caller'
-  gem 'faker'
   gem 'bullet'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
@@ -65,3 +71,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+ruby "2.2.3"
