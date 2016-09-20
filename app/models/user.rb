@@ -10,9 +10,6 @@
 #  updated_at      :datetime         not null
 #
 
-
-require 'byebug'
-
 class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
