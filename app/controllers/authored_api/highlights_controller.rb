@@ -49,6 +49,6 @@ class AuthoredApi::HighlightsController < ApplicationController
 	end
 
 	def photo_params
-		params.require(:first_image).permit(:url)
+		params.require(:first_image).permit(:url, :thumbnail_url)
 	end
 end
