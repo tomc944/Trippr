@@ -1,6 +1,6 @@
 import AppDispatcher from '../dispatcher/dispatcher';
 import SessionConstants from '../constants/session_constants';
-import SessionApiUtil from '../util/session_api_util';
+import SessionApiUtil from '../util/session_util';
 import ErrorActions from './error_actions';
 import { hashHistory } from 'react-router';
 
@@ -19,14 +19,14 @@ const SessionActions = {
       ErrorActions.setErrors
     );
   },
-  logOut() {
-    SessionApiUtil.logOut(SessionActions.removeCurrentUser);
+  logOut(goToLogin) {
+    SessionApiUtil.logOut(SessionActions.removeCurrentUser, goToLogin);
   },
   fetchCurrentUser(complete) {
     SessionApiUtil.fetchCurrentUser(
-      SessionActions.receiveCurrentUser, complete)
-    )
-  }
+      SessionActions.receiveCurrentUser, complete
+    );
+  },
   receiveCurrentUser(currentUser) {
     AppDispatcher.dispatch({
       actionType: SessionConstants.LOGIN,
@@ -37,9 +37,7 @@ const SessionActions = {
     AppDispatcher.dispatch({
       actionType: SessionConstants.LOGOUT,
     });
-    // TODO: MIGHT BE DEPRECATED
-    hashHistory.push("/login")
   }
 };
 
-export default SessionActions;
+module.exports = SessionActions;

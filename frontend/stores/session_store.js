@@ -1,5 +1,5 @@
 import AppDispatcher from '../dispatcher/dispatcher';
-import Store from 'flux/utils';
+import { Store } from 'flux/utils';
 import SessionConstants from '../constants/session_constants';
 
 const SessionStore = new Store(AppDispatcher);
@@ -7,7 +7,7 @@ const SessionStore = new Store(AppDispatcher);
 let _currentUser = {};
 let _currentUserHasBeenFetched = false;
 
-const _login = currentUser => {
+const _login = (currentUser) => {
   _currentUser = currentUser;
   _currentUserHasBeenFetched = true;
 }
@@ -41,3 +41,5 @@ SessionStore.currentUserHasBeenFetched = () => {
 SessionStore.isUserLoggedIn = () => {
   return !!_currentUser.id;
 };
+
+export default SessionStore;

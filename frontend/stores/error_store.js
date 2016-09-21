@@ -1,20 +1,21 @@
-import Store from 'flux/utils';
+import { Store } from 'flux/utils';
 import AppDispatcher from '../dispatcher/dispatcher';
 import ErrorConstants from '../constants/error_constants';
 
-const ErrorStore = new Store(AppdDispatcher);
+const ErrorStore = new Store(AppDispatcher);
 
-let _errors = [];
+let _errors = {};
 let _form   = "";
 
 function _setErrors(payload) {
+  debugger
   _errors = payload.errors;
   _form   = payload.form;
 }
 
 function _clearErrors() {
-  _errors = [];
-  _form   = ""''
+  _errors = {};
+  _form   = "";
 }
 
 ErrorStore.__onDispatch = function (payload) {
@@ -30,12 +31,17 @@ ErrorStore.__onDispatch = function (payload) {
   }
 };
 
-ErrorStore.errors = (form) => {
+ErrorStore.formErrors = (form) => {
   if (form !== form) {
-    return [];
+    return {};
   }
 
-  return _errors.slice();
+  const result = {};
+  for (let field in _errors) {
+    result[field] = Array.from(_errors[field]);
+  }
+
+  return result;
 }
 
 ErrorStore.form = function() {

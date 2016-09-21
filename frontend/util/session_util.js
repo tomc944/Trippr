@@ -1,37 +1,40 @@
 const SessionApiUtil = {
   logIn(user, success, error) {
     const request = $.ajax({
-      url: '/authored_api/session'
+      url: '/authored_api/session',
       method: "POST",
       data: { user: user }
     })
     request.done((user) => {
       success(user);
     })
-    request.fail(() => {
-      error()
+    request.fail((xhr) => {
+      const errors = xhr.responseJSON
+      error("signup", errors)
     })
   },
-  logOut(success) {
+  logOut(success, goToLogin) {
     const request = $.ajax({
       url: '/authored_api/session',
       method: 'DELETE'
-    }),
+    })
     request.done(() => {
       success();
+      goToLogin();
     })
   },
   signUp(user, success, error) {
     const request = $.ajax({
-      url: '/authored_api/user',
+      url: '/authored_api/users',
       method: 'POST',
       data: { user: user },
     })
     request.done((user) => {
-      success(error)
+      success(user)
     })
-    request.fail(() => {
-      error()
+    request.fail((xhr) => {
+      const errors = xhr.responseJSON
+      error("signup", errors)
     })
   },
   fetchCurrentUser(success, complete) {

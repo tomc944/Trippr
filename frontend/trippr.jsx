@@ -6,6 +6,7 @@ import Feed from './components/feed';
 import PostDetail from './components/posts/post_detail';
 import PostForm from './components/posts/post_form';
 import LoginForm from './components/login_form';
+import SessionActions from './actions/session_actions';
 
 const Routes = (
 	<Router history={hashHistory}>
@@ -20,7 +21,10 @@ const Routes = (
 );
 
 document.addEventListener('DOMContentLoaded', () => {
-	// add gon gem to handle this
+	if (window.currentUser) {
+    SessionActions.receiveCurrentUser(window.currentUser);
+  }
+
 	const root = document.getElementById('content');
 	if (root) { render(Routes, root); }
 });
