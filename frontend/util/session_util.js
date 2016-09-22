@@ -1,3 +1,5 @@
+/* TODO: Write cleaner UTIL functions as they are really ugly */
+
 const SessionApiUtil = {
   logIn(user, success, error) {
     const request = $.ajax({

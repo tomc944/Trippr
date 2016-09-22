@@ -2,6 +2,8 @@ import React from 'react';
 import { render } from 'react-dom';
 import PostStore from '../../stores/post_store';
 import PostActions from '../../actions/post_actions';
+import SessionStore from '../../stores/session_store';
+import { Link } from 'react-router';
 
 const PostDetail = React.createClass({
   getInitialState() {
@@ -137,12 +139,18 @@ const PostDetail = React.createClass({
     });
     return highlights;
   },
-
+  loginOrHighlight() {
+    if (SessionStore.isUserLoggedIn()) {
+      return <h4 onClick={this._toggleHighlightable}>{this._highlightable()}</h4>
+    } else {
+      return <h4><Link to="login">Login to Highlight Posts!</Link></h4>
+    }
+  },
   render () {
     return (
       <div>
         <h1>{this.state.post.title}</h1>
-        <h4 onClick = {this._toggleHighlightable}>{this._highlightable()}</h4>
+        {this.loginOrHighlight()}
         <p id='postText'>{this._createPostBody()}</p>
 
       </div>
