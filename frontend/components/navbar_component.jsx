@@ -13,6 +13,8 @@ const NavbarComponent = React.createClass({
     SessionActions.logOut(this.goToLogin);
   },
   goToLogin() {
+    // TODO: This needs to be deprecated, callback should not be put here
+    // but rather in the dispatching session action
     this.props.history.push('/login')
   },
   correctHeaders() {
@@ -20,10 +22,8 @@ const NavbarComponent = React.createClass({
       return <NavItem eventKey={3} onClick={this.handleLogOut}>Logout</NavItem>
     } else {
       return (
-        <div>
-          <NavItem eventKey={4}><Link to ='/login'>Login</Link></NavItem>
-          <NavItem eventKey={5}><Link to='/signup'>Signup</Link></NavItem>
-        </div>
+          [<NavItem eventKey={4}><Link to ='/login'>Login</Link></NavItem>,
+        <NavItem eventKey={5}><Link to='/signup'>Signup</Link></NavItem>]
       )
 
     }
