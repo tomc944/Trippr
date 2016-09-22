@@ -1,1 +1,1 @@
-json.extract!(photo, :id, :url, :post_id, :author_id)
+json.extract!(photo, :id, :url, :thumbnail_url, :post_id, :author_id, :highlights)

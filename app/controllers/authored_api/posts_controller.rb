@@ -19,6 +19,7 @@ class AuthoredApi::PostsController < ApplicationController
 
 	def show
 		@post = post_lookup
+		# debugger
 	end
 
 	def create
@@ -48,7 +49,7 @@ class AuthoredApi::PostsController < ApplicationController
 
 	private
 	def post_lookup
-		Post.find(params[:id])
+		Post.includes(:photos, highlights: :photos).find(params[:id])
 	end
 
 	def post_params

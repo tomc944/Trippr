@@ -1,13 +1,18 @@
 import React from 'react';
 import { render } from 'react-dom';
+import Modal from 'react-modal';
 import PostStore from '../../stores/post_store';
 import PostActions from '../../actions/post_actions';
+import ModalStyle from '../../modal_style';
+import HighlightPhotoIndex from '../photos/highlight_photo_index';
 
 const PostDetail = React.createClass({
   getInitialState() {
     return {
       post: PostStore.find(this.grabId()),
-      highlightable: false
+      highlightable: false,
+      modalOpen: false,
+      modalHighlight: null
     }
   },
   grabId() {
@@ -95,15 +100,15 @@ const PostDetail = React.createClass({
     highlight.post_id = this.state.post.id;
     highlight.start_idx = startIdx;
     highlight.end_idx = endIdx;
-    cloudinary.openUploadWidget({cloud_name: cloud_name, upload_preset: upload_preset}, function(error, images) {
+    var options = CLOUDINARY_OPTIONS
+    options.max_image_height = 400;
+    
+    cloudinary.openUploadWidget(options, function(error, images) {
       if (!error) {
         var firstImage = images[0];
         PostActions.addHighlightToPost(highlight, firstImage);
       }
     })
-  },
-  _addPhotoToHighlight(highlight) {
-
   },
   _createPostBody() {
     var body = [];
@@ -115,11 +120,12 @@ const PostDetail = React.createClass({
         body.push(<span>{text.slice(index,highlight.start_idx)}</span>);
         // TODO: Place span with className so we don't put style in code
 
-        body.push(<span style={{background: 'rgba(0,255,255,0.3)'}} id={highlight.id}>
+        body.push(<span style={{background: 'rgba(0,255,255,0.3)'}}
+                        onClick={this._openModal.bind(this, highlight)}>
           {text.slice(highlight.start_idx,highlight.end_idx)}
         </span>);
         index = highlight.end_idx;
-      })
+      }, this);
       body.push(<span>{text.slice(index)}</span>)
     }
     return body
@@ -138,12 +144,44 @@ const PostDetail = React.createClass({
     return highlights;
   },
 
+  _openModal(highlight) {
+    this.setState({ modalOpen: true,
+                    modalHighlight: highlight});
+  },
+  _onModalClose() {
+    this.setState({ modalOpen: false,
+                    modalHighlight: null});
+  },
+  _addPhotoToHighlight() {
+    var highlight = this.state.modalHighlight;
+    var options = CLOUDINARY_OPTIONS
+    options.max_image_height = 400;
+    cloudinary.openUploadWidget(options, function(error, images) {
+      if (!error) {
+        var image = images[0];
+        PostActions.addPhotoToHighlight(highlight, image);
+      }
+    })
+  },
+
   render () {
     return (
       <div>
         <h1>{this.state.post.title}</h1>
         <h4 onClick = {this._toggleHighlightable}>{this._highlightable()}</h4>
         <p id='postText'>{this._createPostBody()}</p>
+
+      <Modal
+        class='imageModal'
+        isOpen={this.state.modalOpen}
+        onRequestClose={this._onModalClose}
+        style={ModalStyle}>
+        <button id='closeModal' onClick={this._onModalClose}>close</button>
+        <button id='addPhoto' onClick={this._addPhotoToHighlight}>+</button>
+        <div id='photoIndex'>
+          <HighlightPhotoIndex highlight={this.state.modalHighlight}/>
+        </div>
+    </Modal>
 
       </div>
     )

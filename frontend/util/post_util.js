@@ -40,6 +40,20 @@ const PostUtil = {
     request.fail((error) => {
       if (error.status === 422) alert("error")
     })
+  },
+  addPhotoToHighlight(highlight, image, successCB) {
+    const request = $.ajax({
+      url: "/authored_api/highlights/" + highlight.id + "/photos",
+      method: "POST",
+      data: { highlight: highlight,
+              photo: image}
+    })
+    request.done((highlight) => {
+      successCB(highlight)
+    })
+    request.fail((error) => {
+      if (error.status === 422) alert("error")
+    })
   }
 }
 
