@@ -102,6 +102,7 @@ const PostDetail = React.createClass({
     highlight.end_idx = endIdx;
     var options = CLOUDINARY_OPTIONS
     options.max_image_height = 400;
+    
     cloudinary.openUploadWidget(options, function(error, images) {
       if (!error) {
         var firstImage = images[0];
