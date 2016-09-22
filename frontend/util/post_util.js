@@ -1,3 +1,5 @@
+/* TODO: Write cleaner UTIL functions as they are really ugly */
+
 const PostUtil = {
   fetchPost(id, successCB) {
     $.get("/authored_api/posts/" + id, successCB)

@@ -5,6 +5,8 @@ import PostStore from '../../stores/post_store';
 import PostActions from '../../actions/post_actions';
 import ModalStyle from '../../modal_style';
 import HighlightPhotoIndex from '../photos/highlight_photo_index';
+import SessionStore from '../../stores/session_store';
+import { Link } from 'react-router';
 
 const PostDetail = React.createClass({
   getInitialState() {
@@ -102,7 +104,7 @@ const PostDetail = React.createClass({
     highlight.end_idx = endIdx;
     var options = CLOUDINARY_OPTIONS
     options.max_image_height = 400;
-    
+
     cloudinary.openUploadWidget(options, function(error, images) {
       if (!error) {
         var firstImage = images[0];
@@ -143,7 +145,6 @@ const PostDetail = React.createClass({
     });
     return highlights;
   },
-
   _openModal(highlight) {
     this.setState({ modalOpen: true,
                     modalHighlight: highlight});
@@ -163,12 +164,18 @@ const PostDetail = React.createClass({
       }
     })
   },
-
+  loginOrHighlight() {
+    if (SessionStore.isUserLoggedIn()) {
+      return <h4 onClick={this._toggleHighlightable}>{this._highlightable()}</h4>
+    } else {
+      return <h4><Link to="login">Login to Highlight Posts!</Link></h4>
+    }
+  },
   render () {
     return (
       <div>
         <h1>{this.state.post.title}</h1>
-        <h4 onClick = {this._toggleHighlightable}>{this._highlightable()}</h4>
+        {this.loginOrHighlight()}
         <p id='postText'>{this._createPostBody()}</p>
 
       <Modal

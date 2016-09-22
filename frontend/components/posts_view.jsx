@@ -20,6 +20,10 @@ const PostsView = React.createClass({
   },
   handleInfiniteLoad() {
     // this guards in case we are done loading
+
+    /* TODO: Fix the additional call for infinite loading. Right now
+    this feature is really buggy */
+    
     if (!this.props.areMorePosts) {
       this.setState({ isInfiniteLoading: false })
       return;
@@ -29,7 +33,7 @@ const PostsView = React.createClass({
 
     setTimeout(() => {
       that.props.loadNextPage();
-      this.setState({
+      that.setState({
         isInfiniteLoading: false
       });
     }, 1000);
