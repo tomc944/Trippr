@@ -1,4 +1,8 @@
-<div id="content">
-</div>
+<script id="bootstrap-current-user" type="text/javascript">
+  <% if signed_in? %>
+  	window.currentUser = <%= render("authored_api/users/user.json.jbuilder",
+  		user: current_user).html_safe %>
+  <% end %>
+</script>
 
-<%= button_to "Logout", session_url, method: :delete %>
+<div id="content"></div>

@@ -8,7 +8,7 @@ const App = React.createClass({
 	render() {
 		return (
 			<div>
-				<NavbarComponent />
+				<NavbarComponent history={this.props.history}/>
 				{ this.props.children }
 				<FooterComponent />
 			</div>

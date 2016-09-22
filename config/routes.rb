@@ -1,10 +1,4 @@
 Rails.application.routes.draw do
-
-	# Auth resources ---------------------------------------------------------
-
-  resources :users, only: [:new, :create, :update]
-  resource :session, only: [:new, :create, :destroy]
-
 	# Reusable concerns for both APIs (avoids deep-nesting) -----------------------
 
 	concern :imageable do
@@ -18,7 +12,10 @@ Rails.application.routes.draw do
   # Different APIs for authors and commenters -----------------------------------
 
 	namespace :authored_api, defaults: { format: :json } do
-		shallow do
+    resources :users, only: [:create]
+    resource :session, only: [:create, :destroy]
+
+    shallow do
 			resources :posts, except: [:edit, :new], concerns: :image_highlightable
 		end
 

@@ -95,7 +95,7 @@ const PostDetail = React.createClass({
     highlight.post_id = this.state.post.id;
     highlight.start_idx = startIdx;
     highlight.end_idx = endIdx;
-    cloudinary.openUploadWidget(CLOUDINARY_OPTIONS, function(error, images) {
+    cloudinary.openUploadWidget({cloud_name: cloud_name, upload_preset: upload_preset}, function(error, images) {
       if (!error) {
         var firstImage = images[0];
         PostActions.addHighlightToPost(highlight, firstImage);

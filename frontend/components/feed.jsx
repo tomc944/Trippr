@@ -16,6 +16,7 @@ const Feed = React.createClass({
                     areMorePosts: PostStore.areMorePosts() })
   },
   loadNextPage() {
+    debugger
     PostActions.fetchPosts(this.state.page)
     this.setState({ page: this.state.page + 1 })
   },
