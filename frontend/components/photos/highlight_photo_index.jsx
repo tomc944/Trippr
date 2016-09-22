@@ -15,12 +15,16 @@ const HighlightPhotoIndex = React.createClass({
     return photos;
   },
   render() {
-    const photos = this._allPhotos();
+    var photos = this._allPhotos();
     return (
       <ImageGallery
         ref={i => this._imageGallery = i}
         items={photos}
-        slideInterval={2000}/>
+        slideInterval={2000}
+        lazyLoad={true}
+        autoPlay={true}
+        slideInterval={5000}
+        />
     );
   }
 

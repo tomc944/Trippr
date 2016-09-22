@@ -1,13 +1,21 @@
 class AuthoredApi::PhotosController < ApplicationController
   def create
     @photo = Photo.new(photo_params)
+    highlight_info = highlight_params
 
     @photo.author_id = current_user.id
+    @photo.post_id = highlight_info[:post_id]
 
-    if @photo.save
+    completed_transaction = @photo.transaction do
+      @photo.save
+      highlight_photo_params = {photo_id: @photo.id, highlight_id: highlight_info[:id]}
+      @highlight_photo = HighlightPhoto.new(highlight_photo_params)
+      @highlight_photo.save
+    end
+
+    if completed_transaction
       render :show
     else
-      rediret_to new_authored_api_post_url
       render json: @photo.errors.full_messages, status: 422
     end
   end
@@ -28,10 +36,14 @@ class AuthoredApi::PhotosController < ApplicationController
 
   private
   def photo_params
-    params.require(:photo).permit(:url, :post_id)
+    params.require(:photo).permit(:url, :thumbnail_url)
+  end
+
+  def highlight_params
+    params.require(:highlight).permit(:id, :post_id)
   end
 
   def photo_lookup
-    Photo.find(params[:id])
+    Photo.includes(:highlights).find(params[:id])
   end
 end

@@ -20,6 +20,10 @@ PostStore.__onDispatch = (payload) => {
       _receiveNewHighlight(payload.highlight);
       PostStore.__emitChange();
       break;
+    case PostConstants.RECEIVE_NEW_PHOTO:
+      _receiveNewPhoto(payload.photo);
+      PostStore.__emitChange();
+      break;
     case PostConstants.ALL_POSTS_LOADED:
       _areMorePosts = false;
       PostStore.__emitChange();
@@ -57,6 +61,17 @@ const _addPost = (post) => {
 const _receiveNewHighlight = (highlight) => {
   var post = PostStore.find(highlight.post_id);
   post.highlights.push(highlight);
+}
+
+const _receiveNewPhoto = (photo) => {
+  var post = PostStore.find(photo.post_id);
+  var highlight_ids = photo.highlights.map(function(highlight) {
+    return highlight.id});
+  post.highlights.forEach(function(highlight) {
+    if (highlight_ids.includes(highlight.id)) {
+      highlight.photos.push(photo);
+    }
+  })
 }
 
 module.exports = PostStore;

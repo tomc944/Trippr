@@ -15,6 +15,9 @@ const PostActions = {
   addHighlightToPost: (highlight, firstImage) => {
     PostUtil.addHighlightToPost(highlight, firstImage, PostActions.receiveNewHighlight)
   },
+  addPhotoToHighlight: (highlight, image) => {
+    PostUtil.addPhotoToHighlight(highlight, image, PostActions.receiveNewPhoto)
+  },
   receivePost: (post) => {
     AppDispatcher.dispatch({
       actionType: PostConstants.RECEIVE_POST,
@@ -36,6 +39,12 @@ const PostActions = {
     AppDispatcher.dispatch({
       actionType: PostConstants.RECEIVE_NEW_HIGHLIGHT,
       highlight: highlight
+    })
+  },
+  receiveNewPhoto: (photo) => {
+    AppDispatcher.dispatch({
+      actionType: PostConstants.RECEIVE_NEW_PHOTO,
+      photo: photo
     })
   }
 }
