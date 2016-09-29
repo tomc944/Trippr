@@ -22,14 +22,12 @@ const Routes = (
 );
 
 document.addEventListener('DOMContentLoaded', () => {
-<<<<<<< HEAD
 	Modal.setAppElement(document.body);
-=======
+
 	if (window.currentUser) {
     SessionActions.receiveCurrentUser(window.currentUser);
   }
 
->>>>>>> e0a9775e0e286311a3074ede9a01f231b9d97228
 	const root = document.getElementById('content');
 	if (root) { render(Routes, root); }
 });
