@@ -16,7 +16,7 @@ const PostUtil = {
       failureCB();
     })
   },
-  addPost(post, successCB) {
+  addPost(post, successCB, redirectToShow) {
     const request = $.ajax({
       url: "/authored_api/posts",
       method: "POST",
@@ -24,6 +24,7 @@ const PostUtil = {
     })
     request.done((post) => {
       successCB(post)
+      redirectToShow(post.id)
     })
     request.fail((error) => {
       if (error.status === 422) alert("error")

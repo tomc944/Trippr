@@ -19,7 +19,6 @@ class AuthoredApi::PostsController < ApplicationController
 
 	def show
 		@post = post_lookup
-		# debugger
 	end
 
 	def create
