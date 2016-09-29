@@ -9,8 +9,8 @@ const PostActions = {
   fetchPosts: (page) => {
     PostUtil.fetchPosts(page, PostActions.receivePosts, PostActions.allPostsLoaded);
   },
-  addPost: (post) => {
-    PostUtil.addPost(post, PostActions.receivePost);
+  addPost: (post, redirectToShow) => {
+    PostUtil.addPost(post, PostActions.receivePost, redirectToShow);
   },
   addHighlightToPost: (highlight, firstImage) => {
     PostUtil.addHighlightToPost(highlight, firstImage, PostActions.receiveNewHighlight)

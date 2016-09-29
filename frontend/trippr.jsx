@@ -1,13 +1,13 @@
 import React from 'react';
 import { render } from 'react-dom'
 import { Router, Route, IndexRoute, hashHistory } from 'react-router';
-import Modal from 'react-modal';
 import App from './components/app';
 import Feed from './components/feed';
 import PostDetail from './components/posts/post_detail';
 import PostForm from './components/posts/post_form';
 import LoginForm from './components/login_form';
 import SessionActions from './actions/session_actions';
+import Modal from 'react-modal'
 
 const Routes = (
 	<Router history={hashHistory}>

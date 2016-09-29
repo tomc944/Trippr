@@ -27,9 +27,15 @@
     "history": "^1.17.0",
     "react": "15.3.1",
     "react-bootstrap": "^0.30.3",
+<<<<<<< HEAD
     "react-dom": "15.3.1",
+=======
+    "react-dom": "^15.3.1",
+    "react-image-gallery": "^0.7.1",
+>>>>>>> eb3fba02936c44c56109c43f69b5db5fe8d7b32d
     "react-infinite": "^0.9.2",
     "react-localstorage": "^0.2.8",
+    "react-modal": "^1.4.0",
     "react-router": "^1.0.3",
     "react-router-bootstrap": "^0.23.1",
     "webpack": "^1.12.4"
