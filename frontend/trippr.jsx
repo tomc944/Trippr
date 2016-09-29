@@ -22,7 +22,7 @@ const Routes = (
 );
 
 document.addEventListener('DOMContentLoaded', () => {
-	Modal.setAppElement(document.body);
+ 	Modal.setAppElement(document.body);
 
 	if (window.currentUser) {
     SessionActions.receiveCurrentUser(window.currentUser);
