@@ -38,8 +38,7 @@
   -moz-user-select: none;
   -ms-user-select: none;
   -o-user-select: none;
-  user-select: none;
-  max-height: 600px;}
+  user-select: none;}
   .image-gallery.fullscreen-modal {
     background: #000;
     bottom: 0;
