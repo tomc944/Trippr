@@ -6,11 +6,11 @@ Trippr will allow authors to create reports in a large text form. Once the repor
 
 
 ### MVP Features
-- [ ]  Single page auth for users
-- [ ]  Guests can view reports but not upload photos
-- [ ]  Basic CRUD for trip reports
-- [ ]  Basic CRUD for trip highlighting
-- [ ]  Intuitive image upload and display process
+- [x]  Single page auth for users
+- [x]  Guests can view reports but not upload photos
+- [x]  Basic CRUD for trip reports
+- [x]  Basic CRUD for trip highlighting
+- [x]  Intuitive image upload and display process
 - [ ]  Basic search for Reports (i.e. matching by title)
 
 

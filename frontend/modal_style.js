@@ -12,7 +12,7 @@ module.exports = {
     top                        : '40px',
     left                       : '40px',
     right                      : '40px',
-    bottom                     : '40px',
+    bottom                     : 'auto',
     border                     : '1px solid #ccc',
     background                 : '#fff',
     overflow                   : 'auto',
