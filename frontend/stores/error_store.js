@@ -8,7 +8,6 @@ let _errors = {};
 let _form   = "";
 
 function _setErrors(payload) {
-  debugger
   _errors = payload.errors;
   _form   = payload.form;
 }

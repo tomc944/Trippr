@@ -22,8 +22,7 @@ const Routes = (
 );
 
 document.addEventListener('DOMContentLoaded', () => {
-	/* This first line bootstraps the user into our App before we render */
-	Modal.setAppElement(document.body);
+ 	Modal.setAppElement(document.body);
 
 	if (window.currentUser) {
     SessionActions.receiveCurrentUser(window.currentUser);

@@ -1,0 +1,2045 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'react-modal',
+1 verbose cli   '--save' ]
+2 info using npm@2.15.5
+3 info using node@v4.4.5
+4 verbose install initial load of /home/tclaiby_babes/Desktop/Trippr/package.json
+5 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/babel-core/package.json
+6 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/babel-loader/package.json
+7 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/babel-preset-es2015/package.json
+8 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/babel-preset-react/package.json
+9 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/eslint/package.json
+10 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/eslint-config-google/package.json
+11 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/eslint-plugin-react/package.json
+12 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/exif/package.json
+13 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/flux/package.json
+14 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/history/package.json
+15 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react/package.json
+16 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-addons-linked-state-mixin/package.json
+17 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-bootstrap/package.json
+18 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-dom/package.json
+19 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-infinite/package.json
+20 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-localstorage/package.json
+21 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/package.json
+22 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-router/package.json
+23 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-router-bootstrap/package.json
+24 verbose installManyTop reading scoped package data from /home/tclaiby_babes/Desktop/Trippr/node_modules/webpack/package.json
+25 info package.json eslint-config-google@0.3.0 license should be a valid SPDX license expression
+26 info package.json exif@0.6.0 No license field.
+27 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/package.json
+28 verbose install react-modal is installed as 1.4.0
+29 silly cache add args [ 'react-modal', null ]
+30 verbose cache add spec react-modal
+31 silly cache add parsed spec Result {
+31 silly cache add   raw: 'react-modal',
+31 silly cache add   scope: null,
+31 silly cache add   name: 'react-modal',
+31 silly cache add   rawSpec: '',
+31 silly cache add   spec: 'latest',
+31 silly cache add   type: 'tag' }
+32 silly addNamed react-modal@latest
+33 verbose addNamed "latest" is being treated as a dist-tag for react-modal
+34 info addNameTag [ 'react-modal', 'latest' ]
+35 silly mapToRegistry name react-modal
+36 silly mapToRegistry using default registry
+37 silly mapToRegistry registry https://registry.npmjs.org/
+38 silly mapToRegistry data Result {
+38 silly mapToRegistry   raw: 'react-modal',
+38 silly mapToRegistry   scope: null,
+38 silly mapToRegistry   name: 'react-modal',
+38 silly mapToRegistry   rawSpec: '',
+38 silly mapToRegistry   spec: 'latest',
+38 silly mapToRegistry   type: 'tag' }
+39 silly mapToRegistry uri https://registry.npmjs.org/react-modal
+40 verbose addNameTag registry:https://registry.npmjs.org/react-modal not in flight; fetching
+41 verbose request uri https://registry.npmjs.org/react-modal
+42 verbose request no auth needed
+43 info attempt registry request try #1 at 2:31:28 PM
+44 verbose request id adf3005a431dc437
+45 verbose etag "7N0QVS3TJQXXFHUF9OZDDL2N0"
+46 http request GET https://registry.npmjs.org/react-modal
+47 http 304 https://registry.npmjs.org/react-modal
+48 verbose headers { date: 'Mon, 26 Sep 2016 21:31:28 GMT',
+48 verbose headers   via: '1.1 varnish',
+48 verbose headers   'cache-control': 'max-age=300',
+48 verbose headers   etag: '"7N0QVS3TJQXXFHUF9OZDDL2N0"',
+48 verbose headers   age: '44',
+48 verbose headers   connection: 'keep-alive',
+48 verbose headers   'x-served-by': 'cache-lax8624-LAX',
+48 verbose headers   'x-cache': 'HIT',
+48 verbose headers   'x-cache-hits': '1',
+48 verbose headers   'x-timer': 'S1474925488.996893,VS0,VE0',
+48 verbose headers   vary: 'Accept-Encoding' }
+49 silly get cb [ 304,
+49 silly get   { date: 'Mon, 26 Sep 2016 21:31:28 GMT',
+49 silly get     via: '1.1 varnish',
+49 silly get     'cache-control': 'max-age=300',
+49 silly get     etag: '"7N0QVS3TJQXXFHUF9OZDDL2N0"',
+49 silly get     age: '44',
+49 silly get     connection: 'keep-alive',
+49 silly get     'x-served-by': 'cache-lax8624-LAX',
+49 silly get     'x-cache': 'HIT',
+49 silly get     'x-cache-hits': '1',
+49 silly get     'x-timer': 'S1474925488.996893,VS0,VE0',
+49 silly get     vary: 'Accept-Encoding' } ]
+50 verbose etag https://registry.npmjs.org/react-modal from cache
+51 verbose get saving react-modal to /home/tclaiby_babes/.npm/registry.npmjs.org/react-modal/.cache.json
+52 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+53 silly addNameTag next cb for react-modal with tag latest
+54 silly addNamed react-modal@1.4.0
+55 verbose addNamed "1.4.0" is a plain semver version for react-modal
+56 silly cache afterAdd react-modal@1.4.0
+57 verbose afterAdd /home/tclaiby_babes/.npm/react-modal/1.4.0/package/package.json not in flight; writing
+58 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /home/tclaiby_babes/.npm/react-modal/1.4.0/package/package.json written
+60 silly install resolved [ { name: 'react-modal',
+60 silly install resolved     version: '1.4.0',
+60 silly install resolved     description: 'Accessible modal dialog component for React.JS',
+60 silly install resolved     main: './lib/index',
+60 silly install resolved     repository:
+60 silly install resolved      { type: 'git',
+60 silly install resolved        url: 'git+https://github.com/rackt/react-modal.git' },
+60 silly install resolved     homepage: 'https://github.com/rackt/react-modal',
+60 silly install resolved     bugs: { url: 'https://github.com/rackt/react-modal/issues' },
+60 silly install resolved     directories: { example: 'examples' },
+60 silly install resolved     scripts:
+60 silly install resolved      { test: 'scripts/test --browsers Firefox --single-run',
+60 silly install resolved        start: 'scripts/dev-examples' },
+60 silly install resolved     authors: [ 'Ryan Florence' ],
+60 silly install resolved     license: 'MIT',
+60 silly install resolved     devDependencies:
+60 silly install resolved      { 'babel-core': '^6.7.4',
+60 silly install resolved        'babel-loader': '^6.2.4',
+60 silly install resolved        'babel-preset-es2015': '^6.6.0',
+60 silly install resolved        'babel-preset-react': '^6.5.0',
+60 silly install resolved        envify: '^3.4.1',
+60 silly install resolved        expect: '1.10.0',
+60 silly install resolved        karma: '^0.13.22',
+60 silly install resolved        'karma-browserify': '^4.2.1',
+60 silly install resolved        'karma-chrome-launcher': '0.2.0',
+60 silly install resolved        'karma-cli': '0.1.0',
+60 silly install resolved        'karma-firefox-launcher': '0.1.6',
+60 silly install resolved        'karma-mocha': '0.2.0',
+60 silly install resolved        'karma-safari-launcher': '^0.1.1',
+60 silly install resolved        mocha: '2.3.3',
+60 silly install resolved        react: '^15.0.0',
+60 silly install resolved        'react-addons-test-utils': '^15.0.0',
+60 silly install resolved        'react-dom': '^15.0.0',
+60 silly install resolved        'rf-release': '0.4.0',
+60 silly install resolved        sinon: '^1.17.3',
+60 silly install resolved        'uglify-js': '2.4.24',
+60 silly install resolved        webpack: '^1.12.14',
+60 silly install resolved        'webpack-dev-server': '1.11.0' },
+60 silly install resolved     dependencies:
+60 silly install resolved      { 'element-class': '^0.2.0',
+60 silly install resolved        exenv: '1.2.0',
+60 silly install resolved        'lodash.assign': '^3.2.0' },
+60 silly install resolved     peerDependencies: { react: '^0.14.0 || ^15.0.0-0' },
+60 silly install resolved     tags: [ 'react', 'modal', 'dialog' ],
+60 silly install resolved     keywords: [ 'react', 'react-component', 'modal', 'dialog' ],
+60 silly install resolved     gitHead: '9686635abe418ffd510dafefe4cd59c9e8a87217',
+60 silly install resolved     _id: 'react-modal@1.4.0',
+60 silly install resolved     _shasum: 'c50cd02bcd3487f4b53177fa6285f1a5ad49c56e',
+60 silly install resolved     _from: 'react-modal@latest',
+60 silly install resolved     _npmVersion: '3.8.9',
+60 silly install resolved     _nodeVersion: '6.2.0',
+60 silly install resolved     _npmUser: { name: 'claydiffrient', email: 'clay.diffrient@gmail.com' },
+60 silly install resolved     dist:
+60 silly install resolved      { shasum: 'c50cd02bcd3487f4b53177fa6285f1a5ad49c56e',
+60 silly install resolved        tarball: 'https://registry.npmjs.org/react-modal/-/react-modal-1.4.0.tgz' },
+60 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+60 silly install resolved     _npmOperationalInternal:
+60 silly install resolved      { host: 'packages-16-east.internal.npmjs.com',
+60 silly install resolved        tmp: 'tmp/react-modal-1.4.0.tgz_1467313931516_0.8029457975644618' },
+60 silly install resolved     _resolved: 'https://registry.npmjs.org/react-modal/-/react-modal-1.4.0.tgz',
+60 silly install resolved     readme: 'ERROR: No README data found!' } ]
+61 info install react-modal@1.4.0 into /home/tclaiby_babes/Desktop/Trippr
+62 info installOne react-modal@1.4.0
+63 verbose installOne of react-modal to /home/tclaiby_babes/Desktop/Trippr not in flight; installing
+64 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+65 verbose lock using /home/tclaiby_babes/.npm/_locks/react-modal-2387d714446f4b69.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+66 silly install write writing react-modal 1.4.0 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+67 verbose unbuild node_modules/react-modal
+68 info preuninstall react-modal@1.4.0
+69 info uninstall react-modal@1.4.0
+70 verbose unbuild rmStuff react-modal@1.4.0 from /home/tclaiby_babes/Desktop/Trippr/node_modules
+71 info postuninstall react-modal@1.4.0
+72 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal is being purged from base /home/tclaiby_babes/Desktop/Trippr
+73 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+74 silly vacuum-fs purging /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+75 silly vacuum-fs quitting because other entries in /home/tclaiby_babes/Desktop/Trippr/node_modules
+76 verbose tar unpack /home/tclaiby_babes/.npm/react-modal/1.4.0/package.tgz
+77 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+78 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal is being purged
+79 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+80 silly gunzTarPerm modes [ '755', '644' ]
+81 silly gunzTarPerm extractEntry package.json
+82 silly gunzTarPerm extractEntry .npmignore
+83 silly gunzTarPerm extractEntry README.md
+84 silly gunzTarPerm extractEntry LICENSE
+85 silly gunzTarPerm extractEntry webpack.test.config.js
+86 silly gunzTarPerm extractEntry webpack.dist.config.js
+87 silly gunzTarPerm extractEntry webpack.config.js
+88 silly gunzTarPerm extractEntry .babelrc
+89 silly gunzTarPerm extractEntry README.md.orig
+90 silly gunzTarPerm extractEntry UPGRADE_GUIDE.md
+91 silly gunzTarPerm extractEntry eslint.json
+92 silly gunzTarPerm extractEntry .travis.yml
+93 silly gunzTarPerm extractEntry lib/index.js
+94 silly gunzTarPerm extractEntry lib/components/Modal.js
+95 silly gunzTarPerm extractEntry lib/components/ModalPortal.js
+96 silly gunzTarPerm extractEntry lib/helpers/ariaAppHider.js
+97 silly gunzTarPerm extractEntry lib/helpers/focusManager.js
+98 silly gunzTarPerm extractEntry lib/helpers/scopeTab.js
+99 silly gunzTarPerm extractEntry lib/helpers/tabbable.js
+100 silly gunzTarPerm extractEntry CHANGELOG.md
+101 silly gunzTarPerm extractEntry package.json.orig
+102 silly gunzTarPerm extractEntry scripts/build
+103 silly gunzTarPerm extractEntry scripts/dev-examples
+104 silly gunzTarPerm extractEntry scripts/preview-release
+105 silly gunzTarPerm extractEntry scripts/release
+106 silly gunzTarPerm extractEntry scripts/test
+107 silly gunzTarPerm extractEntry .github/ISSUE_TEMPLATE.md
+108 silly gunzTarPerm extractEntry .github/PULL_REQUEST_TEMPLATE.md
+109 silly gunzTarPerm extractEntry dist/react-modal.js
+110 silly gunzTarPerm extractEntry dist/react-modal.min.js
+111 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/package.json
+112 info preinstall react-modal@1.4.0
+113 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/package.json
+114 silly prepareForInstallMany adding element-class@^0.2.0 from react-modal dependencies
+115 silly prepareForInstallMany adding exenv@1.2.0 from react-modal dependencies
+116 silly prepareForInstallMany adding lodash.assign@^3.2.0 from react-modal dependencies
+117 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/package.json
+118 silly cache add args [ 'lodash.assign@^3.2.0', null ]
+119 verbose cache add spec lodash.assign@^3.2.0
+120 silly cache add parsed spec Result {
+120 silly cache add   raw: 'lodash.assign@^3.2.0',
+120 silly cache add   scope: null,
+120 silly cache add   name: 'lodash.assign',
+120 silly cache add   rawSpec: '^3.2.0',
+120 silly cache add   spec: '>=3.2.0 <4.0.0',
+120 silly cache add   type: 'range' }
+121 silly addNamed lodash.assign@>=3.2.0 <4.0.0
+122 verbose addNamed ">=3.2.0 <4.0.0" is a valid semver range for lodash.assign
+123 silly addNameRange { name: 'lodash.assign',
+123 silly addNameRange   range: '>=3.2.0 <4.0.0',
+123 silly addNameRange   hasData: false }
+124 silly mapToRegistry name lodash.assign
+125 silly mapToRegistry using default registry
+126 silly mapToRegistry registry https://registry.npmjs.org/
+127 silly mapToRegistry data Result {
+127 silly mapToRegistry   raw: 'lodash.assign',
+127 silly mapToRegistry   scope: null,
+127 silly mapToRegistry   name: 'lodash.assign',
+127 silly mapToRegistry   rawSpec: '',
+127 silly mapToRegistry   spec: 'latest',
+127 silly mapToRegistry   type: 'tag' }
+128 silly mapToRegistry uri https://registry.npmjs.org/lodash.assign
+129 verbose addNameRange registry:https://registry.npmjs.org/lodash.assign not in flight; fetching
+130 silly cache add args [ 'element-class@^0.2.0', null ]
+131 verbose cache add spec element-class@^0.2.0
+132 silly cache add parsed spec Result {
+132 silly cache add   raw: 'element-class@^0.2.0',
+132 silly cache add   scope: null,
+132 silly cache add   name: 'element-class',
+132 silly cache add   rawSpec: '^0.2.0',
+132 silly cache add   spec: '>=0.2.0 <0.3.0',
+132 silly cache add   type: 'range' }
+133 silly addNamed element-class@>=0.2.0 <0.3.0
+134 verbose addNamed ">=0.2.0 <0.3.0" is a valid semver range for element-class
+135 silly addNameRange { name: 'element-class',
+135 silly addNameRange   range: '>=0.2.0 <0.3.0',
+135 silly addNameRange   hasData: false }
+136 silly mapToRegistry name element-class
+137 silly mapToRegistry using default registry
+138 silly mapToRegistry registry https://registry.npmjs.org/
+139 silly mapToRegistry data Result {
+139 silly mapToRegistry   raw: 'element-class',
+139 silly mapToRegistry   scope: null,
+139 silly mapToRegistry   name: 'element-class',
+139 silly mapToRegistry   rawSpec: '',
+139 silly mapToRegistry   spec: 'latest',
+139 silly mapToRegistry   type: 'tag' }
+140 silly mapToRegistry uri https://registry.npmjs.org/element-class
+141 verbose addNameRange registry:https://registry.npmjs.org/element-class not in flight; fetching
+142 silly cache add args [ 'exenv@1.2.0', null ]
+143 verbose cache add spec exenv@1.2.0
+144 silly cache add parsed spec Result {
+144 silly cache add   raw: 'exenv@1.2.0',
+144 silly cache add   scope: null,
+144 silly cache add   name: 'exenv',
+144 silly cache add   rawSpec: '1.2.0',
+144 silly cache add   spec: '1.2.0',
+144 silly cache add   type: 'version' }
+145 silly addNamed exenv@1.2.0
+146 verbose addNamed "1.2.0" is a plain semver version for exenv
+147 silly mapToRegistry name exenv
+148 silly mapToRegistry using default registry
+149 silly mapToRegistry registry https://registry.npmjs.org/
+150 silly mapToRegistry data Result {
+150 silly mapToRegistry   raw: 'exenv',
+150 silly mapToRegistry   scope: null,
+150 silly mapToRegistry   name: 'exenv',
+150 silly mapToRegistry   rawSpec: '',
+150 silly mapToRegistry   spec: 'latest',
+150 silly mapToRegistry   type: 'tag' }
+151 silly mapToRegistry uri https://registry.npmjs.org/exenv
+152 verbose addNameVersion registry:https://registry.npmjs.org/exenv not in flight; fetching
+153 verbose request uri https://registry.npmjs.org/lodash.assign
+154 verbose request no auth needed
+155 info attempt registry request try #1 at 2:31:29 PM
+156 verbose etag "CZOYS3251AWMXL2ERI71IWNLG"
+157 http request GET https://registry.npmjs.org/lodash.assign
+158 verbose request uri https://registry.npmjs.org/exenv
+159 verbose request no auth needed
+160 info attempt registry request try #1 at 2:31:29 PM
+161 verbose etag "7BX350TWEZRHBBSZOS34X9KO0"
+162 http request GET https://registry.npmjs.org/exenv
+163 verbose request uri https://registry.npmjs.org/element-class
+164 verbose request no auth needed
+165 info attempt registry request try #1 at 2:31:29 PM
+166 verbose etag "32XXNR2Z4PRL428AJSJW6TXXH"
+167 http request GET https://registry.npmjs.org/element-class
+168 http 200 https://registry.npmjs.org/lodash.assign
+169 verbose headers { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+169 verbose headers   etag: '"4WO76F1M009CIUOOEIMGHDLPM"',
+169 verbose headers   'content-type': 'application/json',
+169 verbose headers   'content-encoding': 'gzip',
+169 verbose headers   'cache-control': 'max-age=300',
+169 verbose headers   'content-length': '4247',
+169 verbose headers   'accept-ranges': 'bytes',
+169 verbose headers   date: 'Mon, 26 Sep 2016 21:31:29 GMT',
+169 verbose headers   via: '1.1 varnish',
+169 verbose headers   age: '2',
+169 verbose headers   connection: 'keep-alive',
+169 verbose headers   'x-served-by': 'cache-lax8624-LAX',
+169 verbose headers   'x-cache': 'HIT',
+169 verbose headers   'x-cache-hits': '1',
+169 verbose headers   'x-timer': 'S1474925489.614084,VS0,VE0',
+169 verbose headers   vary: 'Accept-Encoding' }
+170 silly get cb [ 200,
+170 silly get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+170 silly get     etag: '"4WO76F1M009CIUOOEIMGHDLPM"',
+170 silly get     'content-type': 'application/json',
+170 silly get     'content-encoding': 'gzip',
+170 silly get     'cache-control': 'max-age=300',
+170 silly get     'content-length': '4247',
+170 silly get     'accept-ranges': 'bytes',
+170 silly get     date: 'Mon, 26 Sep 2016 21:31:29 GMT',
+170 silly get     via: '1.1 varnish',
+170 silly get     age: '2',
+170 silly get     connection: 'keep-alive',
+170 silly get     'x-served-by': 'cache-lax8624-LAX',
+170 silly get     'x-cache': 'HIT',
+170 silly get     'x-cache-hits': '1',
+170 silly get     'x-timer': 'S1474925489.614084,VS0,VE0',
+170 silly get     vary: 'Accept-Encoding' } ]
+171 verbose get saving lodash.assign to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash.assign/.cache.json
+172 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+173 silly addNameRange number 2 { name: 'lodash.assign', range: '>=3.2.0 <4.0.0', hasData: true }
+174 silly addNameRange versions [ 'lodash.assign',
+174 silly addNameRange   [ '2.0.0',
+174 silly addNameRange     '2.1.0',
+174 silly addNameRange     '2.2.0',
+174 silly addNameRange     '2.2.1',
+174 silly addNameRange     '2.3.0',
+174 silly addNameRange     '2.4.0',
+174 silly addNameRange     '2.4.1',
+174 silly addNameRange     '3.0.0',
+174 silly addNameRange     '3.1.0',
+174 silly addNameRange     '3.2.0',
+174 silly addNameRange     '4.0.0',
+174 silly addNameRange     '4.0.1',
+174 silly addNameRange     '4.0.2',
+174 silly addNameRange     '4.0.3',
+174 silly addNameRange     '4.0.4',
+174 silly addNameRange     '4.0.5',
+174 silly addNameRange     '4.0.6',
+174 silly addNameRange     '4.0.7',
+174 silly addNameRange     '4.0.8',
+174 silly addNameRange     '4.0.9',
+174 silly addNameRange     '4.1.0',
+174 silly addNameRange     '4.2.0' ] ]
+175 silly addNamed lodash.assign@3.2.0
+176 verbose addNamed "3.2.0" is a plain semver version for lodash.assign
+177 silly cache afterAdd lodash.assign@3.2.0
+178 verbose afterAdd /home/tclaiby_babes/.npm/lodash.assign/3.2.0/package/package.json not in flight; writing
+179 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+180 verbose afterAdd /home/tclaiby_babes/.npm/lodash.assign/3.2.0/package/package.json written
+181 http 304 https://registry.npmjs.org/exenv
+182 verbose headers { date: 'Mon, 26 Sep 2016 21:31:29 GMT',
+182 verbose headers   via: '1.1 varnish',
+182 verbose headers   'cache-control': 'max-age=300',
+182 verbose headers   etag: '"7BX350TWEZRHBBSZOS34X9KO0"',
+182 verbose headers   age: '44',
+182 verbose headers   connection: 'keep-alive',
+182 verbose headers   'x-served-by': 'cache-lax8629-LAX',
+182 verbose headers   'x-cache': 'HIT',
+182 verbose headers   'x-cache-hits': '1',
+182 verbose headers   'x-timer': 'S1474925489.781723,VS0,VE0',
+182 verbose headers   vary: 'Accept-Encoding' }
+183 silly get cb [ 304,
+183 silly get   { date: 'Mon, 26 Sep 2016 21:31:29 GMT',
+183 silly get     via: '1.1 varnish',
+183 silly get     'cache-control': 'max-age=300',
+183 silly get     etag: '"7BX350TWEZRHBBSZOS34X9KO0"',
+183 silly get     age: '44',
+183 silly get     connection: 'keep-alive',
+183 silly get     'x-served-by': 'cache-lax8629-LAX',
+183 silly get     'x-cache': 'HIT',
+183 silly get     'x-cache-hits': '1',
+183 silly get     'x-timer': 'S1474925489.781723,VS0,VE0',
+183 silly get     vary: 'Accept-Encoding' } ]
+184 verbose etag https://registry.npmjs.org/exenv from cache
+185 verbose get saving exenv to /home/tclaiby_babes/.npm/registry.npmjs.org/exenv/.cache.json
+186 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+187 http 304 https://registry.npmjs.org/element-class
+188 verbose headers { date: 'Mon, 26 Sep 2016 21:31:29 GMT',
+188 verbose headers   via: '1.1 varnish',
+188 verbose headers   'cache-control': 'max-age=300',
+188 verbose headers   etag: '"32XXNR2Z4PRL428AJSJW6TXXH"',
+188 verbose headers   age: '44',
+188 verbose headers   connection: 'keep-alive',
+188 verbose headers   'x-served-by': 'cache-lax8623-LAX',
+188 verbose headers   'x-cache': 'HIT',
+188 verbose headers   'x-cache-hits': '1',
+188 verbose headers   'x-timer': 'S1474925489.786114,VS0,VE0',
+188 verbose headers   vary: 'Accept-Encoding' }
+189 silly get cb [ 304,
+189 silly get   { date: 'Mon, 26 Sep 2016 21:31:29 GMT',
+189 silly get     via: '1.1 varnish',
+189 silly get     'cache-control': 'max-age=300',
+189 silly get     etag: '"32XXNR2Z4PRL428AJSJW6TXXH"',
+189 silly get     age: '44',
+189 silly get     connection: 'keep-alive',
+189 silly get     'x-served-by': 'cache-lax8623-LAX',
+189 silly get     'x-cache': 'HIT',
+189 silly get     'x-cache-hits': '1',
+189 silly get     'x-timer': 'S1474925489.786114,VS0,VE0',
+189 silly get     vary: 'Accept-Encoding' } ]
+190 verbose etag https://registry.npmjs.org/element-class from cache
+191 verbose get saving element-class to /home/tclaiby_babes/.npm/registry.npmjs.org/element-class/.cache.json
+192 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+193 silly cache afterAdd exenv@1.2.0
+194 verbose afterAdd /home/tclaiby_babes/.npm/exenv/1.2.0/package/package.json not in flight; writing
+195 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+196 silly addNameRange number 2 { name: 'element-class', range: '>=0.2.0 <0.3.0', hasData: true }
+197 silly addNameRange versions [ 'element-class',
+197 silly addNameRange   [ '0.0.1', '0.0.2', '0.1.0', '0.1.1', '0.2.0', '0.2.1', '0.2.2' ] ]
+198 silly addNamed element-class@0.2.2
+199 verbose addNamed "0.2.2" is a plain semver version for element-class
+200 verbose afterAdd /home/tclaiby_babes/.npm/exenv/1.2.0/package/package.json written
+201 silly cache afterAdd element-class@0.2.2
+202 verbose afterAdd /home/tclaiby_babes/.npm/element-class/0.2.2/package/package.json not in flight; writing
+203 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+204 verbose afterAdd /home/tclaiby_babes/.npm/element-class/0.2.2/package/package.json written
+205 silly install resolved [ { name: 'lodash.assign',
+205 silly install resolved     version: '3.2.0',
+205 silly install resolved     description: 'The modern build of lodash’s `_.assign` as a module.',
+205 silly install resolved     homepage: 'https://lodash.com/',
+205 silly install resolved     icon: 'https://lodash.com/icon.svg',
+205 silly install resolved     license: 'MIT',
+205 silly install resolved     keywords: [ 'lodash', 'lodash-modularized', 'stdlib', 'util' ],
+205 silly install resolved     author:
+205 silly install resolved      { name: 'John-David Dalton',
+205 silly install resolved        email: 'john.david.dalton@gmail.com',
+205 silly install resolved        url: 'http://allyoucanleet.com/' },
+205 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+205 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+205 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+205 silly install resolved     dependencies:
+205 silly install resolved      { 'lodash._baseassign': '^3.0.0',
+205 silly install resolved        'lodash._createassigner': '^3.0.0',
+205 silly install resolved        'lodash.keys': '^3.0.0' },
+205 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+205 silly install resolved     _id: 'lodash.assign@3.2.0',
+205 silly install resolved     _shasum: '3ce9f0234b4b2223e296b8fa0ac1fee8ebca64fa',
+205 silly install resolved     _from: 'lodash.assign@>=3.2.0 <4.0.0',
+205 silly install resolved     _npmVersion: '2.10.0',
+205 silly install resolved     _nodeVersion: '0.12.3',
+205 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+205 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+205 silly install resolved     dist:
+205 silly install resolved      { shasum: '3ce9f0234b4b2223e296b8fa0ac1fee8ebca64fa',
+205 silly install resolved        tarball: 'https://registry.npmjs.org/lodash.assign/-/lodash.assign-3.2.0.tgz' },
+205 silly install resolved     directories: {},
+205 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.assign/-/lodash.assign-3.2.0.tgz',
+205 silly install resolved     readme: 'ERROR: No README data found!' },
+205 silly install resolved   { name: 'exenv',
+205 silly install resolved     version: '1.2.0',
+205 silly install resolved     description: 'React\'s ExecutionEnvironment module extracted for use in other packages & components',
+205 silly install resolved     main: 'index.js',
+205 silly install resolved     scripts: { test: 'echo "See React tests" && exit 0' },
+205 silly install resolved     repository:
+205 silly install resolved      { type: 'git',
+205 silly install resolved        url: 'git+https://github.com/JedWatson/exenv.git' },
+205 silly install resolved     keywords:
+205 silly install resolved      [ 'react',
+205 silly install resolved        'browser',
+205 silly install resolved        'server',
+205 silly install resolved        'environment',
+205 silly install resolved        'env',
+205 silly install resolved        'execution',
+205 silly install resolved        'executionenvironment' ],
+205 silly install resolved     author: { name: 'Jed Watson' },
+205 silly install resolved     license: 'BSD',
+205 silly install resolved     bugs: { url: 'https://github.com/JedWatson/exenv/issues' },
+205 silly install resolved     homepage: 'https://github.com/JedWatson/exenv',
+205 silly install resolved     gitHead: 'bf84d0a7782fd824a1d94ed612067b1e0d080d2e',
+205 silly install resolved     _id: 'exenv@1.2.0',
+205 silly install resolved     _shasum: '3835f127abf075bfe082d0aed4484057c78e3c89',
+205 silly install resolved     _from: 'exenv@1.2.0',
+205 silly install resolved     _npmVersion: '2.7.5',
+205 silly install resolved     _nodeVersion: '0.12.2',
+205 silly install resolved     _npmUser: { name: 'jedwatson', email: 'jed.watson@me.com' },
+205 silly install resolved     dist:
+205 silly install resolved      { shasum: '3835f127abf075bfe082d0aed4484057c78e3c89',
+205 silly install resolved        tarball: 'https://registry.npmjs.org/exenv/-/exenv-1.2.0.tgz' },
+205 silly install resolved     maintainers: [ [Object] ],
+205 silly install resolved     directories: {},
+205 silly install resolved     _resolved: 'https://registry.npmjs.org/exenv/-/exenv-1.2.0.tgz',
+205 silly install resolved     readme: 'ERROR: No README data found!' },
+205 silly install resolved   { name: 'element-class',
+205 silly install resolved     description: 'add and remove classes from dom elements',
+205 silly install resolved     author: { name: 'Max Ogden', email: 'max@maxogden.com' },
+205 silly install resolved     repository:
+205 silly install resolved      { type: 'git',
+205 silly install resolved        url: 'git+ssh://git@github.com/maxogden/element-class.git' },
+205 silly install resolved     version: '0.2.2',
+205 silly install resolved     bugs: { url: 'https://github.com/maxogden/element-class/issues' },
+205 silly install resolved     homepage: 'https://github.com/maxogden/element-class',
+205 silly install resolved     main: 'index.js',
+205 silly install resolved     devDependencies: { tape: '^4.2.0' },
+205 silly install resolved     scripts: { test: 'echo "Error: no test specified" && exit 1' },
+205 silly install resolved     license: 'ISC',
+205 silly install resolved     testling: { files: 'test.js', browsers: [Object] },
+205 silly install resolved     gitHead: 'e61e8f8950dcfffd8ccde4310972a80053f7b75d',
+205 silly install resolved     _id: 'element-class@0.2.2',
+205 silly install resolved     _shasum: '9d3bbd0767f9013ef8e1c8ebe722c1402a60050e',
+205 silly install resolved     _from: 'element-class@>=0.2.0 <0.3.0',
+205 silly install resolved     _npmVersion: '2.11.3',
+205 silly install resolved     _nodeVersion: '0.12.7',
+205 silly install resolved     _npmUser: { name: 'maxogden', email: 'max@maxogden.com' },
+205 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+205 silly install resolved     dist:
+205 silly install resolved      { shasum: '9d3bbd0767f9013ef8e1c8ebe722c1402a60050e',
+205 silly install resolved        tarball: 'https://registry.npmjs.org/element-class/-/element-class-0.2.2.tgz' },
+205 silly install resolved     directories: {},
+205 silly install resolved     _resolved: 'https://registry.npmjs.org/element-class/-/element-class-0.2.2.tgz',
+205 silly install resolved     readme: 'ERROR: No README data found!' } ]
+206 info install lodash.assign@3.2.0 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+207 info install exenv@1.2.0 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+208 info install element-class@0.2.2 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+209 info installOne lodash.assign@3.2.0
+210 verbose installOne of lodash.assign to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal not in flight; installing
+211 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+212 info installOne exenv@1.2.0
+213 verbose installOne of exenv to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal not in flight; installing
+214 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+215 info installOne element-class@0.2.2
+216 verbose installOne of element-class to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal not in flight; installing
+217 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+218 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-assign-e9e44724b6ec038f.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+219 verbose lock using /home/tclaiby_babes/.npm/_locks/exenv-72161541a0dd0de5.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+220 verbose lock using /home/tclaiby_babes/.npm/_locks/element-class-f11c34f273489cf3.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+221 silly install write writing lodash.assign 3.2.0 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+222 silly install write writing exenv 1.2.0 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+223 silly install write writing element-class 0.2.2 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+224 verbose unbuild node_modules/react-modal/node_modules/exenv
+225 verbose unbuild node_modules/react-modal/node_modules/lodash.assign
+226 verbose unbuild node_modules/react-modal/node_modules/element-class
+227 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv is being purged from base /home/tclaiby_babes/Desktop/Trippr
+228 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+229 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign is being purged from base /home/tclaiby_babes/Desktop/Trippr
+230 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+231 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class is being purged from base /home/tclaiby_babes/Desktop/Trippr
+232 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+233 verbose tar unpack /home/tclaiby_babes/.npm/exenv/1.2.0/package.tgz
+234 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+235 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv is being purged
+236 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+237 verbose tar unpack /home/tclaiby_babes/.npm/lodash.assign/3.2.0/package.tgz
+238 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+239 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign is being purged
+240 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+241 verbose tar unpack /home/tclaiby_babes/.npm/element-class/0.2.2/package.tgz
+242 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+243 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class is being purged
+244 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+245 silly gunzTarPerm modes [ '755', '644' ]
+246 silly gunzTarPerm modes [ '755', '644' ]
+247 silly gunzTarPerm modes [ '755', '644' ]
+248 silly gunzTarPerm extractEntry package.json
+249 silly gunzTarPerm extractEntry package.json
+250 silly gunzTarPerm extractEntry package.json
+251 silly gunzTarPerm extractEntry README.md
+252 silly gunzTarPerm extractEntry LICENSE
+253 silly gunzTarPerm extractEntry README.md
+254 silly gunzTarPerm extractEntry index.js
+255 silly gunzTarPerm extractEntry .npmignore
+256 silly gunzTarPerm extractEntry index.js
+257 silly gunzTarPerm extractEntry index.js
+258 silly gunzTarPerm extractEntry LICENSE.txt
+259 silly gunzTarPerm extractEntry test.js
+260 silly gunzTarPerm extractEntry collaborators.md
+261 silly gunzTarPerm extractEntry readme.md
+262 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/package.json
+263 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv/package.json
+264 info preinstall lodash.assign@3.2.0
+265 info preinstall exenv@1.2.0
+266 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/package.json
+267 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv/package.json
+268 silly prepareForInstallMany adding lodash._baseassign@^3.0.0 from lodash.assign dependencies
+269 silly prepareForInstallMany adding lodash._createassigner@^3.0.0 from lodash.assign dependencies
+270 silly prepareForInstallMany adding lodash.keys@^3.0.0 from lodash.assign dependencies
+271 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/package.json
+272 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv/package.json
+273 silly install resolved []
+274 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+275 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+276 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class/package.json
+277 silly cache add args [ 'lodash._baseassign@^3.0.0', null ]
+278 verbose cache add spec lodash._baseassign@^3.0.0
+279 silly cache add args [ 'lodash._createassigner@^3.0.0', null ]
+280 verbose cache add spec lodash._createassigner@^3.0.0
+281 silly cache add parsed spec Result {
+281 silly cache add   raw: 'lodash._baseassign@^3.0.0',
+281 silly cache add   scope: null,
+281 silly cache add   name: 'lodash._baseassign',
+281 silly cache add   rawSpec: '^3.0.0',
+281 silly cache add   spec: '>=3.0.0 <4.0.0',
+281 silly cache add   type: 'range' }
+282 silly addNamed lodash._baseassign@>=3.0.0 <4.0.0
+283 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._baseassign
+284 silly addNameRange { name: 'lodash._baseassign',
+284 silly addNameRange   range: '>=3.0.0 <4.0.0',
+284 silly addNameRange   hasData: false }
+285 silly mapToRegistry name lodash._baseassign
+286 silly mapToRegistry using default registry
+287 silly mapToRegistry registry https://registry.npmjs.org/
+288 silly mapToRegistry data Result {
+288 silly mapToRegistry   raw: 'lodash._baseassign',
+288 silly mapToRegistry   scope: null,
+288 silly mapToRegistry   name: 'lodash._baseassign',
+288 silly mapToRegistry   rawSpec: '',
+288 silly mapToRegistry   spec: 'latest',
+288 silly mapToRegistry   type: 'tag' }
+289 silly mapToRegistry uri https://registry.npmjs.org/lodash._baseassign
+290 verbose addNameRange registry:https://registry.npmjs.org/lodash._baseassign not in flight; fetching
+291 silly cache add parsed spec Result {
+291 silly cache add   raw: 'lodash._createassigner@^3.0.0',
+291 silly cache add   scope: null,
+291 silly cache add   name: 'lodash._createassigner',
+291 silly cache add   rawSpec: '^3.0.0',
+291 silly cache add   spec: '>=3.0.0 <4.0.0',
+291 silly cache add   type: 'range' }
+292 silly addNamed lodash._createassigner@>=3.0.0 <4.0.0
+293 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._createassigner
+294 silly addNameRange { name: 'lodash._createassigner',
+294 silly addNameRange   range: '>=3.0.0 <4.0.0',
+294 silly addNameRange   hasData: false }
+295 silly mapToRegistry name lodash._createassigner
+296 silly mapToRegistry using default registry
+297 silly mapToRegistry registry https://registry.npmjs.org/
+298 silly mapToRegistry data Result {
+298 silly mapToRegistry   raw: 'lodash._createassigner',
+298 silly mapToRegistry   scope: null,
+298 silly mapToRegistry   name: 'lodash._createassigner',
+298 silly mapToRegistry   rawSpec: '',
+298 silly mapToRegistry   spec: 'latest',
+298 silly mapToRegistry   type: 'tag' }
+299 silly mapToRegistry uri https://registry.npmjs.org/lodash._createassigner
+300 verbose addNameRange registry:https://registry.npmjs.org/lodash._createassigner not in flight; fetching
+301 silly cache add args [ 'lodash.keys@^3.0.0', null ]
+302 verbose cache add spec lodash.keys@^3.0.0
+303 silly cache add parsed spec Result {
+303 silly cache add   raw: 'lodash.keys@^3.0.0',
+303 silly cache add   scope: null,
+303 silly cache add   name: 'lodash.keys',
+303 silly cache add   rawSpec: '^3.0.0',
+303 silly cache add   spec: '>=3.0.0 <4.0.0',
+303 silly cache add   type: 'range' }
+304 silly addNamed lodash.keys@>=3.0.0 <4.0.0
+305 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash.keys
+306 silly addNameRange { name: 'lodash.keys', range: '>=3.0.0 <4.0.0', hasData: false }
+307 silly mapToRegistry name lodash.keys
+308 silly mapToRegistry using default registry
+309 silly mapToRegistry registry https://registry.npmjs.org/
+310 silly mapToRegistry data Result {
+310 silly mapToRegistry   raw: 'lodash.keys',
+310 silly mapToRegistry   scope: null,
+310 silly mapToRegistry   name: 'lodash.keys',
+310 silly mapToRegistry   rawSpec: '',
+310 silly mapToRegistry   spec: 'latest',
+310 silly mapToRegistry   type: 'tag' }
+311 silly mapToRegistry uri https://registry.npmjs.org/lodash.keys
+312 verbose addNameRange registry:https://registry.npmjs.org/lodash.keys not in flight; fetching
+313 info preinstall element-class@0.2.2
+314 info linkStuff exenv@1.2.0
+315 silly linkStuff exenv@1.2.0 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules as its parent node_modules
+316 verbose request uri https://registry.npmjs.org/lodash._baseassign
+317 verbose request no auth needed
+318 info attempt registry request try #1 at 2:31:30 PM
+319 verbose etag "7BL6B7FKZDZ47VD91B03KH2N1"
+320 http request GET https://registry.npmjs.org/lodash._baseassign
+321 verbose request uri https://registry.npmjs.org/lodash.keys
+322 verbose request no auth needed
+323 info attempt registry request try #1 at 2:31:30 PM
+324 verbose etag "6M8EIKUB1JKD1584LFN077BOA"
+325 http request GET https://registry.npmjs.org/lodash.keys
+326 verbose request uri https://registry.npmjs.org/lodash._createassigner
+327 verbose request no auth needed
+328 info attempt registry request try #1 at 2:31:30 PM
+329 verbose etag "CQWTFITE6W94GAS2PZVA3DD9Z"
+330 http request GET https://registry.npmjs.org/lodash._createassigner
+331 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class/package.json
+332 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class/package.json
+333 silly install resolved []
+334 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+335 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+336 verbose linkBins exenv@1.2.0
+337 verbose linkMans exenv@1.2.0
+338 verbose rebuildBundles exenv@1.2.0
+339 info install exenv@1.2.0
+340 info postinstall exenv@1.2.0
+341 info linkStuff element-class@0.2.2
+342 silly linkStuff element-class@0.2.2 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules as its parent node_modules
+343 verbose unlock done using /home/tclaiby_babes/.npm/_locks/exenv-72161541a0dd0de5.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/exenv
+344 verbose linkBins element-class@0.2.2
+345 verbose linkMans element-class@0.2.2
+346 verbose rebuildBundles element-class@0.2.2
+347 info install element-class@0.2.2
+348 info postinstall element-class@0.2.2
+349 verbose unlock done using /home/tclaiby_babes/.npm/_locks/element-class-f11c34f273489cf3.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/element-class
+350 http 304 https://registry.npmjs.org/lodash._baseassign
+351 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+351 verbose headers   via: '1.1 varnish',
+351 verbose headers   'cache-control': 'max-age=300',
+351 verbose headers   etag: '"7BL6B7FKZDZ47VD91B03KH2N1"',
+351 verbose headers   age: '25',
+351 verbose headers   connection: 'keep-alive',
+351 verbose headers   'x-served-by': 'cache-lax8624-LAX',
+351 verbose headers   'x-cache': 'HIT',
+351 verbose headers   'x-cache-hits': '1',
+351 verbose headers   'x-timer': 'S1474925490.004306,VS0,VE0',
+351 verbose headers   vary: 'Accept-Encoding' }
+352 silly get cb [ 304,
+352 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+352 silly get     via: '1.1 varnish',
+352 silly get     'cache-control': 'max-age=300',
+352 silly get     etag: '"7BL6B7FKZDZ47VD91B03KH2N1"',
+352 silly get     age: '25',
+352 silly get     connection: 'keep-alive',
+352 silly get     'x-served-by': 'cache-lax8624-LAX',
+352 silly get     'x-cache': 'HIT',
+352 silly get     'x-cache-hits': '1',
+352 silly get     'x-timer': 'S1474925490.004306,VS0,VE0',
+352 silly get     vary: 'Accept-Encoding' } ]
+353 verbose etag https://registry.npmjs.org/lodash._baseassign from cache
+354 verbose get saving lodash._baseassign to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash._baseassign/.cache.json
+355 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+356 http 304 https://registry.npmjs.org/lodash.keys
+357 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+357 verbose headers   via: '1.1 varnish',
+357 verbose headers   'cache-control': 'max-age=300',
+357 verbose headers   etag: '"6M8EIKUB1JKD1584LFN077BOA"',
+357 verbose headers   age: '171',
+357 verbose headers   connection: 'keep-alive',
+357 verbose headers   'x-served-by': 'cache-lax8629-LAX',
+357 verbose headers   'x-cache': 'HIT',
+357 verbose headers   'x-cache-hits': '59',
+357 verbose headers   'x-timer': 'S1474925490.007215,VS0,VE0',
+357 verbose headers   vary: 'Accept-Encoding' }
+358 silly get cb [ 304,
+358 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+358 silly get     via: '1.1 varnish',
+358 silly get     'cache-control': 'max-age=300',
+358 silly get     etag: '"6M8EIKUB1JKD1584LFN077BOA"',
+358 silly get     age: '171',
+358 silly get     connection: 'keep-alive',
+358 silly get     'x-served-by': 'cache-lax8629-LAX',
+358 silly get     'x-cache': 'HIT',
+358 silly get     'x-cache-hits': '59',
+358 silly get     'x-timer': 'S1474925490.007215,VS0,VE0',
+358 silly get     vary: 'Accept-Encoding' } ]
+359 verbose etag https://registry.npmjs.org/lodash.keys from cache
+360 verbose get saving lodash.keys to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash.keys/.cache.json
+361 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+362 http 304 https://registry.npmjs.org/lodash._createassigner
+363 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+363 verbose headers   via: '1.1 varnish',
+363 verbose headers   'cache-control': 'max-age=300',
+363 verbose headers   etag: '"CQWTFITE6W94GAS2PZVA3DD9Z"',
+363 verbose headers   age: '275',
+363 verbose headers   connection: 'keep-alive',
+363 verbose headers   'x-served-by': 'cache-lax8623-LAX',
+363 verbose headers   'x-cache': 'HIT',
+363 verbose headers   'x-cache-hits': '1',
+363 verbose headers   'x-timer': 'S1474925490.010978,VS0,VE0',
+363 verbose headers   vary: 'Accept-Encoding' }
+364 silly get cb [ 304,
+364 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+364 silly get     via: '1.1 varnish',
+364 silly get     'cache-control': 'max-age=300',
+364 silly get     etag: '"CQWTFITE6W94GAS2PZVA3DD9Z"',
+364 silly get     age: '275',
+364 silly get     connection: 'keep-alive',
+364 silly get     'x-served-by': 'cache-lax8623-LAX',
+364 silly get     'x-cache': 'HIT',
+364 silly get     'x-cache-hits': '1',
+364 silly get     'x-timer': 'S1474925490.010978,VS0,VE0',
+364 silly get     vary: 'Accept-Encoding' } ]
+365 verbose etag https://registry.npmjs.org/lodash._createassigner from cache
+366 verbose get saving lodash._createassigner to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash._createassigner/.cache.json
+367 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+368 silly addNameRange number 2 { name: 'lodash._baseassign',
+368 silly addNameRange   range: '>=3.0.0 <4.0.0',
+368 silly addNameRange   hasData: true }
+369 silly addNameRange versions [ 'lodash._baseassign',
+369 silly addNameRange   [ '3.0.0', '3.0.1', '3.0.2', '3.1.0', '3.1.1', '3.2.0' ] ]
+370 silly addNamed lodash._baseassign@3.2.0
+371 verbose addNamed "3.2.0" is a plain semver version for lodash._baseassign
+372 silly addNameRange number 2 { name: 'lodash.keys', range: '>=3.0.0 <4.0.0', hasData: true }
+373 silly addNameRange versions [ 'lodash.keys',
+373 silly addNameRange   [ '2.0.0',
+373 silly addNameRange     '2.1.0',
+373 silly addNameRange     '2.2.0',
+373 silly addNameRange     '2.2.1',
+373 silly addNameRange     '2.3.0',
+373 silly addNameRange     '2.4.0',
+373 silly addNameRange     '2.4.1',
+373 silly addNameRange     '3.0.0',
+373 silly addNameRange     '3.0.1',
+373 silly addNameRange     '3.0.2',
+373 silly addNameRange     '3.0.3',
+373 silly addNameRange     '3.0.4',
+373 silly addNameRange     '3.0.5',
+373 silly addNameRange     '3.0.6',
+373 silly addNameRange     '3.0.7',
+373 silly addNameRange     '3.1.0',
+373 silly addNameRange     '3.1.1',
+373 silly addNameRange     '3.1.2',
+373 silly addNameRange     '4.0.0',
+373 silly addNameRange     '4.0.1',
+373 silly addNameRange     '4.0.2',
+373 silly addNameRange     '4.0.3',
+373 silly addNameRange     '4.0.4',
+373 silly addNameRange     '4.0.5',
+373 silly addNameRange     '4.0.6',
+373 silly addNameRange     '4.0.7',
+373 silly addNameRange     '4.0.8',
+373 silly addNameRange     '4.2.0' ] ]
+374 silly addNamed lodash.keys@3.1.2
+375 verbose addNamed "3.1.2" is a plain semver version for lodash.keys
+376 silly addNameRange number 2 { name: 'lodash._createassigner',
+376 silly addNameRange   range: '>=3.0.0 <4.0.0',
+376 silly addNameRange   hasData: true }
+377 silly addNameRange versions [ 'lodash._createassigner',
+377 silly addNameRange   [ '3.0.0', '3.0.1', '3.1.0', '3.1.1' ] ]
+378 silly addNamed lodash._createassigner@3.1.1
+379 verbose addNamed "3.1.1" is a plain semver version for lodash._createassigner
+380 silly cache afterAdd lodash._baseassign@3.2.0
+381 verbose afterAdd /home/tclaiby_babes/.npm/lodash._baseassign/3.2.0/package/package.json not in flight; writing
+382 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+383 silly cache afterAdd lodash.keys@3.1.2
+384 verbose afterAdd /home/tclaiby_babes/.npm/lodash.keys/3.1.2/package/package.json not in flight; writing
+385 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+386 silly cache afterAdd lodash._createassigner@3.1.1
+387 verbose afterAdd /home/tclaiby_babes/.npm/lodash._createassigner/3.1.1/package/package.json not in flight; writing
+388 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+389 verbose afterAdd /home/tclaiby_babes/.npm/lodash._baseassign/3.2.0/package/package.json written
+390 verbose afterAdd /home/tclaiby_babes/.npm/lodash._createassigner/3.1.1/package/package.json written
+391 verbose afterAdd /home/tclaiby_babes/.npm/lodash.keys/3.1.2/package/package.json written
+392 silly install resolved [ { name: 'lodash._baseassign',
+392 silly install resolved     version: '3.2.0',
+392 silly install resolved     description: 'The modern build of lodash’s internal `baseAssign` as a module.',
+392 silly install resolved     homepage: 'https://lodash.com/',
+392 silly install resolved     icon: 'https://lodash.com/icon.svg',
+392 silly install resolved     license: 'MIT',
+392 silly install resolved     author:
+392 silly install resolved      { name: 'John-David Dalton',
+392 silly install resolved        email: 'john.david.dalton@gmail.com',
+392 silly install resolved        url: 'http://allyoucanleet.com/' },
+392 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+392 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+392 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+392 silly install resolved     dependencies: { 'lodash._basecopy': '^3.0.0', 'lodash.keys': '^3.0.0' },
+392 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+392 silly install resolved     _id: 'lodash._baseassign@3.2.0',
+392 silly install resolved     _shasum: '8c38a099500f215ad09e59f1722fd0c52bfe0a4e',
+392 silly install resolved     _from: 'lodash._baseassign@>=3.0.0 <4.0.0',
+392 silly install resolved     _npmVersion: '2.10.0',
+392 silly install resolved     _nodeVersion: '0.12.3',
+392 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+392 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+392 silly install resolved     dist:
+392 silly install resolved      { shasum: '8c38a099500f215ad09e59f1722fd0c52bfe0a4e',
+392 silly install resolved        tarball: 'https://registry.npmjs.org/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz' },
+392 silly install resolved     directories: {},
+392 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._baseassign/-/lodash._baseassign-3.2.0.tgz',
+392 silly install resolved     readme: 'ERROR: No README data found!' },
+392 silly install resolved   { name: 'lodash._createassigner',
+392 silly install resolved     version: '3.1.1',
+392 silly install resolved     description: 'The modern build of lodash’s internal `createAssigner` as a module.',
+392 silly install resolved     homepage: 'https://lodash.com/',
+392 silly install resolved     icon: 'https://lodash.com/icon.svg',
+392 silly install resolved     license: 'MIT',
+392 silly install resolved     author:
+392 silly install resolved      { name: 'John-David Dalton',
+392 silly install resolved        email: 'john.david.dalton@gmail.com',
+392 silly install resolved        url: 'http://allyoucanleet.com/' },
+392 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+392 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+392 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+392 silly install resolved     dependencies:
+392 silly install resolved      { 'lodash._bindcallback': '^3.0.0',
+392 silly install resolved        'lodash._isiterateecall': '^3.0.0',
+392 silly install resolved        'lodash.restparam': '^3.0.0' },
+392 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+392 silly install resolved     _id: 'lodash._createassigner@3.1.1',
+392 silly install resolved     _shasum: '838a5bae2fdaca63ac22dee8e19fa4e6d6970b11',
+392 silly install resolved     _from: 'lodash._createassigner@>=3.0.0 <4.0.0',
+392 silly install resolved     _npmVersion: '2.10.0',
+392 silly install resolved     _nodeVersion: '0.12.3',
+392 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+392 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+392 silly install resolved     dist:
+392 silly install resolved      { shasum: '838a5bae2fdaca63ac22dee8e19fa4e6d6970b11',
+392 silly install resolved        tarball: 'https://registry.npmjs.org/lodash._createassigner/-/lodash._createassigner-3.1.1.tgz' },
+392 silly install resolved     directories: {},
+392 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._createassigner/-/lodash._createassigner-3.1.1.tgz',
+392 silly install resolved     readme: 'ERROR: No README data found!' },
+392 silly install resolved   { name: 'lodash.keys',
+392 silly install resolved     version: '3.1.2',
+392 silly install resolved     description: 'The modern build of lodash’s `_.keys` as a module.',
+392 silly install resolved     homepage: 'https://lodash.com/',
+392 silly install resolved     icon: 'https://lodash.com/icon.svg',
+392 silly install resolved     license: 'MIT',
+392 silly install resolved     keywords: [ 'lodash', 'lodash-modularized', 'stdlib', 'util' ],
+392 silly install resolved     author:
+392 silly install resolved      { name: 'John-David Dalton',
+392 silly install resolved        email: 'john.david.dalton@gmail.com',
+392 silly install resolved        url: 'http://allyoucanleet.com/' },
+392 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+392 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+392 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+392 silly install resolved     dependencies:
+392 silly install resolved      { 'lodash._getnative': '^3.0.0',
+392 silly install resolved        'lodash.isarguments': '^3.0.0',
+392 silly install resolved        'lodash.isarray': '^3.0.0' },
+392 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+392 silly install resolved     _id: 'lodash.keys@3.1.2',
+392 silly install resolved     _shasum: '4dbc0472b156be50a0b286855d1bd0b0c656098a',
+392 silly install resolved     _from: 'lodash.keys@>=3.0.0 <4.0.0',
+392 silly install resolved     _npmVersion: '2.12.0',
+392 silly install resolved     _nodeVersion: '0.12.5',
+392 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+392 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+392 silly install resolved     dist:
+392 silly install resolved      { shasum: '4dbc0472b156be50a0b286855d1bd0b0c656098a',
+392 silly install resolved        tarball: 'https://registry.npmjs.org/lodash.keys/-/lodash.keys-3.1.2.tgz' },
+392 silly install resolved     directories: {},
+392 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.keys/-/lodash.keys-3.1.2.tgz',
+392 silly install resolved     readme: 'ERROR: No README data found!' } ]
+393 info install lodash._baseassign@3.2.0 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+394 info install lodash._createassigner@3.1.1 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+395 info install lodash.keys@3.1.2 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+396 info installOne lodash._baseassign@3.2.0
+397 verbose installOne of lodash._baseassign to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign not in flight; installing
+398 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+399 info installOne lodash._createassigner@3.1.1
+400 verbose installOne of lodash._createassigner to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign not in flight; installing
+401 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+402 info installOne lodash.keys@3.1.2
+403 verbose installOne of lodash.keys to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign not in flight; installing
+404 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+405 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-createassigner-9387bae351cdf541.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+406 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-baseassign-216fb129a5a6d93c.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+407 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-keys-bc77b82b2731e77d.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+408 silly install write writing lodash._createassigner 3.1.1 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+409 silly install write writing lodash._baseassign 3.2.0 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+410 silly install write writing lodash.keys 3.1.2 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+411 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+412 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+413 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+414 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner is being purged from base /home/tclaiby_babes/Desktop/Trippr
+415 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+416 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys is being purged from base /home/tclaiby_babes/Desktop/Trippr
+417 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+418 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign is being purged from base /home/tclaiby_babes/Desktop/Trippr
+419 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+420 verbose tar unpack /home/tclaiby_babes/.npm/lodash._createassigner/3.1.1/package.tgz
+421 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+422 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner is being purged
+423 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+424 verbose tar unpack /home/tclaiby_babes/.npm/lodash.keys/3.1.2/package.tgz
+425 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+426 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys is being purged
+427 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+428 verbose tar unpack /home/tclaiby_babes/.npm/lodash._baseassign/3.2.0/package.tgz
+429 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+430 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign is being purged
+431 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+432 silly gunzTarPerm modes [ '755', '644' ]
+433 silly gunzTarPerm modes [ '755', '644' ]
+434 silly gunzTarPerm modes [ '755', '644' ]
+435 silly gunzTarPerm extractEntry package.json
+436 silly gunzTarPerm extractEntry package.json
+437 silly gunzTarPerm extractEntry package.json
+438 silly gunzTarPerm extractEntry README.md
+439 silly gunzTarPerm extractEntry index.js
+440 silly gunzTarPerm extractEntry README.md
+441 silly gunzTarPerm extractEntry LICENSE
+442 silly gunzTarPerm extractEntry README.md
+443 silly gunzTarPerm extractEntry index.js
+444 silly gunzTarPerm extractEntry LICENSE.txt
+445 silly gunzTarPerm extractEntry index.js
+446 silly gunzTarPerm extractEntry LICENSE.txt
+447 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/package.json
+448 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/package.json
+449 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/package.json
+450 info preinstall lodash.keys@3.1.2
+451 info preinstall lodash._baseassign@3.2.0
+452 info preinstall lodash._createassigner@3.1.1
+453 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/package.json
+454 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/package.json
+455 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/package.json
+456 silly prepareForInstallMany adding lodash._getnative@^3.0.0 from lodash.keys dependencies
+457 silly prepareForInstallMany adding lodash.isarguments@^3.0.0 from lodash.keys dependencies
+458 silly prepareForInstallMany adding lodash.isarray@^3.0.0 from lodash.keys dependencies
+459 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/package.json
+460 silly prepareForInstallMany adding lodash._basecopy@^3.0.0 from lodash._baseassign dependencies
+461 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/package.json
+462 silly prepareForInstallMany adding lodash._bindcallback@^3.0.0 from lodash._createassigner dependencies
+463 silly prepareForInstallMany adding lodash._isiterateecall@^3.0.0 from lodash._createassigner dependencies
+464 silly prepareForInstallMany adding lodash.restparam@^3.0.0 from lodash._createassigner dependencies
+465 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/package.json
+466 silly cache add args [ 'lodash._getnative@^3.0.0', null ]
+467 verbose cache add spec lodash._getnative@^3.0.0
+468 silly cache add args [ 'lodash.isarguments@^3.0.0', null ]
+469 verbose cache add spec lodash.isarguments@^3.0.0
+470 silly cache add parsed spec Result {
+470 silly cache add   raw: 'lodash._getnative@^3.0.0',
+470 silly cache add   scope: null,
+470 silly cache add   name: 'lodash._getnative',
+470 silly cache add   rawSpec: '^3.0.0',
+470 silly cache add   spec: '>=3.0.0 <4.0.0',
+470 silly cache add   type: 'range' }
+471 silly addNamed lodash._getnative@>=3.0.0 <4.0.0
+472 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._getnative
+473 silly addNameRange { name: 'lodash._getnative',
+473 silly addNameRange   range: '>=3.0.0 <4.0.0',
+473 silly addNameRange   hasData: false }
+474 silly mapToRegistry name lodash._getnative
+475 silly mapToRegistry using default registry
+476 silly mapToRegistry registry https://registry.npmjs.org/
+477 silly mapToRegistry data Result {
+477 silly mapToRegistry   raw: 'lodash._getnative',
+477 silly mapToRegistry   scope: null,
+477 silly mapToRegistry   name: 'lodash._getnative',
+477 silly mapToRegistry   rawSpec: '',
+477 silly mapToRegistry   spec: 'latest',
+477 silly mapToRegistry   type: 'tag' }
+478 silly mapToRegistry uri https://registry.npmjs.org/lodash._getnative
+479 verbose addNameRange registry:https://registry.npmjs.org/lodash._getnative not in flight; fetching
+480 silly cache add parsed spec Result {
+480 silly cache add   raw: 'lodash.isarguments@^3.0.0',
+480 silly cache add   scope: null,
+480 silly cache add   name: 'lodash.isarguments',
+480 silly cache add   rawSpec: '^3.0.0',
+480 silly cache add   spec: '>=3.0.0 <4.0.0',
+480 silly cache add   type: 'range' }
+481 silly addNamed lodash.isarguments@>=3.0.0 <4.0.0
+482 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash.isarguments
+483 silly addNameRange { name: 'lodash.isarguments',
+483 silly addNameRange   range: '>=3.0.0 <4.0.0',
+483 silly addNameRange   hasData: false }
+484 silly mapToRegistry name lodash.isarguments
+485 silly mapToRegistry using default registry
+486 silly mapToRegistry registry https://registry.npmjs.org/
+487 silly mapToRegistry data Result {
+487 silly mapToRegistry   raw: 'lodash.isarguments',
+487 silly mapToRegistry   scope: null,
+487 silly mapToRegistry   name: 'lodash.isarguments',
+487 silly mapToRegistry   rawSpec: '',
+487 silly mapToRegistry   spec: 'latest',
+487 silly mapToRegistry   type: 'tag' }
+488 silly mapToRegistry uri https://registry.npmjs.org/lodash.isarguments
+489 verbose addNameRange registry:https://registry.npmjs.org/lodash.isarguments not in flight; fetching
+490 silly cache add args [ 'lodash.isarray@^3.0.0', null ]
+491 verbose cache add spec lodash.isarray@^3.0.0
+492 silly cache add parsed spec Result {
+492 silly cache add   raw: 'lodash.isarray@^3.0.0',
+492 silly cache add   scope: null,
+492 silly cache add   name: 'lodash.isarray',
+492 silly cache add   rawSpec: '^3.0.0',
+492 silly cache add   spec: '>=3.0.0 <4.0.0',
+492 silly cache add   type: 'range' }
+493 silly addNamed lodash.isarray@>=3.0.0 <4.0.0
+494 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash.isarray
+495 silly addNameRange { name: 'lodash.isarray',
+495 silly addNameRange   range: '>=3.0.0 <4.0.0',
+495 silly addNameRange   hasData: false }
+496 silly mapToRegistry name lodash.isarray
+497 silly mapToRegistry using default registry
+498 silly mapToRegistry registry https://registry.npmjs.org/
+499 silly mapToRegistry data Result {
+499 silly mapToRegistry   raw: 'lodash.isarray',
+499 silly mapToRegistry   scope: null,
+499 silly mapToRegistry   name: 'lodash.isarray',
+499 silly mapToRegistry   rawSpec: '',
+499 silly mapToRegistry   spec: 'latest',
+499 silly mapToRegistry   type: 'tag' }
+500 silly mapToRegistry uri https://registry.npmjs.org/lodash.isarray
+501 verbose addNameRange registry:https://registry.npmjs.org/lodash.isarray not in flight; fetching
+502 verbose request uri https://registry.npmjs.org/lodash.isarray
+503 verbose request no auth needed
+504 info attempt registry request try #1 at 2:31:30 PM
+505 verbose etag "5EPK29Q8778P3VYQMPYEP7PXQ"
+506 http request GET https://registry.npmjs.org/lodash.isarray
+507 verbose request uri https://registry.npmjs.org/lodash.isarguments
+508 verbose request no auth needed
+509 info attempt registry request try #1 at 2:31:30 PM
+510 verbose etag "CZ765Z44P746EEOXQN2QKZMED"
+511 http request GET https://registry.npmjs.org/lodash.isarguments
+512 silly cache add args [ 'lodash._basecopy@^3.0.0', null ]
+513 verbose cache add spec lodash._basecopy@^3.0.0
+514 silly cache add args [ 'lodash.restparam@^3.0.0', null ]
+515 verbose cache add spec lodash.restparam@^3.0.0
+516 silly cache add parsed spec Result {
+516 silly cache add   raw: 'lodash._basecopy@^3.0.0',
+516 silly cache add   scope: null,
+516 silly cache add   name: 'lodash._basecopy',
+516 silly cache add   rawSpec: '^3.0.0',
+516 silly cache add   spec: '>=3.0.0 <4.0.0',
+516 silly cache add   type: 'range' }
+517 silly addNamed lodash._basecopy@>=3.0.0 <4.0.0
+518 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._basecopy
+519 silly addNameRange { name: 'lodash._basecopy',
+519 silly addNameRange   range: '>=3.0.0 <4.0.0',
+519 silly addNameRange   hasData: false }
+520 silly mapToRegistry name lodash._basecopy
+521 silly mapToRegistry using default registry
+522 silly mapToRegistry registry https://registry.npmjs.org/
+523 silly mapToRegistry data Result {
+523 silly mapToRegistry   raw: 'lodash._basecopy',
+523 silly mapToRegistry   scope: null,
+523 silly mapToRegistry   name: 'lodash._basecopy',
+523 silly mapToRegistry   rawSpec: '',
+523 silly mapToRegistry   spec: 'latest',
+523 silly mapToRegistry   type: 'tag' }
+524 silly mapToRegistry uri https://registry.npmjs.org/lodash._basecopy
+525 verbose addNameRange registry:https://registry.npmjs.org/lodash._basecopy not in flight; fetching
+526 silly cache add parsed spec Result {
+526 silly cache add   raw: 'lodash.restparam@^3.0.0',
+526 silly cache add   scope: null,
+526 silly cache add   name: 'lodash.restparam',
+526 silly cache add   rawSpec: '^3.0.0',
+526 silly cache add   spec: '>=3.0.0 <4.0.0',
+526 silly cache add   type: 'range' }
+527 silly addNamed lodash.restparam@>=3.0.0 <4.0.0
+528 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash.restparam
+529 silly addNameRange { name: 'lodash.restparam',
+529 silly addNameRange   range: '>=3.0.0 <4.0.0',
+529 silly addNameRange   hasData: false }
+530 silly mapToRegistry name lodash.restparam
+531 silly mapToRegistry using default registry
+532 silly mapToRegistry registry https://registry.npmjs.org/
+533 silly mapToRegistry data Result {
+533 silly mapToRegistry   raw: 'lodash.restparam',
+533 silly mapToRegistry   scope: null,
+533 silly mapToRegistry   name: 'lodash.restparam',
+533 silly mapToRegistry   rawSpec: '',
+533 silly mapToRegistry   spec: 'latest',
+533 silly mapToRegistry   type: 'tag' }
+534 silly mapToRegistry uri https://registry.npmjs.org/lodash.restparam
+535 verbose addNameRange registry:https://registry.npmjs.org/lodash.restparam not in flight; fetching
+536 silly cache add args [ 'lodash._bindcallback@^3.0.0', null ]
+537 verbose cache add spec lodash._bindcallback@^3.0.0
+538 silly cache add args [ 'lodash._isiterateecall@^3.0.0', null ]
+539 verbose cache add spec lodash._isiterateecall@^3.0.0
+540 silly cache add parsed spec Result {
+540 silly cache add   raw: 'lodash._bindcallback@^3.0.0',
+540 silly cache add   scope: null,
+540 silly cache add   name: 'lodash._bindcallback',
+540 silly cache add   rawSpec: '^3.0.0',
+540 silly cache add   spec: '>=3.0.0 <4.0.0',
+540 silly cache add   type: 'range' }
+541 silly addNamed lodash._bindcallback@>=3.0.0 <4.0.0
+542 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._bindcallback
+543 silly addNameRange { name: 'lodash._bindcallback',
+543 silly addNameRange   range: '>=3.0.0 <4.0.0',
+543 silly addNameRange   hasData: false }
+544 silly mapToRegistry name lodash._bindcallback
+545 silly mapToRegistry using default registry
+546 silly mapToRegistry registry https://registry.npmjs.org/
+547 silly mapToRegistry data Result {
+547 silly mapToRegistry   raw: 'lodash._bindcallback',
+547 silly mapToRegistry   scope: null,
+547 silly mapToRegistry   name: 'lodash._bindcallback',
+547 silly mapToRegistry   rawSpec: '',
+547 silly mapToRegistry   spec: 'latest',
+547 silly mapToRegistry   type: 'tag' }
+548 silly mapToRegistry uri https://registry.npmjs.org/lodash._bindcallback
+549 verbose addNameRange registry:https://registry.npmjs.org/lodash._bindcallback not in flight; fetching
+550 silly cache add parsed spec Result {
+550 silly cache add   raw: 'lodash._isiterateecall@^3.0.0',
+550 silly cache add   scope: null,
+550 silly cache add   name: 'lodash._isiterateecall',
+550 silly cache add   rawSpec: '^3.0.0',
+550 silly cache add   spec: '>=3.0.0 <4.0.0',
+550 silly cache add   type: 'range' }
+551 silly addNamed lodash._isiterateecall@>=3.0.0 <4.0.0
+552 verbose addNamed ">=3.0.0 <4.0.0" is a valid semver range for lodash._isiterateecall
+553 silly addNameRange { name: 'lodash._isiterateecall',
+553 silly addNameRange   range: '>=3.0.0 <4.0.0',
+553 silly addNameRange   hasData: false }
+554 silly mapToRegistry name lodash._isiterateecall
+555 silly mapToRegistry using default registry
+556 silly mapToRegistry registry https://registry.npmjs.org/
+557 silly mapToRegistry data Result {
+557 silly mapToRegistry   raw: 'lodash._isiterateecall',
+557 silly mapToRegistry   scope: null,
+557 silly mapToRegistry   name: 'lodash._isiterateecall',
+557 silly mapToRegistry   rawSpec: '',
+557 silly mapToRegistry   spec: 'latest',
+557 silly mapToRegistry   type: 'tag' }
+558 silly mapToRegistry uri https://registry.npmjs.org/lodash._isiterateecall
+559 verbose addNameRange registry:https://registry.npmjs.org/lodash._isiterateecall not in flight; fetching
+560 verbose request uri https://registry.npmjs.org/lodash._getnative
+561 verbose request no auth needed
+562 info attempt registry request try #1 at 2:31:30 PM
+563 verbose etag "3SVNLKSR8B1QV2CE7Y4X2OE9J"
+564 http request GET https://registry.npmjs.org/lodash._getnative
+565 verbose request uri https://registry.npmjs.org/lodash.restparam
+566 verbose request no auth needed
+567 info attempt registry request try #1 at 2:31:30 PM
+568 verbose etag "3A4RYDT95T3M7XQ5OCA8XD3GX"
+569 http request GET https://registry.npmjs.org/lodash.restparam
+570 verbose request uri https://registry.npmjs.org/lodash._basecopy
+571 verbose request no auth needed
+572 info attempt registry request try #1 at 2:31:30 PM
+573 verbose etag "9W88239PMDC1S83XDN4XKIKI"
+574 http request GET https://registry.npmjs.org/lodash._basecopy
+575 verbose request uri https://registry.npmjs.org/lodash._bindcallback
+576 verbose request no auth needed
+577 info attempt registry request try #1 at 2:31:30 PM
+578 verbose etag "C4USMCQMNI83HLO3N8V2JNP9R"
+579 http request GET https://registry.npmjs.org/lodash._bindcallback
+580 verbose request uri https://registry.npmjs.org/lodash._isiterateecall
+581 verbose request no auth needed
+582 info attempt registry request try #1 at 2:31:30 PM
+583 verbose etag "5T12YB3BV3DYI9G8QK957PADV"
+584 http request GET https://registry.npmjs.org/lodash._isiterateecall
+585 http 304 https://registry.npmjs.org/lodash.isarray
+586 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+586 verbose headers   via: '1.1 varnish',
+586 verbose headers   'cache-control': 'max-age=300',
+586 verbose headers   etag: '"5EPK29Q8778P3VYQMPYEP7PXQ"',
+586 verbose headers   age: '49',
+586 verbose headers   connection: 'keep-alive',
+586 verbose headers   'x-served-by': 'cache-lax8624-LAX',
+586 verbose headers   'x-cache': 'HIT',
+586 verbose headers   'x-cache-hits': '2',
+586 verbose headers   'x-timer': 'S1474925490.243785,VS0,VE0',
+586 verbose headers   vary: 'Accept-Encoding' }
+587 silly get cb [ 304,
+587 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+587 silly get     via: '1.1 varnish',
+587 silly get     'cache-control': 'max-age=300',
+587 silly get     etag: '"5EPK29Q8778P3VYQMPYEP7PXQ"',
+587 silly get     age: '49',
+587 silly get     connection: 'keep-alive',
+587 silly get     'x-served-by': 'cache-lax8624-LAX',
+587 silly get     'x-cache': 'HIT',
+587 silly get     'x-cache-hits': '2',
+587 silly get     'x-timer': 'S1474925490.243785,VS0,VE0',
+587 silly get     vary: 'Accept-Encoding' } ]
+588 verbose etag https://registry.npmjs.org/lodash.isarray from cache
+589 verbose get saving lodash.isarray to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash.isarray/.cache.json
+590 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+591 http 304 https://registry.npmjs.org/lodash.isarguments
+592 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+592 verbose headers   via: '1.1 varnish',
+592 verbose headers   'cache-control': 'max-age=300',
+592 verbose headers   etag: '"CZ765Z44P746EEOXQN2QKZMED"',
+592 verbose headers   age: '58',
+592 verbose headers   connection: 'keep-alive',
+592 verbose headers   'x-served-by': 'cache-lax8629-LAX',
+592 verbose headers   'x-cache': 'HIT',
+592 verbose headers   'x-cache-hits': '3',
+592 verbose headers   'x-timer': 'S1474925490.246764,VS0,VE0',
+592 verbose headers   vary: 'Accept-Encoding' }
+593 silly get cb [ 304,
+593 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+593 silly get     via: '1.1 varnish',
+593 silly get     'cache-control': 'max-age=300',
+593 silly get     etag: '"CZ765Z44P746EEOXQN2QKZMED"',
+593 silly get     age: '58',
+593 silly get     connection: 'keep-alive',
+593 silly get     'x-served-by': 'cache-lax8629-LAX',
+593 silly get     'x-cache': 'HIT',
+593 silly get     'x-cache-hits': '3',
+593 silly get     'x-timer': 'S1474925490.246764,VS0,VE0',
+593 silly get     vary: 'Accept-Encoding' } ]
+594 verbose etag https://registry.npmjs.org/lodash.isarguments from cache
+595 verbose get saving lodash.isarguments to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash.isarguments/.cache.json
+596 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+597 http 304 https://registry.npmjs.org/lodash._getnative
+598 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+598 verbose headers   via: '1.1 varnish',
+598 verbose headers   'cache-control': 'max-age=300',
+598 verbose headers   etag: '"3SVNLKSR8B1QV2CE7Y4X2OE9J"',
+598 verbose headers   age: '56',
+598 verbose headers   connection: 'keep-alive',
+598 verbose headers   'x-served-by': 'cache-lax8623-LAX',
+598 verbose headers   'x-cache': 'HIT',
+598 verbose headers   'x-cache-hits': '1',
+598 verbose headers   'x-timer': 'S1474925490.260325,VS0,VE0',
+598 verbose headers   vary: 'Accept-Encoding' }
+599 silly get cb [ 304,
+599 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+599 silly get     via: '1.1 varnish',
+599 silly get     'cache-control': 'max-age=300',
+599 silly get     etag: '"3SVNLKSR8B1QV2CE7Y4X2OE9J"',
+599 silly get     age: '56',
+599 silly get     connection: 'keep-alive',
+599 silly get     'x-served-by': 'cache-lax8623-LAX',
+599 silly get     'x-cache': 'HIT',
+599 silly get     'x-cache-hits': '1',
+599 silly get     'x-timer': 'S1474925490.260325,VS0,VE0',
+599 silly get     vary: 'Accept-Encoding' } ]
+600 verbose etag https://registry.npmjs.org/lodash._getnative from cache
+601 verbose get saving lodash._getnative to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash._getnative/.cache.json
+602 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+603 silly addNameRange number 2 { name: 'lodash.isarray',
+603 silly addNameRange   range: '>=3.0.0 <4.0.0',
+603 silly addNameRange   hasData: true }
+604 silly addNameRange versions [ 'lodash.isarray',
+604 silly addNameRange   [ '2.0.0',
+604 silly addNameRange     '2.1.0',
+604 silly addNameRange     '2.2.0',
+604 silly addNameRange     '2.2.1',
+604 silly addNameRange     '2.3.0',
+604 silly addNameRange     '2.4.0',
+604 silly addNameRange     '2.4.1',
+604 silly addNameRange     '3.0.0',
+604 silly addNameRange     '3.0.1',
+604 silly addNameRange     '3.0.2',
+604 silly addNameRange     '3.0.3',
+604 silly addNameRange     '3.0.4',
+604 silly addNameRange     '4.0.0' ] ]
+605 silly addNamed lodash.isarray@3.0.4
+606 verbose addNamed "3.0.4" is a plain semver version for lodash.isarray
+607 silly addNameRange number 2 { name: 'lodash.isarguments',
+607 silly addNameRange   range: '>=3.0.0 <4.0.0',
+607 silly addNameRange   hasData: true }
+608 silly addNameRange versions [ 'lodash.isarguments',
+608 silly addNameRange   [ '2.0.0',
+608 silly addNameRange     '2.1.0',
+608 silly addNameRange     '2.2.0',
+608 silly addNameRange     '2.2.1',
+608 silly addNameRange     '2.3.0',
+608 silly addNameRange     '2.4.0',
+608 silly addNameRange     '2.4.1',
+608 silly addNameRange     '3.0.0',
+608 silly addNameRange     '3.0.1',
+608 silly addNameRange     '3.0.2',
+608 silly addNameRange     '3.0.3',
+608 silly addNameRange     '3.0.4',
+608 silly addNameRange     '3.0.5',
+608 silly addNameRange     '3.0.6',
+608 silly addNameRange     '3.0.7',
+608 silly addNameRange     '3.0.8',
+608 silly addNameRange     '3.0.9',
+608 silly addNameRange     '3.1.0' ] ]
+609 silly addNamed lodash.isarguments@3.1.0
+610 verbose addNamed "3.1.0" is a plain semver version for lodash.isarguments
+611 silly addNameRange number 2 { name: 'lodash._getnative',
+611 silly addNameRange   range: '>=3.0.0 <4.0.0',
+611 silly addNameRange   hasData: true }
+612 silly addNameRange versions [ 'lodash._getnative', [ '3.9.0', '3.9.1' ] ]
+613 silly addNamed lodash._getnative@3.9.1
+614 verbose addNamed "3.9.1" is a plain semver version for lodash._getnative
+615 silly cache afterAdd lodash.isarray@3.0.4
+616 verbose afterAdd /home/tclaiby_babes/.npm/lodash.isarray/3.0.4/package/package.json not in flight; writing
+617 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+618 silly cache afterAdd lodash.isarguments@3.1.0
+619 verbose afterAdd /home/tclaiby_babes/.npm/lodash.isarguments/3.1.0/package/package.json not in flight; writing
+620 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+621 silly cache afterAdd lodash._getnative@3.9.1
+622 verbose afterAdd /home/tclaiby_babes/.npm/lodash._getnative/3.9.1/package/package.json not in flight; writing
+623 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+624 verbose afterAdd /home/tclaiby_babes/.npm/lodash.isarray/3.0.4/package/package.json written
+625 verbose afterAdd /home/tclaiby_babes/.npm/lodash.isarguments/3.1.0/package/package.json written
+626 verbose afterAdd /home/tclaiby_babes/.npm/lodash._getnative/3.9.1/package/package.json written
+627 silly install resolved [ { name: 'lodash.isarray',
+627 silly install resolved     version: '3.0.4',
+627 silly install resolved     description: 'The modern build of lodash’s `_.isArray` as a module.',
+627 silly install resolved     homepage: 'https://lodash.com/',
+627 silly install resolved     icon: 'https://lodash.com/icon.svg',
+627 silly install resolved     license: 'MIT',
+627 silly install resolved     keywords: [ 'lodash', 'lodash-modularized', 'stdlib', 'util' ],
+627 silly install resolved     author:
+627 silly install resolved      { name: 'John-David Dalton',
+627 silly install resolved        email: 'john.david.dalton@gmail.com',
+627 silly install resolved        url: 'http://allyoucanleet.com/' },
+627 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+627 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+627 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+627 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+627 silly install resolved     _id: 'lodash.isarray@3.0.4',
+627 silly install resolved     _shasum: '79e4eb88c36a8122af86f844aa9bcd851b5fbb55',
+627 silly install resolved     _from: 'lodash.isarray@>=3.0.0 <4.0.0',
+627 silly install resolved     _npmVersion: '2.12.0',
+627 silly install resolved     _nodeVersion: '0.12.5',
+627 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+627 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+627 silly install resolved     dist:
+627 silly install resolved      { shasum: '79e4eb88c36a8122af86f844aa9bcd851b5fbb55',
+627 silly install resolved        tarball: 'https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz' },
+627 silly install resolved     directories: {},
+627 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.isarray/-/lodash.isarray-3.0.4.tgz',
+627 silly install resolved     readme: 'ERROR: No README data found!' },
+627 silly install resolved   { name: 'lodash.isarguments',
+627 silly install resolved     version: '3.1.0',
+627 silly install resolved     description: 'The lodash method `_.isArguments` exported as a module.',
+627 silly install resolved     homepage: 'https://lodash.com/',
+627 silly install resolved     icon: 'https://lodash.com/icon.svg',
+627 silly install resolved     license: 'MIT',
+627 silly install resolved     keywords: [ 'lodash-modularized', 'isarguments' ],
+627 silly install resolved     author:
+627 silly install resolved      { name: 'John-David Dalton',
+627 silly install resolved        email: 'john.david.dalton@gmail.com',
+627 silly install resolved        url: 'http://allyoucanleet.com/' },
+627 silly install resolved     contributors: [ [Object], [Object], [Object] ],
+627 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+627 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+627 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+627 silly install resolved     _id: 'lodash.isarguments@3.1.0',
+627 silly install resolved     _shasum: '2f573d85c6a24289ff00663b491c1d338ff3458a',
+627 silly install resolved     _from: 'lodash.isarguments@>=3.0.0 <4.0.0',
+627 silly install resolved     _npmVersion: '2.15.10',
+627 silly install resolved     _nodeVersion: '4.4.7',
+627 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+627 silly install resolved     dist:
+627 silly install resolved      { shasum: '2f573d85c6a24289ff00663b491c1d338ff3458a',
+627 silly install resolved        tarball: 'https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz' },
+627 silly install resolved     maintainers: [ [Object], [Object], [Object] ],
+627 silly install resolved     _npmOperationalInternal:
+627 silly install resolved      { host: 'packages-12-west.internal.npmjs.com',
+627 silly install resolved        tmp: 'tmp/lodash.isarguments-3.1.0.tgz_1471110006733_0.7392017105594277' },
+627 silly install resolved     directories: {},
+627 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.isarguments/-/lodash.isarguments-3.1.0.tgz',
+627 silly install resolved     readme: 'ERROR: No README data found!' },
+627 silly install resolved   { name: 'lodash._getnative',
+627 silly install resolved     version: '3.9.1',
+627 silly install resolved     description: 'The modern build of lodash’s internal `getNative` as a module.',
+627 silly install resolved     homepage: 'https://lodash.com/',
+627 silly install resolved     icon: 'https://lodash.com/icon.svg',
+627 silly install resolved     license: 'MIT',
+627 silly install resolved     author:
+627 silly install resolved      { name: 'John-David Dalton',
+627 silly install resolved        email: 'john.david.dalton@gmail.com',
+627 silly install resolved        url: 'http://allyoucanleet.com/' },
+627 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+627 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+627 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+627 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+627 silly install resolved     _id: 'lodash._getnative@3.9.1',
+627 silly install resolved     _shasum: '570bc7dede46d61cdcde687d65d3eecbaa3aaff5',
+627 silly install resolved     _from: 'lodash._getnative@>=3.0.0 <4.0.0',
+627 silly install resolved     _npmVersion: '2.12.0',
+627 silly install resolved     _nodeVersion: '0.12.5',
+627 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+627 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object] ],
+627 silly install resolved     dist:
+627 silly install resolved      { shasum: '570bc7dede46d61cdcde687d65d3eecbaa3aaff5',
+627 silly install resolved        tarball: 'https://registry.npmjs.org/lodash._getnative/-/lodash._getnative-3.9.1.tgz' },
+627 silly install resolved     directories: {},
+627 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._getnative/-/lodash._getnative-3.9.1.tgz',
+627 silly install resolved     readme: 'ERROR: No README data found!' } ]
+628 info install lodash.isarray@3.0.4 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+629 info install lodash.isarguments@3.1.0 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+630 info install lodash._getnative@3.9.1 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+631 info installOne lodash.isarray@3.0.4
+632 verbose installOne of lodash.isarray to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys not in flight; installing
+633 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+634 info installOne lodash.isarguments@3.1.0
+635 verbose installOne of lodash.isarguments to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys not in flight; installing
+636 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+637 info installOne lodash._getnative@3.9.1
+638 verbose installOne of lodash._getnative to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys not in flight; installing
+639 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+640 http 304 https://registry.npmjs.org/lodash._isiterateecall
+641 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+641 verbose headers   via: '1.1 varnish',
+641 verbose headers   'cache-control': 'max-age=300',
+641 verbose headers   etag: '"5T12YB3BV3DYI9G8QK957PADV"',
+641 verbose headers   age: '6',
+641 verbose headers   connection: 'keep-alive',
+641 verbose headers   'x-served-by': 'cache-lax8624-LAX',
+641 verbose headers   'x-cache': 'HIT',
+641 verbose headers   'x-cache-hits': '1',
+641 verbose headers   'x-timer': 'S1474925490.320257,VS0,VE0',
+641 verbose headers   vary: 'Accept-Encoding' }
+642 silly get cb [ 304,
+642 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+642 silly get     via: '1.1 varnish',
+642 silly get     'cache-control': 'max-age=300',
+642 silly get     etag: '"5T12YB3BV3DYI9G8QK957PADV"',
+642 silly get     age: '6',
+642 silly get     connection: 'keep-alive',
+642 silly get     'x-served-by': 'cache-lax8624-LAX',
+642 silly get     'x-cache': 'HIT',
+642 silly get     'x-cache-hits': '1',
+642 silly get     'x-timer': 'S1474925490.320257,VS0,VE0',
+642 silly get     vary: 'Accept-Encoding' } ]
+643 verbose etag https://registry.npmjs.org/lodash._isiterateecall from cache
+644 verbose get saving lodash._isiterateecall to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash._isiterateecall/.cache.json
+645 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+646 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-isarray-b0a42e2230a950f3.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+647 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-isarguments-f93d0572c1a13962.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+648 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-getnative-f5f948e9ca1851d7.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+649 silly install write writing lodash.isarray 3.0.4 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+650 silly install write writing lodash.isarguments 3.1.0 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+651 silly install write writing lodash._getnative 3.9.1 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+652 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+653 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+654 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+655 silly addNameRange number 2 { name: 'lodash._isiterateecall',
+655 silly addNameRange   range: '>=3.0.0 <4.0.0',
+655 silly addNameRange   hasData: true }
+656 silly addNameRange versions [ 'lodash._isiterateecall',
+656 silly addNameRange   [ '3.0.0',
+656 silly addNameRange     '3.0.1',
+656 silly addNameRange     '3.0.2',
+656 silly addNameRange     '3.0.3',
+656 silly addNameRange     '3.0.4',
+656 silly addNameRange     '3.0.5',
+656 silly addNameRange     '3.0.6',
+656 silly addNameRange     '3.0.7',
+656 silly addNameRange     '3.0.8',
+656 silly addNameRange     '3.0.9' ] ]
+657 silly addNamed lodash._isiterateecall@3.0.9
+658 verbose addNamed "3.0.9" is a plain semver version for lodash._isiterateecall
+659 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray is being purged from base /home/tclaiby_babes/Desktop/Trippr
+660 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+661 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments is being purged from base /home/tclaiby_babes/Desktop/Trippr
+662 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+663 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative is being purged from base /home/tclaiby_babes/Desktop/Trippr
+664 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+665 verbose tar unpack /home/tclaiby_babes/.npm/lodash.isarray/3.0.4/package.tgz
+666 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+667 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray is being purged
+668 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+669 verbose tar unpack /home/tclaiby_babes/.npm/lodash.isarguments/3.1.0/package.tgz
+670 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+671 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments is being purged
+672 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+673 verbose tar unpack /home/tclaiby_babes/.npm/lodash._getnative/3.9.1/package.tgz
+674 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+675 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative is being purged
+676 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+677 silly gunzTarPerm modes [ '755', '644' ]
+678 silly gunzTarPerm modes [ '755', '644' ]
+679 silly gunzTarPerm modes [ '755', '644' ]
+680 silly cache afterAdd lodash._isiterateecall@3.0.9
+681 verbose afterAdd /home/tclaiby_babes/.npm/lodash._isiterateecall/3.0.9/package/package.json not in flight; writing
+682 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+683 silly gunzTarPerm extractEntry package.json
+684 silly gunzTarPerm extractEntry package.json
+685 silly gunzTarPerm extractEntry package.json
+686 verbose afterAdd /home/tclaiby_babes/.npm/lodash._isiterateecall/3.0.9/package/package.json written
+687 silly gunzTarPerm extractEntry README.md
+688 silly gunzTarPerm extractEntry LICENSE
+689 silly gunzTarPerm extractEntry README.md
+690 silly gunzTarPerm extractEntry LICENSE
+691 silly gunzTarPerm extractEntry README.md
+692 silly gunzTarPerm extractEntry LICENSE
+693 silly gunzTarPerm extractEntry index.js
+694 silly gunzTarPerm extractEntry index.js
+695 silly gunzTarPerm extractEntry index.js
+696 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments/package.json
+697 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative/package.json
+698 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray/package.json
+699 info preinstall lodash.isarguments@3.1.0
+700 info preinstall lodash.isarray@3.0.4
+701 info preinstall lodash._getnative@3.9.1
+702 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments/package.json
+703 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray/package.json
+704 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative/package.json
+705 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray/package.json
+706 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments/package.json
+707 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative/package.json
+708 silly install resolved []
+709 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+710 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+711 silly install resolved []
+712 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+713 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+714 silly install resolved []
+715 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+716 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+717 info linkStuff lodash.isarguments@3.1.0
+718 silly linkStuff lodash.isarguments@3.1.0 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules as its parent node_modules
+719 info linkStuff lodash.isarray@3.0.4
+720 silly linkStuff lodash.isarray@3.0.4 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules as its parent node_modules
+721 info linkStuff lodash._getnative@3.9.1
+722 silly linkStuff lodash._getnative@3.9.1 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules as its parent node_modules
+723 verbose linkBins lodash.isarguments@3.1.0
+724 verbose linkMans lodash.isarguments@3.1.0
+725 verbose rebuildBundles lodash.isarguments@3.1.0
+726 verbose linkBins lodash._getnative@3.9.1
+727 verbose linkMans lodash._getnative@3.9.1
+728 verbose rebuildBundles lodash._getnative@3.9.1
+729 verbose linkBins lodash.isarray@3.0.4
+730 verbose linkMans lodash.isarray@3.0.4
+731 verbose rebuildBundles lodash.isarray@3.0.4
+732 info install lodash.isarguments@3.1.0
+733 info install lodash._getnative@3.9.1
+734 info install lodash.isarray@3.0.4
+735 http 304 https://registry.npmjs.org/lodash.restparam
+736 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+736 verbose headers   via: '1.1 varnish',
+736 verbose headers   'cache-control': 'max-age=300',
+736 verbose headers   etag: '"3A4RYDT95T3M7XQ5OCA8XD3GX"',
+736 verbose headers   age: '213',
+736 verbose headers   connection: 'keep-alive',
+736 verbose headers   'x-served-by': 'cache-lax8629-LAX',
+736 verbose headers   'x-cache': 'HIT',
+736 verbose headers   'x-cache-hits': '3',
+736 verbose headers   'x-timer': 'S1474925490.434033,VS0,VE0',
+736 verbose headers   vary: 'Accept-Encoding' }
+737 silly get cb [ 304,
+737 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+737 silly get     via: '1.1 varnish',
+737 silly get     'cache-control': 'max-age=300',
+737 silly get     etag: '"3A4RYDT95T3M7XQ5OCA8XD3GX"',
+737 silly get     age: '213',
+737 silly get     connection: 'keep-alive',
+737 silly get     'x-served-by': 'cache-lax8629-LAX',
+737 silly get     'x-cache': 'HIT',
+737 silly get     'x-cache-hits': '3',
+737 silly get     'x-timer': 'S1474925490.434033,VS0,VE0',
+737 silly get     vary: 'Accept-Encoding' } ]
+738 verbose etag https://registry.npmjs.org/lodash.restparam from cache
+739 verbose get saving lodash.restparam to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash.restparam/.cache.json
+740 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+741 info postinstall lodash.isarguments@3.1.0
+742 info postinstall lodash._getnative@3.9.1
+743 info postinstall lodash.isarray@3.0.4
+744 http 304 https://registry.npmjs.org/lodash._basecopy
+745 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+745 verbose headers   via: '1.1 varnish',
+745 verbose headers   'cache-control': 'max-age=300',
+745 verbose headers   etag: '"9W88239PMDC1S83XDN4XKIKI"',
+745 verbose headers   age: '184',
+745 verbose headers   connection: 'keep-alive',
+745 verbose headers   'x-served-by': 'cache-lax8642-LAX',
+745 verbose headers   'x-cache': 'HIT',
+745 verbose headers   'x-cache-hits': '1',
+745 verbose headers   'x-timer': 'S1474925490.456554,VS0,VE0',
+745 verbose headers   vary: 'Accept-Encoding' }
+746 silly get cb [ 304,
+746 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+746 silly get     via: '1.1 varnish',
+746 silly get     'cache-control': 'max-age=300',
+746 silly get     etag: '"9W88239PMDC1S83XDN4XKIKI"',
+746 silly get     age: '184',
+746 silly get     connection: 'keep-alive',
+746 silly get     'x-served-by': 'cache-lax8642-LAX',
+746 silly get     'x-cache': 'HIT',
+746 silly get     'x-cache-hits': '1',
+746 silly get     'x-timer': 'S1474925490.456554,VS0,VE0',
+746 silly get     vary: 'Accept-Encoding' } ]
+747 verbose etag https://registry.npmjs.org/lodash._basecopy from cache
+748 verbose get saving lodash._basecopy to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash._basecopy/.cache.json
+749 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+750 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-isarguments-f93d0572c1a13962.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarguments
+751 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-getnative-f5f948e9ca1851d7.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash._getnative
+752 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-isarray-b0a42e2230a950f3.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys/node_modules/lodash.isarray
+753 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+754 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+755 http 304 https://registry.npmjs.org/lodash._bindcallback
+756 verbose headers { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+756 verbose headers   via: '1.1 varnish',
+756 verbose headers   'cache-control': 'max-age=300',
+756 verbose headers   etag: '"C4USMCQMNI83HLO3N8V2JNP9R"',
+756 verbose headers   age: '256',
+756 verbose headers   connection: 'keep-alive',
+756 verbose headers   'x-served-by': 'cache-lax8643-LAX',
+756 verbose headers   'x-cache': 'HIT',
+756 verbose headers   'x-cache-hits': '1',
+756 verbose headers   'x-timer': 'S1474925490.460414,VS0,VE0',
+756 verbose headers   vary: 'Accept-Encoding' }
+757 silly get cb [ 304,
+757 silly get   { date: 'Mon, 26 Sep 2016 21:31:30 GMT',
+757 silly get     via: '1.1 varnish',
+757 silly get     'cache-control': 'max-age=300',
+757 silly get     etag: '"C4USMCQMNI83HLO3N8V2JNP9R"',
+757 silly get     age: '256',
+757 silly get     connection: 'keep-alive',
+757 silly get     'x-served-by': 'cache-lax8643-LAX',
+757 silly get     'x-cache': 'HIT',
+757 silly get     'x-cache-hits': '1',
+757 silly get     'x-timer': 'S1474925490.460414,VS0,VE0',
+757 silly get     vary: 'Accept-Encoding' } ]
+758 verbose etag https://registry.npmjs.org/lodash._bindcallback from cache
+759 verbose get saving lodash._bindcallback to /home/tclaiby_babes/.npm/registry.npmjs.org/lodash._bindcallback/.cache.json
+760 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+761 silly addNameRange number 2 { name: 'lodash.restparam',
+761 silly addNameRange   range: '>=3.0.0 <4.0.0',
+761 silly addNameRange   hasData: true }
+762 silly addNameRange versions [ 'lodash.restparam', [ '3.6.0', '3.6.1' ] ]
+763 silly addNamed lodash.restparam@3.6.1
+764 verbose addNamed "3.6.1" is a plain semver version for lodash.restparam
+765 info linkStuff lodash.keys@3.1.2
+766 silly linkStuff lodash.keys@3.1.2 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules as its parent node_modules
+767 silly addNameRange number 2 { name: 'lodash._basecopy',
+767 silly addNameRange   range: '>=3.0.0 <4.0.0',
+767 silly addNameRange   hasData: true }
+768 silly addNameRange versions [ 'lodash._basecopy', [ '3.0.0', '3.0.1' ] ]
+769 silly addNamed lodash._basecopy@3.0.1
+770 verbose addNamed "3.0.1" is a plain semver version for lodash._basecopy
+771 silly cache afterAdd lodash.restparam@3.6.1
+772 verbose afterAdd /home/tclaiby_babes/.npm/lodash.restparam/3.6.1/package/package.json not in flight; writing
+773 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+774 silly addNameRange number 2 { name: 'lodash._bindcallback',
+774 silly addNameRange   range: '>=3.0.0 <4.0.0',
+774 silly addNameRange   hasData: true }
+775 silly addNameRange versions [ 'lodash._bindcallback', [ '3.0.0', '3.0.1' ] ]
+776 silly addNamed lodash._bindcallback@3.0.1
+777 verbose addNamed "3.0.1" is a plain semver version for lodash._bindcallback
+778 verbose afterAdd /home/tclaiby_babes/.npm/lodash.restparam/3.6.1/package/package.json written
+779 silly cache afterAdd lodash._basecopy@3.0.1
+780 verbose afterAdd /home/tclaiby_babes/.npm/lodash._basecopy/3.0.1/package/package.json not in flight; writing
+781 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+782 silly cache afterAdd lodash._bindcallback@3.0.1
+783 verbose afterAdd /home/tclaiby_babes/.npm/lodash._bindcallback/3.0.1/package/package.json not in flight; writing
+784 verbose correctMkdir /home/tclaiby_babes/.npm correctMkdir not in flight; initializing
+785 verbose linkBins lodash.keys@3.1.2
+786 verbose linkMans lodash.keys@3.1.2
+787 verbose rebuildBundles lodash.keys@3.1.2
+788 verbose rebuildBundles [ 'lodash._getnative', 'lodash.isarguments', 'lodash.isarray' ]
+789 info install lodash.keys@3.1.2
+790 info postinstall lodash.keys@3.1.2
+791 verbose afterAdd /home/tclaiby_babes/.npm/lodash._bindcallback/3.0.1/package/package.json written
+792 silly install resolved [ { name: 'lodash._isiterateecall',
+792 silly install resolved     version: '3.0.9',
+792 silly install resolved     description: 'The modern build of lodash’s internal `isIterateeCall` as a module.',
+792 silly install resolved     homepage: 'https://lodash.com/',
+792 silly install resolved     icon: 'https://lodash.com/icon.svg',
+792 silly install resolved     license: 'MIT',
+792 silly install resolved     author:
+792 silly install resolved      { name: 'John-David Dalton',
+792 silly install resolved        email: 'john.david.dalton@gmail.com',
+792 silly install resolved        url: 'http://allyoucanleet.com/' },
+792 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+792 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+792 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+792 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+792 silly install resolved     _id: 'lodash._isiterateecall@3.0.9',
+792 silly install resolved     _shasum: '5203ad7ba425fae842460e696db9cf3e6aac057c',
+792 silly install resolved     _from: 'lodash._isiterateecall@>=3.0.0 <4.0.0',
+792 silly install resolved     _npmVersion: '2.10.1',
+792 silly install resolved     _nodeVersion: '2.0.2',
+792 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+792 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+792 silly install resolved     dist:
+792 silly install resolved      { shasum: '5203ad7ba425fae842460e696db9cf3e6aac057c',
+792 silly install resolved        tarball: 'https://registry.npmjs.org/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz' },
+792 silly install resolved     directories: {},
+792 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._isiterateecall/-/lodash._isiterateecall-3.0.9.tgz',
+792 silly install resolved     readme: 'ERROR: No README data found!' },
+792 silly install resolved   { name: 'lodash.restparam',
+792 silly install resolved     version: '3.6.1',
+792 silly install resolved     description: 'The modern build of lodash’s `_.restParam` as a module.',
+792 silly install resolved     homepage: 'https://lodash.com/',
+792 silly install resolved     icon: 'https://lodash.com/icon.svg',
+792 silly install resolved     license: 'MIT',
+792 silly install resolved     keywords: [ 'lodash', 'lodash-modularized', 'stdlib', 'util' ],
+792 silly install resolved     author:
+792 silly install resolved      { name: 'John-David Dalton',
+792 silly install resolved        email: 'john.david.dalton@gmail.com',
+792 silly install resolved        url: 'http://allyoucanleet.com/' },
+792 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+792 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+792 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+792 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+792 silly install resolved     _id: 'lodash.restparam@3.6.1',
+792 silly install resolved     _shasum: '936a4e309ef330a7645ed4145986c85ae5b20805',
+792 silly install resolved     _from: 'lodash.restparam@>=3.0.0 <4.0.0',
+792 silly install resolved     _npmVersion: '2.7.6',
+792 silly install resolved     _nodeVersion: '0.12.2',
+792 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+792 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+792 silly install resolved     dist:
+792 silly install resolved      { shasum: '936a4e309ef330a7645ed4145986c85ae5b20805',
+792 silly install resolved        tarball: 'https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz' },
+792 silly install resolved     directories: {},
+792 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash.restparam/-/lodash.restparam-3.6.1.tgz',
+792 silly install resolved     readme: 'ERROR: No README data found!' },
+792 silly install resolved   { name: 'lodash._bindcallback',
+792 silly install resolved     version: '3.0.1',
+792 silly install resolved     description: 'The modern build of lodash’s internal `bindCallback` as a module.',
+792 silly install resolved     homepage: 'https://lodash.com/',
+792 silly install resolved     icon: 'https://lodash.com/icon.svg',
+792 silly install resolved     license: 'MIT',
+792 silly install resolved     author:
+792 silly install resolved      { name: 'John-David Dalton',
+792 silly install resolved        email: 'john.david.dalton@gmail.com',
+792 silly install resolved        url: 'http://allyoucanleet.com/' },
+792 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+792 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+792 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+792 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+792 silly install resolved     _id: 'lodash._bindcallback@3.0.1',
+792 silly install resolved     _shasum: 'e531c27644cf8b57a99e17ed95b35c748789392e',
+792 silly install resolved     _from: 'lodash._bindcallback@>=3.0.0 <4.0.0',
+792 silly install resolved     _npmVersion: '2.7.6',
+792 silly install resolved     _nodeVersion: '0.12.2',
+792 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+792 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+792 silly install resolved     dist:
+792 silly install resolved      { shasum: 'e531c27644cf8b57a99e17ed95b35c748789392e',
+792 silly install resolved        tarball: 'https://registry.npmjs.org/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz' },
+792 silly install resolved     directories: {},
+792 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._bindcallback/-/lodash._bindcallback-3.0.1.tgz',
+792 silly install resolved     readme: 'ERROR: No README data found!' } ]
+793 info install lodash._isiterateecall@3.0.9 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+794 info install lodash.restparam@3.6.1 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+795 info install lodash._bindcallback@3.0.1 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+796 info installOne lodash._isiterateecall@3.0.9
+797 verbose installOne of lodash._isiterateecall to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner not in flight; installing
+798 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+799 info installOne lodash.restparam@3.6.1
+800 verbose installOne of lodash.restparam to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner not in flight; installing
+801 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+802 info installOne lodash._bindcallback@3.0.1
+803 verbose installOne of lodash._bindcallback to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner not in flight; installing
+804 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+805 verbose afterAdd /home/tclaiby_babes/.npm/lodash._basecopy/3.0.1/package/package.json written
+806 silly install resolved [ { name: 'lodash._basecopy',
+806 silly install resolved     version: '3.0.1',
+806 silly install resolved     description: 'The modern build of lodash’s internal `baseCopy` as a module.',
+806 silly install resolved     homepage: 'https://lodash.com/',
+806 silly install resolved     icon: 'https://lodash.com/icon.svg',
+806 silly install resolved     license: 'MIT',
+806 silly install resolved     author:
+806 silly install resolved      { name: 'John-David Dalton',
+806 silly install resolved        email: 'john.david.dalton@gmail.com',
+806 silly install resolved        url: 'http://allyoucanleet.com/' },
+806 silly install resolved     contributors: [ [Object], [Object], [Object], [Object], [Object] ],
+806 silly install resolved     repository: { type: 'git', url: 'git+https://github.com/lodash/lodash.git' },
+806 silly install resolved     scripts: { test: 'echo "See https://travis-ci.org/lodash/lodash-cli for testing details."' },
+806 silly install resolved     bugs: { url: 'https://github.com/lodash/lodash/issues' },
+806 silly install resolved     _id: 'lodash._basecopy@3.0.1',
+806 silly install resolved     _shasum: '8da0e6a876cf344c0ad8a54882111dd3c5c7ca36',
+806 silly install resolved     _from: 'lodash._basecopy@>=3.0.0 <4.0.0',
+806 silly install resolved     _npmVersion: '2.7.6',
+806 silly install resolved     _nodeVersion: '0.12.2',
+806 silly install resolved     _npmUser: { name: 'jdalton', email: 'john.david.dalton@gmail.com' },
+806 silly install resolved     maintainers: [ [Object], [Object], [Object], [Object], [Object] ],
+806 silly install resolved     dist:
+806 silly install resolved      { shasum: '8da0e6a876cf344c0ad8a54882111dd3c5c7ca36',
+806 silly install resolved        tarball: 'https://registry.npmjs.org/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz' },
+806 silly install resolved     directories: {},
+806 silly install resolved     _resolved: 'https://registry.npmjs.org/lodash._basecopy/-/lodash._basecopy-3.0.1.tgz',
+806 silly install resolved     readme: 'ERROR: No README data found!' } ]
+807 info install lodash._basecopy@3.0.1 into /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+808 info installOne lodash._basecopy@3.0.1
+809 verbose installOne of lodash._basecopy to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign not in flight; installing
+810 verbose correctMkdir /home/tclaiby_babes/.npm/_locks correctMkdir not in flight; initializing
+811 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-isiterateecall-2db7079152e619ab.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+812 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-restparam-7ecb922c403213af.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+813 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-keys-bc77b82b2731e77d.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash.keys
+814 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-bindcallback-bd0be9079e15ce98.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+815 verbose lock using /home/tclaiby_babes/.npm/_locks/lodash-basecopy-8cc4b588fd11f74b.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+816 silly install write writing lodash._isiterateecall 3.0.9 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+817 silly install write writing lodash.restparam 3.6.1 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+818 silly install write writing lodash._bindcallback 3.0.1 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+819 silly install write writing lodash._basecopy 3.0.1 to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+820 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+821 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+822 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+823 verbose unbuild node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+824 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam is being purged from base /home/tclaiby_babes/Desktop/Trippr
+825 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+826 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall is being purged from base /home/tclaiby_babes/Desktop/Trippr
+827 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+828 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy is being purged from base /home/tclaiby_babes/Desktop/Trippr
+829 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+830 verbose tar unpack /home/tclaiby_babes/.npm/lodash.restparam/3.6.1/package.tgz
+831 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+832 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam is being purged
+833 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+834 verbose tar unpack /home/tclaiby_babes/.npm/lodash._isiterateecall/3.0.9/package.tgz
+835 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+836 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall is being purged
+837 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+838 verbose tar unpack /home/tclaiby_babes/.npm/lodash._basecopy/3.0.1/package.tgz
+839 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+840 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy is being purged
+841 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+842 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback is being purged from base /home/tclaiby_babes/Desktop/Trippr
+843 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+844 silly gunzTarPerm modes [ '755', '644' ]
+845 silly gunzTarPerm modes [ '755', '644' ]
+846 silly gunzTarPerm modes [ '755', '644' ]
+847 verbose tar unpack /home/tclaiby_babes/.npm/lodash._bindcallback/3.0.1/package.tgz
+848 verbose tar unpacking to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+849 silly gentlyRm /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback is being purged
+850 verbose gentlyRm don't care about contents; nuking /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+851 silly gunzTarPerm modes [ '755', '644' ]
+852 silly gunzTarPerm extractEntry package.json
+853 silly gunzTarPerm extractEntry package.json
+854 silly gunzTarPerm extractEntry package.json
+855 silly gunzTarPerm extractEntry package.json
+856 silly gunzTarPerm extractEntry README.md
+857 silly gunzTarPerm extractEntry index.js
+858 silly gunzTarPerm extractEntry README.md
+859 silly gunzTarPerm extractEntry index.js
+860 silly gunzTarPerm extractEntry README.md
+861 silly gunzTarPerm extractEntry index.js
+862 silly gunzTarPerm extractEntry README.md
+863 silly gunzTarPerm extractEntry index.js
+864 silly gunzTarPerm extractEntry LICENSE.txt
+865 silly gunzTarPerm extractEntry LICENSE.txt
+866 silly gunzTarPerm extractEntry LICENSE.txt
+867 silly gunzTarPerm extractEntry LICENSE.txt
+868 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall/package.json
+869 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam/package.json
+870 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy/package.json
+871 verbose write writing to /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback/package.json
+872 info preinstall lodash.restparam@3.6.1
+873 info preinstall lodash._basecopy@3.0.1
+874 info preinstall lodash._isiterateecall@3.0.9
+875 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam/package.json
+876 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy/package.json
+877 info preinstall lodash._bindcallback@3.0.1
+878 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall/package.json
+879 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback/package.json
+880 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam/package.json
+881 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy/package.json
+882 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall/package.json
+883 verbose readDependencies loading dependencies from /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback/package.json
+884 silly install resolved []
+885 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+886 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+887 silly install resolved []
+888 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+889 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+890 silly install resolved []
+891 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+892 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+893 silly install resolved []
+894 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+895 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+896 info linkStuff lodash.restparam@3.6.1
+897 silly linkStuff lodash.restparam@3.6.1 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules as its parent node_modules
+898 info linkStuff lodash._basecopy@3.0.1
+899 silly linkStuff lodash._basecopy@3.0.1 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules as its parent node_modules
+900 info linkStuff lodash._isiterateecall@3.0.9
+901 silly linkStuff lodash._isiterateecall@3.0.9 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules as its parent node_modules
+902 info linkStuff lodash._bindcallback@3.0.1
+903 silly linkStuff lodash._bindcallback@3.0.1 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules as its parent node_modules
+904 verbose linkBins lodash.restparam@3.6.1
+905 verbose linkMans lodash.restparam@3.6.1
+906 verbose rebuildBundles lodash.restparam@3.6.1
+907 verbose linkBins lodash._basecopy@3.0.1
+908 verbose linkMans lodash._basecopy@3.0.1
+909 verbose rebuildBundles lodash._basecopy@3.0.1
+910 info install lodash.restparam@3.6.1
+911 info install lodash._basecopy@3.0.1
+912 verbose linkBins lodash._isiterateecall@3.0.9
+913 verbose linkMans lodash._isiterateecall@3.0.9
+914 verbose rebuildBundles lodash._isiterateecall@3.0.9
+915 info install lodash._isiterateecall@3.0.9
+916 verbose linkBins lodash._bindcallback@3.0.1
+917 verbose linkMans lodash._bindcallback@3.0.1
+918 verbose rebuildBundles lodash._bindcallback@3.0.1
+919 info postinstall lodash.restparam@3.6.1
+920 info postinstall lodash._basecopy@3.0.1
+921 info install lodash._bindcallback@3.0.1
+922 info postinstall lodash._isiterateecall@3.0.9
+923 info postinstall lodash._bindcallback@3.0.1
+924 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-restparam-7ecb922c403213af.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash.restparam
+925 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-basecopy-8cc4b588fd11f74b.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign/node_modules/lodash._basecopy
+926 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+927 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+928 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-isiterateecall-2db7079152e619ab.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._isiterateecall
+929 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-bindcallback-bd0be9079e15ce98.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner/node_modules/lodash._bindcallback
+930 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+931 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+932 info linkStuff lodash._baseassign@3.2.0
+933 silly linkStuff lodash._baseassign@3.2.0 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules as its parent node_modules
+934 info linkStuff lodash._createassigner@3.1.1
+935 silly linkStuff lodash._createassigner@3.1.1 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules as its parent node_modules
+936 verbose linkBins lodash._baseassign@3.2.0
+937 verbose linkMans lodash._baseassign@3.2.0
+938 verbose rebuildBundles lodash._baseassign@3.2.0
+939 verbose rebuildBundles [ 'lodash._basecopy' ]
+940 info install lodash._baseassign@3.2.0
+941 verbose linkBins lodash._createassigner@3.1.1
+942 verbose linkMans lodash._createassigner@3.1.1
+943 verbose rebuildBundles lodash._createassigner@3.1.1
+944 verbose rebuildBundles [ 'lodash._bindcallback',
+944 verbose rebuildBundles   'lodash._isiterateecall',
+944 verbose rebuildBundles   'lodash.restparam' ]
+945 info install lodash._createassigner@3.1.1
+946 info postinstall lodash._baseassign@3.2.0
+947 info postinstall lodash._createassigner@3.1.1
+948 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-baseassign-216fb129a5a6d93c.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._baseassign
+949 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-createassigner-9387bae351cdf541.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign/node_modules/lodash._createassigner
+950 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+951 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+952 info linkStuff lodash.assign@3.2.0
+953 silly linkStuff lodash.assign@3.2.0 has /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules as its parent node_modules
+954 verbose linkBins lodash.assign@3.2.0
+955 verbose linkMans lodash.assign@3.2.0
+956 verbose rebuildBundles lodash.assign@3.2.0
+957 verbose rebuildBundles [ 'lodash._baseassign', 'lodash._createassigner', 'lodash.keys' ]
+958 info install lodash.assign@3.2.0
+959 info postinstall lodash.assign@3.2.0
+960 verbose unlock done using /home/tclaiby_babes/.npm/_locks/lodash-assign-e9e44724b6ec038f.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal/node_modules/lodash.assign
+961 verbose about to build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+962 info build /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+963 info linkStuff react-modal@1.4.0
+964 silly linkStuff react-modal@1.4.0 has /home/tclaiby_babes/Desktop/Trippr/node_modules as its parent node_modules
+965 verbose linkBins react-modal@1.4.0
+966 verbose linkMans react-modal@1.4.0
+967 verbose rebuildBundles react-modal@1.4.0
+968 verbose rebuildBundles [ 'element-class', 'exenv', 'lodash.assign' ]
+969 info install react-modal@1.4.0
+970 info postinstall react-modal@1.4.0
+971 verbose unlock done using /home/tclaiby_babes/.npm/_locks/react-modal-2387d714446f4b69.lock for /home/tclaiby_babes/Desktop/Trippr/node_modules/react-modal
+972 verbose validateInstall loading /home/tclaiby_babes/Desktop/Trippr/package.json for validation
+973 verbose stack Error: The package react@15.3.1 does not satisfy its siblings' peerDependencies requirements!
+973 verbose stack     at /usr/lib/node_modules/npm/lib/install.js:125:32
+973 verbose stack     at /usr/lib/node_modules/npm/lib/install.js:268:7
+973 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-installed/read-installed.js:142:5
+973 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+973 verbose stack     at cb (/usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+973 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+973 verbose stack     at cb (/usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+973 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+973 verbose stack     at cb (/usr/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+973 verbose stack     at /usr/lib/node_modules/npm/node_modules/read-installed/read-installed.js:263:14
+974 verbose cwd /home/tclaiby_babes/Desktop/Trippr
+975 error Linux 4.2.0-38-generic
+976 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "react-modal" "--save"
+977 error node v4.4.5
+978 error npm  v2.15.5
+979 error code EPEERINVALID
+980 error peerinvalid The package react@15.3.1 does not satisfy its siblings' peerDependencies requirements!
+980 error peerinvalid Peer react-bootstrap@0.30.3 wants react@>=0.14.0
+980 error peerinvalid Peer react-dom@15.3.1 wants react@^15.3.1
+980 error peerinvalid Peer react-infinite@0.9.2 wants react@^15.0.0
+980 error peerinvalid Peer react-router-bootstrap@0.23.1 wants react@>=0.14.0
+980 error peerinvalid Peer react-addons-linked-state-mixin@0.14.8 wants react@^0.14.8
+980 error peerinvalid Peer react-modal@1.4.0 wants react@^0.14.0 || ^15.0.0-0
+981 verbose exit [ 1, true ]
