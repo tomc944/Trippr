@@ -16,6 +16,7 @@ const PostForm = React.createClass({
     return (e) => this.setState({[property]: e.target.value});
   },
   redirectToShow(id) {
+    // TODO: Definitely refactor this
     this.props.history.push('/posts/' + id);
   },
   handleCreation(event) {
