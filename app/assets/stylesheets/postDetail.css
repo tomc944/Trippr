@@ -1,0 +1,34 @@
+.postShow {
+  margin-right: 20vh;
+  margin-left: 20vh;
+}
+
+.postShowTitle {
+  display:flex;
+  justify-content: center;
+  cursor: default;
+  font-family: 'Homemade Apple', cursive;
+
+}
+
+.loginOrHighlight {
+  display: flex;
+  justify-content: center;
+}
+
+.toggleHighlights {
+  cursor:pointer;
+
+}
+
+.postText {
+
+}
+
+.highlightedText {
+  background-color: rgba(0, 255, 0, 0.3);
+  cursor:pointer;
+}
+
+.plainText {
+}
