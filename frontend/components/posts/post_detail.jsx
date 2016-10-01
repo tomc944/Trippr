@@ -119,16 +119,16 @@ const PostDetail = React.createClass({
       var text = this.state.post.post
       var highlights = this._sortHighlights()
       highlights.forEach(function(highlight) {
-        body.push(<span>{text.slice(index,highlight.start_idx)}</span>);
+        body.push(<span className='plainText'>{text.slice(index,highlight.start_idx)}</span>);
         // TODO: Place span with className so we don't put style in code
 
-        body.push(<span style={{background: 'rgba(0,255,255,0.3)'}}
+        body.push(<span className='highlightedText'
                         onClick={this._openModal.bind(this, highlight)}>
           {text.slice(highlight.start_idx,highlight.end_idx)}
         </span>);
         index = highlight.end_idx;
       }, this);
-      body.push(<span>{text.slice(index)}</span>)
+      body.push(<span className='plainText'>{text.slice(index)}</span>)
     }
     return body
   },
@@ -166,17 +166,19 @@ const PostDetail = React.createClass({
   },
   loginOrHighlight() {
     if (SessionStore.isUserLoggedIn()) {
-      return <h4 onClick={this._toggleHighlightable}>{this._highlightable()}</h4>
+      return <h4 className='toggleHighlights' onClick={this._toggleHighlightable}>
+        {this._highlightable()}
+      </h4>
     } else {
       return <h4><Link to="login">Login to Highlight Posts!</Link></h4>
     }
   },
   render () {
     return (
-      <div>
-        <h1>{this.state.post.title}</h1>
-        {this.loginOrHighlight()}
-        <p id='postText'>{this._createPostBody()}</p>
+      <div className='postShow'>
+        <h1 className='postShowTitle'>{this.state.post.title}</h1>
+        <div className='loginOrHighlight'>{this.loginOrHighlight()}</div>
+        <p className='postText' id='postText'>{this._createPostBody()}</p>
 
       <Modal
         class='imageModal'
