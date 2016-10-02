@@ -13,8 +13,8 @@ const NavbarComponent = React.createClass({
     SessionActions.logOut(this.goToLogin);
   },
   goToLogin() {
-    // TODO: This needs to be deprecated, callback should not be put here
-    // but rather in the dispatching session action
+    /* TODO: This needs to be deprecated, callback should not be put here
+    but rather in the dispatching session action */
     this.props.history.push('/login')
   },
   correctHeaders() {
@@ -30,19 +30,16 @@ const NavbarComponent = React.createClass({
   },
   render () {
     return (
-      <Navbar inverse>
+      <Navbar>
         <Navbar.Header>
           <Navbar.Brand>
-            Trippr
+            <img src='assets/Trippr-logo.png'></img>
           </Navbar.Brand>
         </Navbar.Header>
         <Navbar.Collapse>
           <Nav pullRight>
             <NavItem eventKey={1}><Link to='/'>Feed</Link></NavItem>
-            <NavDropdown title='Reports' id="report-dropdown" eventKey={2}>
-              <MenuItem eventKey={2.1}><Link to='/posts'>All Reports</Link></MenuItem>
-              <MenuItem eventKey={2.2}><Link to='/posts/new'>New Report</Link></MenuItem>
-            </NavDropdown>
+            <NavItem eventKey={2}><Link to='/posts/new'>New Report</Link></NavItem>
             <NavItem eventKey={3}>Profile</NavItem>
             {this.correctHeaders()}
           </Nav>

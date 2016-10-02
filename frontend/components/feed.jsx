@@ -48,7 +48,7 @@ const Feed = React.createClass({
 
     setTimeout(() => {
       that.loadNextPage();
-    }, 1000);
+    }, 250);
   },
   elementInfiniteLoading: function() {
     return <div className='loader'>
@@ -57,17 +57,29 @@ const Feed = React.createClass({
   },
   render() {
     return (
-      <div className="index">
-        <Infinite elementHeight={200}
-                  containerHeight={window.innerHeight}
-                  infiniteLoadBeginEdgeOffset={200}
-                  onInfiniteLoad={this.handleInfiniteLoad}
-                  loadingSpinnerDelegate={this.elementInfiniteLoading()}
-                  isInfiniteLoading={this.state.isInfiniteLoading}
-                  timeScrollStateLastsForAfterUserScrolls={2000}
-                  useWindowAsScrollContainer={true}>
-          {this.renderPosts()}
-        </Infinite>
+      <div className="feed-container">
+        <h1 className="report-title">Welcome to Trippr</h1>
+        <p className='explanation'>
+          Trippr is a Trip Reporting application for adventurers! Have you
+          ever been frustrated by terrible trip reporting formats and bad styling?
+          Look no further. Trippr allows users to develop reports, highlighting
+          information that should contain reference to photos. Trippr was designed
+          to share beta or information amongst fellow adventurers. If you have
+          a photo that will help elucidate a report, sign-up and attach a photo
+          to a highlight.
+        </p>
+        <div className="index">
+          <Infinite elementHeight={220}
+                    containerHeight={window.innerHeight}
+                    infiniteLoadBeginEdgeOffset={500}
+                    onInfiniteLoad={this.handleInfiniteLoad}
+                    loadingSpinnerDelegate={this.elementInfiniteLoading()}
+                    isInfiniteLoading={this.state.isInfiniteLoading}
+                    timeScrollStateLastsForAfterUserScrolls={500}
+                    useWindowAsScrollContainer={true}>
+            {this.renderPosts()}
+          </Infinite>
+        </div>
       </div>
     )
   }

@@ -8,7 +8,7 @@ const PostIndexItem = React.createClass({
 
     return (
       <div className="ellipsis">
-        <h1 className='report-title'><Link to={postLink}>{this.props.post.title}</Link></h1>
+        <h3 className='report-title'><Link to={postLink}>{this.props.post.title}</Link></h3>
         <p className='report-body'>{this.props.post.post}</p>
       </div>
     )
