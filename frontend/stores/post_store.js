@@ -65,8 +65,11 @@ const _receiveNewHighlight = (highlight) => {
 
 const _receiveNewPhoto = (photo) => {
   var post = PostStore.find(photo.post_id);
+  
   var highlight_ids = photo.highlights.map(function(highlight) {
-    return highlight.id});
+    return highlight.id
+  });
+
   post.highlights.forEach(function(highlight) {
     if (highlight_ids.includes(highlight.id)) {
       highlight.photos.push(photo);

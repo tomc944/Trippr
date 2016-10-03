@@ -14,5 +14,6 @@
  *= require_self
  */
 
- @import './carousel';
- @import './imageModal';
+ body {
+   font-family: 'Raleway', sans-serif;
+ }

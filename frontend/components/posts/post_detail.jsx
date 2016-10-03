@@ -174,7 +174,7 @@ const PostDetail = React.createClass({
   render () {
     return (
       <div>
-        <h1>{this.state.post.title}</h1>
+        <h1 className='report-title'>{this.state.post.title}</h1>
         {this.loginOrHighlight()}
         <p id='postText'>{this._createPostBody()}</p>
 
@@ -183,12 +183,13 @@ const PostDetail = React.createClass({
         isOpen={this.state.modalOpen}
         onRequestClose={this._onModalClose}
         style={ModalStyle}>
+
         <button id='closeModal' onClick={this._onModalClose}>close</button>
         <button id='addPhoto' onClick={this._addPhotoToHighlight}>+</button>
         <div id='photoIndex'>
           <HighlightPhotoIndex highlight={this.state.modalHighlight}/>
         </div>
-    </Modal>
+      </Modal>
 
       </div>
     )
