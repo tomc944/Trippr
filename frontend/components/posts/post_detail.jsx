@@ -120,8 +120,6 @@ const PostDetail = React.createClass({
       var highlights = this._sortHighlights()
       highlights.forEach(function(highlight) {
         body.push(<span className='plainText'>{text.slice(index,highlight.start_idx)}</span>);
-        // TODO: Place span with className so we don't put style in code
-
         body.push(<span className='highlightedText'
                         onClick={this._openModal.bind(this, highlight)}>
           {text.slice(highlight.start_idx,highlight.end_idx)}
@@ -173,10 +171,17 @@ const PostDetail = React.createClass({
       return <h4><Link to="login">Login to Highlight Posts!</Link></h4>
     }
   },
+  _coverPhoto() {
+    if (this.state.post.photos) {
+      return (<img className='coverPhoto' src={this.state.post.photos[0].url}/>)
+    }
+  },
   render () {
     return (
       <div className='postShow'>
         <h1 className='report-title'>{this.state.post.title}</h1>
+        <h5 className='report-author'>Author: {this.state.post.author_username}</h5>
+        <div className='coverPhotoContainer'>{this._coverPhoto()}</div>
         <div className='loginOrHighlight'>{this.loginOrHighlight()}</div>
         <p className='postText' id='postText'>{this._createPostBody()}</p>
 

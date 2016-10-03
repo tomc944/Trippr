@@ -24,8 +24,16 @@ class AuthoredApi::PostsController < ApplicationController
 	def create
 		@post = Post.new(post_params)
 		@post[:author_id] = current_user.id
+		@photo = Photo.new(photo_params)
+		@photo[:author_id] = current_user.id
 
-		if @post.save
+		completed_transaction = @post.transaction do
+			@post.save!
+			@photo[:post_id] = @post.id
+			@photo.save!
+		end
+
+		if completed_transaction
 			render :show
 		else
 			redirect_to new_authored_api_post_url
@@ -53,5 +61,10 @@ class AuthoredApi::PostsController < ApplicationController
 
 	def post_params
 		params.require(:post).permit(:title, :post, :author_id)
+	end
+
+	def photo_params
+		debugger
+		params.require(:post).permit(:url, :thumbnail_url)
 	end
 end

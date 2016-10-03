@@ -1,4 +1,7 @@
 json.extract!(post, :id, :post, :title, :author_id, :photos)
+
+json.author_username post.user.username
+
 json.highlights do
   json.array!(post.highlights) do |highlight|
     json.id highlight.id

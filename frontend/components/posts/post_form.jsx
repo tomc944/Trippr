@@ -8,6 +8,8 @@ const PostForm = React.createClass({
   blankAttrs: {
     post: "",
     title: "",
+    url: "",
+    thumbnail_url: ""
   },
   getInitialState() {
     return this.blankAttrs;
@@ -22,6 +24,30 @@ const PostForm = React.createClass({
   handleCreation(event) {
     event.preventDefault();
     PostActions.addPost(this.state, this.redirectToShow)
+  },
+  _addCoverPhoto() {
+    var options = CLOUDINARY_OPTIONS
+    options.max_image_height = 400;
+    cloudinary.openUploadWidget(options, function(error, images) {
+      if (!error) {
+        var image = images[0];
+        this.setState({url: image.url,
+                       thumbnail_url: image.thumbnail_url})
+      }
+    }.bind(this));
+  },
+  _coverOptions() {
+    if (this.state.url === '') {
+      return (
+        <Button type='button' onClick={this._addCoverPhoto}>
+          Upload Cover Photo!
+        </Button>
+      )
+    } else {
+      return (
+        <img src={this.state.thumbnail_url}/>
+      )
+    }
   },
   render () {
     return (
@@ -52,6 +78,8 @@ const PostForm = React.createClass({
                />
           </Col>
         </FormGroup>
+
+        <div className='coverOptions'>{this._coverOptions()}</div>
         <Button type='button' onClick={this.handleCreation}>
           Create a Post!
         </Button>

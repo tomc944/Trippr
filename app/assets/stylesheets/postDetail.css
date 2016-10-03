@@ -1,6 +1,7 @@
 .postShow {
   margin-right: 20vh;
   margin-left: 20vh;
+  margin-bottom:40px;
 }
 
 .postShowTitle {
@@ -8,7 +9,11 @@
   justify-content: center;
   cursor: default;
   font-family: 'Homemade Apple', cursive;
+}
 
+.report-author {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .loginOrHighlight {
@@ -31,4 +36,16 @@
 }
 
 .plainText {
+}
+
+.coverPhotoContainer {
+  max-width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.coverPhoto {
+  max-width: 750px;
+  width: 100%;
+  height: 100%;
 }
