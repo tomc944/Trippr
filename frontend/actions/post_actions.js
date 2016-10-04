@@ -6,6 +6,9 @@ const PostActions = {
   fetchPost: (id) => {
     PostUtil.fetchPost(id, PostActions.receivePost);
   },
+  fetchAllPosts: () => {
+    PostUtil.fetchAllPosts(PostActions.receiveAllPosts)
+  },
   fetchPosts: (page) => {
     PostUtil.fetchPosts(page, PostActions.receivePosts, PostActions.allPostsLoaded);
   },
@@ -32,6 +35,12 @@ const PostActions = {
   receivePosts: (posts) => {
     AppDispatcher.dispatch({
       actionType: PostConstants.RECEIVE_POSTS,
+      posts: posts
+    })
+  },
+  receiveAllPosts: (posts) => {
+    AppDispatcher.dispatch({
+      actionType: PostConstants.RECEIVE_ALL_POSTS,
       posts: posts
     })
   },

@@ -5,6 +5,7 @@ import PostConstants from '../constants/post_constants';
 const PostStore = new Store(AppDispatcher);
 let _posts = {};
 let _areMorePosts = true;
+let _postTitles = [];
 
 PostStore.__onDispatch = (payload) => {
   switch(payload.actionType) {
@@ -14,6 +15,10 @@ PostStore.__onDispatch = (payload) => {
       break;
     case PostConstants.RECEIVE_POSTS:
       _addPosts(payload.posts);
+      PostStore.__emitChange();
+      break;
+    case PostConstants.RECEIVE_ALL_POSTS:
+      _receiveAllPosts(payload.posts);
       PostStore.__emitChange();
       break;
     case PostConstants.RECEIVE_NEW_HIGHLIGHT:
@@ -43,10 +48,17 @@ PostStore.all = () => {
   return Object.assign({}, _posts);
 }
 
+PostStore.allTitles = () => {
+  return _postTitles.slice();
+}
+
 const _receivePost = (post) => {
   _posts[post.id] = post;
 }
 
+const _receiveAllPosts = (posts) => {
+  _postTitles = posts;
+}
 
 const _addPosts = (posts) => {
   posts.forEach((post) => {
@@ -65,7 +77,7 @@ const _receiveNewHighlight = (highlight) => {
 
 const _receiveNewPhoto = (photo) => {
   var post = PostStore.find(photo.post_id);
-  
+
   var highlight_ids = photo.highlights.map(function(highlight) {
     return highlight.id
   });

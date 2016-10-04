@@ -1,16 +1,10 @@
 class AuthoredApi::PostsController < ApplicationController
 	def index
-		# do we want to show all Posts as a feed OR
-		# will this be a landing page for only the author's posts
-		if params[:authored_posts]
-			@posts = current_user.authored_posts
-		else
-			@posts = Post.includes(:highlights, :photos)
-		end
+		@posts = Post.all
 	end
 
 	def by_page
-		@posts = Post.page(params[:page_num]).all.includes(:highlights, :photos)
+		@posts = Post.page(params[:page_num]).all.includes(:photos)
 
 		if @posts.empty?
 			render json: "empty"

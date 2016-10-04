@@ -4,6 +4,9 @@ const PostUtil = {
   fetchPost(id, successCB) {
     $.get("/authored_api/posts/" + id, successCB)
   },
+  fetchAllPosts(successCB) {
+    $.get("/authored_api/posts", successCB);
+  },
   fetchPosts(pageNum, successCB, failureCB) {
     const request = $.ajax({
       url: '/authored_api/posts/by_page/' + pageNum,
