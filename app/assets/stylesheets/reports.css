@@ -73,6 +73,7 @@ background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAgAAAAABCAMA
 .report-title {
   text-align: center;
   font-family: 'Homemade Apple', cursive;
+  cursor: default;
 }
 
 .index {
