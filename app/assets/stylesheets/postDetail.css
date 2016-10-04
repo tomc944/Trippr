@@ -1,18 +1,27 @@
 .postShow {
   margin-right: 20vh;
   margin-left: 20vh;
+<<<<<<< HEAD
   margin-bottom:60px;
+=======
+>>>>>>> 795fae555c57824df88cb60fc93bbf7899e2da7c
 }
 
 .postShowTitle {
   display:flex;
   justify-content: center;
+<<<<<<< HEAD
   font-family: 'Homemade Apple', cursive;
 }
 
 .report-author {
   text-align: center;
   margin-top: 20px;
+=======
+  cursor: default;
+  font-family: 'Homemade Apple', cursive;
+
+>>>>>>> 795fae555c57824df88cb60fc93bbf7899e2da7c
 }
 
 .loginOrHighlight {
@@ -36,6 +45,7 @@
 
 .plainText {
 }
+<<<<<<< HEAD
 
 .coverPhotoContainer {
   max-width: inherit;
@@ -48,3 +58,5 @@
   width: 100%;
   height: 100%;
 }
+=======
+>>>>>>> 795fae555c57824df88cb60fc93bbf7899e2da7c

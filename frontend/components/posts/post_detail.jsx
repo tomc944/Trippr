@@ -120,6 +120,11 @@ const PostDetail = React.createClass({
       var highlights = this._sortHighlights()
       highlights.forEach(function(highlight) {
         body.push(<span className='plainText'>{text.slice(index,highlight.start_idx)}</span>);
+<<<<<<< HEAD
+=======
+        // TODO: Place span with className so we don't put style in code
+
+>>>>>>> 795fae555c57824df88cb60fc93bbf7899e2da7c
         body.push(<span className='highlightedText'
                         onClick={this._openModal.bind(this, highlight)}>
           {text.slice(highlight.start_idx,highlight.end_idx)}
