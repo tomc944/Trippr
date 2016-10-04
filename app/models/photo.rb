@@ -2,12 +2,13 @@
 #
 # Table name: photos
 #
-#  id         :integer          not null, primary key
-#  url        :string           not null
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
-#  post_id    :integer
-#  author_id  :integer
+#  id            :integer          not null, primary key
+#  url           :string           not null
+#  created_at    :datetime         not null
+#  updated_at    :datetime         not null
+#  post_id       :integer
+#  author_id     :integer
+#  thumbnail_url :string           default(""), not null
 #
 
 class Photo < ApplicationRecord

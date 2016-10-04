@@ -1,0 +1,45 @@
+.postShow {
+  margin-right: 20vh;
+  margin-left: 20vh;
+  margin-bottom:60px;
+}
+
+
+.report-author {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.loginOrHighlight {
+  display: flex;
+  justify-content: center;
+}
+
+.toggleHighlights {
+  cursor:pointer;
+
+}
+
+.postText {
+
+}
+
+.highlightedText {
+  background-color: rgba(0, 255, 0, 0.3);
+  cursor:pointer;
+}
+
+.plainText {
+}
+
+.coverPhotoContainer {
+  max-width: inherit;
+  display: flex;
+  justify-content: center;
+}
+
+.coverPhoto {
+  max-width: 750px;
+  width: 100%;
+  height: 100%;
+}
