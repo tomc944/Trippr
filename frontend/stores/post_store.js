@@ -47,7 +47,6 @@ const _receivePost = (post) => {
   _posts[post.id] = post;
 }
 
-
 const _addPosts = (posts) => {
   posts.forEach((post) => {
     _addPost(post)
@@ -65,7 +64,7 @@ const _receiveNewHighlight = (highlight) => {
 
 const _receiveNewPhoto = (photo) => {
   var post = PostStore.find(photo.post_id);
-  
+
   var highlight_ids = photo.highlights.map(function(highlight) {
     return highlight.id
   });

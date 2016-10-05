@@ -3,6 +3,8 @@ import { render } from 'react-dom';
 import { Form, FormGroup, ControlLabel,
          FormControl, Button, Col } from 'react-bootstrap';
 import PostActions from '../../actions/post_actions';
+import SessionStore from '../../stores/session_store';
+import { Link } from 'react-router';
 
 const PostForm = React.createClass({
   blankAttrs: {
@@ -49,9 +51,28 @@ const PostForm = React.createClass({
       )
     }
   },
+  checkContent() {
+    return (!!this.state.post && !!this.state.url &&
+            !!this.state.thumbnail_url && !!this.state.title)
+  },
+  createOrLogin(){
+    if (SessionStore.isUserLoggedIn()) {
+      return (
+        <div className='post-create'>
+          <Button
+            classtype='button'
+            onClick={this.handleCreation}
+            disabled={!this.checkContent()}>
+            Create a Post!
+          </Button>
+        </div>)
+    }
+    return <h4 className="centering"><Link to="login">Login to Create Report!</Link></h4>
+  },
   render () {
     return (
-      <Form horizontal>
+      <Form className="feed-container" horizontal>
+        <h1 className="report-title">Create a Report</h1>
         <FormGroup controlId="formTitle">
           <Col componentClass={ControlLabel} sm={2}>
             Title
@@ -72,6 +93,7 @@ const PostForm = React.createClass({
           <Col sm={8}>
             <FormControl
               componentClass="textarea"
+              rows={10}
               value={this.state.post}
               onChange={this.update("post")}
               placeholder="Was a dope trip out to Mt. Shasta"
@@ -79,10 +101,9 @@ const PostForm = React.createClass({
           </Col>
         </FormGroup>
 
-        <div className='coverOptions'>{this._coverOptions()}</div>
-        <Button type='button' onClick={this.handleCreation}>
-          Create a Post!
-        </Button>
+        <div className='cover-options'>{this._coverOptions()}</div>
+
+        {this.createOrLogin()}
       </Form>
     )
   }
