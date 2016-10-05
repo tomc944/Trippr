@@ -4,7 +4,7 @@ const PostUtil = {
   fetchPost(id, successCB) {
     $.get("/authored_api/posts/" + id, successCB)
   },
-  fetchAllPosts(successCB) {
+  fetchAllSearches(successCB) {
     $.get("/authored_api/posts", successCB);
   },
   fetchPosts(pageNum, successCB, failureCB) {

@@ -17,12 +17,16 @@ const PostDetail = React.createClass({
       modalHighlight: null
     }
   },
-  grabId() {
-    return parseInt(this.props.params.id)
+  grabId(props) {
+    const id = props ? props.params.id : this.props.params.id;
+    return parseInt(id);
   },
   componentDidMount() {
     this.postToken = PostStore.addListener(this._onChange);
     PostActions.fetchPost(this.grabId());
+  },
+  componentWillReceiveProps(newProps) {
+    PostActions.fetchPost(this.grabId(newProps));
   },
   _onChange() {
     this.setState({ post: PostStore.find(this.grabId()) })
@@ -98,7 +102,7 @@ const PostDetail = React.createClass({
     }
   },
   _createHighlight(startIdx, endIdx) {
-    var highlight = {}
+    var highlight = {};
     highlight.post_id = this.state.post.id;
     highlight.start_idx = startIdx;
     highlight.end_idx = endIdx;
@@ -131,17 +135,22 @@ const PostDetail = React.createClass({
     return body
   },
   _sortHighlights() {
-    var highlights = this.state.post.highlights
-    highlights.sort(function (a, b) {
-      if (a.start_idx > b.start_idx) {
-        return 1;
-      } else if (a.start_idx < b.start_idx) {
-        return -1;
-      } else {
-        return 0;
-      }
-    });
-    return highlights;
+    var highlights;
+
+    if (!!this.state.post.highlights) {
+      highlights = this.state.post.highlights;
+      highlights.sort(function (a, b) {
+        if (a.start_idx > b.start_idx) {
+          return 1;
+        } else if (a.start_idx < b.start_idx) {
+          return -1;
+        } else {
+          return 0;
+        }
+      });
+    }
+
+    return highlights || [];
   },
   _openModal(highlight) {
     this.setState({ modalOpen: true,
@@ -172,13 +181,13 @@ const PostDetail = React.createClass({
     }
   },
   _coverPhoto() {
-    if (this.state.post.photos) {
+    if (this.state.post.photos && this.state.post.photos.length > 0) {
       return (<img className='coverPhoto' src={this.state.post.photos[0].url}/>)
     }
   },
   render () {
     return (
-      <div className='postShow'>
+      <div className='post-show'>
 
         <h1 className='report-title'>{this.state.post.title}</h1>
         <h5 className='report-author'>Author: {this.state.post.author_username}</h5>

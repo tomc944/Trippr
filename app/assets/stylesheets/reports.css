@@ -1,5 +1,14 @@
 .logo {
-  background-image: image-url("Trippr-logo.png")
+  background-image: image-url("Trippr-logo.png");
+}
+
+.cover-options {
+  text-align: center;
+}
+
+.post-create {
+  text-align: center;
+  margin-top: 20px;
 }
 
 .searched {

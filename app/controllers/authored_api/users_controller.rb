@@ -15,5 +15,4 @@ class AuthoredApi::UsersController < ApplicationController
   def user_params
     params.require(:user).permit(:username, :password)
   end
-
 end

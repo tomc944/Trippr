@@ -1,0 +1,4 @@
+module.exports = {
+  RECEIVE_ALL_SEARCHES: "RECEIVE_ALL_SEARCHES",
+
+}

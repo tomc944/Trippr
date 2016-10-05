@@ -58,7 +58,6 @@ class AuthoredApi::PostsController < ApplicationController
 	end
 
 	def photo_params
-		debugger
 		params.require(:post).permit(:url, :thumbnail_url)
 	end
 end

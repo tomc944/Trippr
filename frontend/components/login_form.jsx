@@ -3,6 +3,7 @@ import { render } from 'react-dom';
 import { Link } from 'react-router';
 import SessionStore from '../stores/session_store';
 import ErrorStore from '../stores/error_store';
+import ErrorActions from '../actions/error_actions';
 import SessionActions from '../actions/session_actions';
 import { Form, FormGroup, Col, FormControl, Button, ControlLabel } from 'react-bootstrap';
 
@@ -14,9 +15,17 @@ const LoginForm = React.createClass({
     })
   },
   componentDidMount() {
-    // if errors propogate this will automatically call a rerender
+    /* if errors propogate this will automatically
+       call a rerender */
     this.errorToken = ErrorStore.addListener(this.forceUpdate.bind(this));
     this.sessionToken = SessionStore.addListener(this.redirectIfLoggedIn);
+  },
+  componentWillReceiveProps(newProps) {
+    /* clears left-over errors from login or signup
+       and doesn't persist them */
+    if (newProps.route.path !== this.props.route.path) {
+      ErrorActions.clearErrors();
+    }
   },
   componentWillUnmount() {
     this.errorToken.remove();
@@ -71,41 +80,43 @@ const LoginForm = React.createClass({
     return (
       <div className="feed-container">
         <Form horizontal>
-          Welcome to Trippr!
-          <br/>
-          Please { this.formType() } or { navLink }
+          <Col smOffset={4}>
+            Welcome to Trippr!
+            <br/>
+            Please { this.formType() } or { navLink }
+          </Col>
           {this.fieldErrors('base')}
           <FormGroup controlId="formHorizontalEmail">
             <Col componentClass={ControlLabel} sm={2}>
-              Username
+              Username:
             </Col>
-            <Col sm={10}>
+            <Col sm={3}>
               { this.fieldErrors("username") }
 
               <FormControl
                 type="text"
                 value={this.state.username}
-                placeholder="username"
+                placeholder="Enter Username"
                 onChange={this.update("username")}/>
             </Col>
           </FormGroup>
 
           <FormGroup controlId="formHorizontalPassword">
             <Col componentClass={ControlLabel} sm={2}>
-              Password
+              Password:
             </Col>
-            <Col sm={10}>
+            <Col sm={3}>
               { this.fieldErrors("password") }
               <FormControl
                 type="password"
                 value={this.state.password}
-                placeholder="Password"
+                placeholder="Enter Password"
                 onChange={this.update("password")}/>
             </Col>
           </FormGroup>
 
           <FormGroup>
-            <Col smOffset={2} sm={10}>
+            <Col smOffset={2} sm={6}>
               <Button type="submit" onClick={this.handleCreation}>
                 {this.formType().toUpperCase()}
               </Button>

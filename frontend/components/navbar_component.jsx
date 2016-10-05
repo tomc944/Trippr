@@ -5,19 +5,19 @@ import { Navbar, Nav, NavItem, FormGroup,
 import { Link } from 'react-router';
 import SessionStore from '../stores/session_store';
 import SessionActions from '../actions/session_actions';
-import PostStore from '../stores/post_store';
-import PostActions from '../actions/post_actions';
+import SearchStore from '../stores/search_store';
+import SearchActions from '../actions/search_actions';
 import Fuse from 'fuse.js';
 import classNames from 'classnames';
 
 const NavbarComponent = React.createClass({
   getInitialState() {
-    return ({ postTitles: PostStore.allTitles(), searchInput: '' })
+    return ({ searchTitles: SearchStore.allTitles(), searchInput: '' })
   },
   componentDidMount() {
     SessionStore.addListener(this.forceUpdate.bind(this));
-    PostStore.addListener(this._onChange);
-    PostActions.fetchAllPosts();
+    SearchStore.addListener(this._onChange);
+    SearchActions.fetchAllSearches();
   },
   update(property) {
     return (e) => this.setState({[property]: e.target.value});
@@ -31,7 +31,7 @@ const NavbarComponent = React.createClass({
     this.props.history.push('/login');
   },
   _onChange() {
-    this.setState({ postTitles: PostStore.allTitles() });
+    this.setState({ searchTitles: SearchStore.allTitles() });
   },
   performSearch() {
     let result;
@@ -44,8 +44,8 @@ const NavbarComponent = React.createClass({
       keys: ['title']
     };
 
-    if (!!this.state.searchInput && !!this.state.postTitles) {
-      const fuse = new Fuse(this.state.postTitles, FUSE_OPTIONS);
+    if (!!this.state.searchInput && !!this.state.searchTitles) {
+      const fuse = new Fuse(this.state.searchTitles, FUSE_OPTIONS);
       result = fuse.search(this.state.searchInput);
     }
 
@@ -64,7 +64,6 @@ const NavbarComponent = React.createClass({
   renderResults() {
     const results = this.performSearch();
     let resultsDiv = <div></div>;
-    const resultsClass = 'search-list';
 
     if (!!results) {
       resultsDiv = results.map(function(result) {

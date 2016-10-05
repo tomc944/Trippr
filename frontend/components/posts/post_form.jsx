@@ -51,11 +51,21 @@ const PostForm = React.createClass({
       )
     }
   },
+  checkContent() {
+    return (!!this.state.post && !!this.state.url &&
+            !!this.state.thumbnail_url && !!this.state.title)
+  },
   createOrLogin(){
     if (SessionStore.isUserLoggedIn()) {
-      return (<Button type='button' onClick={this.handleCreation}>
-        Create a Post!
-      </Button>)
+      return (
+        <div className='post-create'>
+          <Button
+            classtype='button'
+            onClick={this.handleCreation}
+            disabled={!this.checkContent()}>
+            Create a Post!
+          </Button>
+        </div>)
     }
     return <h4 className="centering"><Link to="login">Login to Create Report!</Link></h4>
   },
@@ -91,7 +101,7 @@ const PostForm = React.createClass({
           </Col>
         </FormGroup>
 
-        <div className='coverOptions'>{this._coverOptions()}</div>
+        <div className='cover-options'>{this._coverOptions()}</div>
 
         {this.createOrLogin()}
       </Form>
