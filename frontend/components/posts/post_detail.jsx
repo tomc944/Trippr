@@ -179,24 +179,25 @@ const PostDetail = React.createClass({
   render () {
     return (
       <div className='postShow'>
+
         <h1 className='report-title'>{this.state.post.title}</h1>
         <h5 className='report-author'>Author: {this.state.post.author_username}</h5>
         <div className='coverPhotoContainer'>{this._coverPhoto()}</div>
         <div className='loginOrHighlight'>{this.loginOrHighlight()}</div>
         <p className='postText' id='postText'>{this._createPostBody()}</p>
 
-      <Modal
-        class='imageModal'
-        isOpen={this.state.modalOpen}
-        onRequestClose={this._onModalClose}
-        style={ModalStyle}>
+        <Modal
+          class='imageModal'
+          isOpen={this.state.modalOpen}
+          onRequestClose={this._onModalClose}
+          style={ModalStyle}>
 
-        <button id='closeModal' onClick={this._onModalClose}>close</button>
-        <button id='addPhoto' onClick={this._addPhotoToHighlight}>+</button>
-        <div id='photoIndex'>
-          <HighlightPhotoIndex highlight={this.state.modalHighlight}/>
-        </div>
-      </Modal>
+          <button id='closeModal' onClick={this._onModalClose}>close</button>
+          <button id='addPhoto' onClick={this._addPhotoToHighlight}>+</button>
+          <div id='photoIndex'>
+            <HighlightPhotoIndex highlight={this.state.modalHighlight}/>
+          </div>
+        </Modal>
 
       </div>
     )

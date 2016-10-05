@@ -8,6 +8,7 @@ import SessionActions from '../actions/session_actions';
 import PostStore from '../stores/post_store';
 import PostActions from '../actions/post_actions';
 import Fuse from 'fuse.js';
+import classNames from 'classnames';
 
 const NavbarComponent = React.createClass({
   getInitialState() {
@@ -44,22 +45,11 @@ const NavbarComponent = React.createClass({
     };
 
     if (!!this.state.searchInput && !!this.state.postTitles) {
-      const searchIndex = this._convertTitles(this.state.postTitles);
-      const fuse = new Fuse(searchIndex, FUSE_OPTIONS);
+      const fuse = new Fuse(this.state.postTitles, FUSE_OPTIONS);
       result = fuse.search(this.state.searchInput);
     }
 
     return result || false;
-  },
-  _convertTitles(titles) {
-    const titleKeys = Object.keys(titles);
-    let titleArray = [];
-
-    titleKeys.forEach(function(id) {
-      titleArray.push(titles[id]);
-    })
-
-    return titleArray;
   },
   correctHeaders() {
     if (SessionStore.isUserLoggedIn()) {
@@ -73,31 +63,36 @@ const NavbarComponent = React.createClass({
   },
   renderResults() {
     const results = this.performSearch();
-    let resultsDiv = <div></div>
-    const resultsClass = 'search-list'
+    let resultsDiv = <div></div>;
+    const resultsClass = 'search-list';
 
     if (!!results) {
       resultsDiv = results.map(function(result) {
         return (
           <Link
-            clasName='search-result-item'
+            className='search-result-item'
             key={result.id}
             to={"/posts/" + result.id}>
             {result.title}
           </Link>
         )
-      })
+      });
     }
     return resultsDiv;
   },
   render () {
+    const renderClass = classNames({
+      'searched': this.state.searchInput,
+      'not-searched': !this.state.searchInput
+    })
 
     return (
-      <Navbar fixedTop={false}>
+      <Navbar fixedTop={true}>
         <Navbar.Header>
           <Navbar.Brand>
             <img src='assets/Trippr-logo.png'></img>
           </Navbar.Brand>
+          <Navbar.Toggle />
         </Navbar.Header>
         <Navbar.Collapse>
           <Navbar.Form pullLeft>
@@ -110,11 +105,12 @@ const NavbarComponent = React.createClass({
             </FormGroup>
             {' '}
           </Navbar.Form>
-          {this.renderResults()}
+          <div className={renderClass}>
+            {this.renderResults()}
+          </div>
           <Nav pullRight>
             <NavItem eventKey={1}><Link to='/'>Feed</Link></NavItem>
             <NavItem eventKey={2}><Link to='/posts/new'>New Report</Link></NavItem>
-            <NavItem eventKey={3}>Profile</NavItem>
             {this.correctHeaders()}
           </Nav>
         </Navbar.Collapse>

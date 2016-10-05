@@ -69,7 +69,7 @@ const LoginForm = React.createClass({
     }
 
     return (
-      <div>
+      <div className="feed-container">
         <Form horizontal>
           Welcome to Trippr!
           <br/>
