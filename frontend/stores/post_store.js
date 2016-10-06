@@ -3,6 +3,7 @@ import { Store } from 'flux/utils';
 import PostConstants from '../constants/post_constants';
 
 const PostStore = new Store(AppDispatcher);
+
 let _posts = {};
 let _areMorePosts = true;
 
@@ -40,7 +41,7 @@ PostStore.find = (id) => {
 }
 
 PostStore.all = () => {
-  return Object.assign({}, _posts);
+  return Object.keys(_posts).map(function(key){return _posts[key];}).reverse();
 }
 
 const _receivePost = (post) => {

@@ -27,11 +27,9 @@ const Feed = React.createClass({
   },
   renderPosts() {
     const posts = this.state.posts;
-    const postKeys = Object.keys(this.state.posts);
 
-    return postKeys.map((key) => {
-      let post = posts[key];
-      return <PostIndexItem key={key} post={post} />
+    return posts.map((post) => {
+      return <PostIndexItem key={post.id} post={post} />
     })
   },
   handleInfiniteLoad() {

@@ -4,7 +4,7 @@ class AuthoredApi::PostsController < ApplicationController
 	end
 
 	def by_page
-		@posts = Post.page(params[:page_num]).all.includes(:photos)
+		@posts = Post.page(params[:page_num]).all.includes(:photos).order('created_at DESC')
 
 		if @posts.empty?
 			render json: "empty"
