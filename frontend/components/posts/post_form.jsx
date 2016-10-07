@@ -52,8 +52,9 @@ const PostForm = React.createClass({
     }
   },
   checkContent() {
-    return (!!this.state.post && !!this.state.url &&
-            !!this.state.thumbnail_url && !!this.state.title)
+    return (Object.keys(this.state).every(function(key) {
+      return !!this.state[key];
+    }))
   },
   createOrLogin(){
     if (SessionStore.isUserLoggedIn()) {

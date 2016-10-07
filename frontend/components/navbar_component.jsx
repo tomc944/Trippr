@@ -19,6 +19,14 @@ const NavbarComponent = React.createClass({
     SearchStore.addListener(this._onChange);
     SearchActions.fetchAllSearches();
   },
+  componentWillReceiveProps(newProps) {
+    if (this.props.location !== newProps.location) {
+      this.clearSearch();
+    }
+  },
+  clearSearch() {
+    this.setState({ searchInput: '' });
+  },
   update(property) {
     return (e) => this.setState({[property]: e.target.value});
   },
