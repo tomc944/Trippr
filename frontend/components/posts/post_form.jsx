@@ -41,7 +41,10 @@ const PostForm = React.createClass({
   _coverOptions() {
     if (this.state.url === '') {
       return (
-        <Button type='button' onClick={this._addCoverPhoto}>
+        <Button
+          type='button'
+          disabled={!SessionStore.isUserLoggedIn()} 
+          onClick={this._addCoverPhoto}>
           Upload Cover Photo!
         </Button>
       )
