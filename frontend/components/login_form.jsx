@@ -79,6 +79,8 @@ const LoginForm = React.createClass({
 
     return (
       <div className="feed-container">
+
+        <img className='login-background' src='assets/mountain.jpg'></img>
         <Form horizontal>
           <Col smOffset={4}>
             Welcome to Trippr!

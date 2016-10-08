@@ -6,11 +6,12 @@ import FooterComponent from './footer_component';
 
 const App = React.createClass({
 	/* TODO: Fix navbar so it doesn't have to hold onto the history as a props */
-
 	render() {
 		return (
 			<div>
-				<NavbarComponent history={this.props.history}/>
+				<NavbarComponent
+					location={this.props.location.pathname}
+					history={this.props.history}/>
 				{ this.props.children }
 				<FooterComponent />
 			</div>

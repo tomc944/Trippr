@@ -171,13 +171,20 @@ const PostDetail = React.createClass({
       }
     })
   },
-  loginOrHighlight() {
+  loginOrHighlight(option) {
     if (SessionStore.isUserLoggedIn()) {
       return <h4 className='toggleHighlights' onClick={this._toggleHighlightable}>
         {this._highlightable()}
       </h4>
     } else {
       return <h4><Link to="login">Login to Highlight Posts!</Link></h4>
+    }
+  },
+  loginOrPhoto() {
+    if (SessionStore.isUserLoggedIn()) {
+      return <button id='addPhoto' onClick={this._addPhotoToHighlight}>+</button>
+    } else {
+      return <h4><Link to="login">Login to Upload Photos!</Link></h4>
     }
   },
   _coverPhoto() {
@@ -202,7 +209,7 @@ const PostDetail = React.createClass({
           style={ModalStyle}>
 
           <button id='closeModal' onClick={this._onModalClose}>close</button>
-          <button id='addPhoto' onClick={this._addPhotoToHighlight}>+</button>
+          {this.loginOrPhoto()}
           <div id='photoIndex'>
             <HighlightPhotoIndex highlight={this.state.modalHighlight}/>
           </div>
