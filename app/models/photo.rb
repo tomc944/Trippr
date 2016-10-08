@@ -19,4 +19,6 @@ class Photo < ApplicationRecord
 
 	has_many :highlight_photos
 	has_many :highlights, through: :highlight_photos, source: :highlight
+
+	default_scope { order('created_at ASC') }
 end
