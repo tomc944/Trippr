@@ -43,7 +43,7 @@ const PostForm = React.createClass({
       return (
         <Button
           type='button'
-          disabled={!SessionStore.isUserLoggedIn()} 
+          disabled={!SessionStore.isUserLoggedIn()}
           onClick={this._addCoverPhoto}>
           Upload Cover Photo!
         </Button>
@@ -55,8 +55,10 @@ const PostForm = React.createClass({
     }
   },
   checkContent() {
+    const that = this;
+
     return (Object.keys(this.state).every(function(key) {
-      return !!this.state[key];
+      return !!that.state[key];
     }))
   },
   createOrLogin(){
