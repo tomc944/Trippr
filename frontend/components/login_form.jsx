@@ -46,7 +46,7 @@ const LoginForm = React.createClass({
     if (!errors[field]) { return; }
 
     const messages = errors[field].map( (errorMsg, i) => {
-      return <li key={ i }>{ errorMsg }</li>;
+      return <li className='errors' key={ i }>{ errorMsg }</li>;
     });
 
     return <ul>{ messages }</ul>;
@@ -80,51 +80,54 @@ const LoginForm = React.createClass({
     return (
       <div className="feed-container">
 
-        <img className='login-background' src='assets/mountain.jpg'></img>
-        <Form horizontal>
-          <Col smOffset={4}>
-            Welcome to Trippr!
-            <br/>
-            Please { this.formType() } or { navLink }
-          </Col>
-          {this.fieldErrors('base')}
-          <FormGroup controlId="formHorizontalEmail">
-            <Col componentClass={ControlLabel} sm={2}>
-              Username:
+        <Col sm={6} smOffset={3}>
+          <img className='login-background' src='assets/mountain.jpg'></img>
+        </Col>
+        <Col sm={4} smOffset={4}>
+          <Form className='login-form-container' horizontal>
+            <Col>
+              <h3 className='report-title'>Welcome to Trippr!</h3>
+              <p className='link-away'>Please { this.formType() } or { navLink }</p>
+              {this.fieldErrors('base')}
             </Col>
-            <Col sm={3}>
-              { this.fieldErrors("username") }
+            <FormGroup controlId="formHorizontalEmail">
+              <Col componentClass={ControlLabel}>
+                Username:
+              </Col>
+              <Col>
+                { this.fieldErrors("username") }
 
-              <FormControl
-                type="text"
-                value={this.state.username}
-                placeholder="Enter Username"
-                onChange={this.update("username")}/>
-            </Col>
-          </FormGroup>
+                <FormControl
+                  type="text"
+                  value={this.state.username}
+                  placeholder="Enter Username"
+                  onChange={this.update("username")}/>
+              </Col>
+            </FormGroup>
 
-          <FormGroup controlId="formHorizontalPassword">
-            <Col componentClass={ControlLabel} sm={2}>
-              Password:
-            </Col>
-            <Col sm={3}>
-              { this.fieldErrors("password") }
-              <FormControl
-                type="password"
-                value={this.state.password}
-                placeholder="Enter Password"
-                onChange={this.update("password")}/>
-            </Col>
-          </FormGroup>
+            <FormGroup controlId="formHorizontalPassword">
+              <Col componentClass={ControlLabel}>
+                Password:
+              </Col>
+              <Col>
+                { this.fieldErrors("password") }
+                <FormControl
+                  type="password"
+                  value={this.state.password}
+                  placeholder="Enter Password"
+                  onChange={this.update("password")}/>
+              </Col>
+            </FormGroup>
 
-          <FormGroup>
-            <Col smOffset={2} sm={6}>
-              <Button type="submit" onClick={this.handleCreation}>
-                {this.formType().toUpperCase()}
-              </Button>
-            </Col>
-          </FormGroup>
-        </Form>
+            <FormGroup>
+              <Col>
+                <Button type="submit" onClick={this.handleCreation}>
+                  {this.formType().toUpperCase()}
+                </Button>
+              </Col>
+            </FormGroup>
+          </Form>
+        </Col>
       </div>
     )
   }

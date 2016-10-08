@@ -3,11 +3,25 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .login-background {
-  display: block;
+  position: absolute;;
+  z-index: -1;
   height: auto;
   width: auto;
   max-width: 600px;
-  margin: auto;
   border-radius: 20px;
-  opacity: 0.7;
+  opacity: 0.5;
+}
+
+.link-away {
+  text-align: center;
+}
+
+.errors {
+  list-style: none;
+  text-align: center;
+  color: red;
+}
+
+.login-form-container {
+  margin-top:60px;
 }
