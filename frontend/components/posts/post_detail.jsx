@@ -40,7 +40,7 @@ const PostDetail = React.createClass({
     var overallFocusOffset = this._getHighlightOffset(highlight.focusNode.parentElement) + highlight.focusOffset;
     var startIndex;
     var endIndex;
-    
+
     if (overallAnchorOffset < overallFocusOffset) {
       startIndex = overallAnchorOffset;
       endIndex = overallFocusOffset;
@@ -105,7 +105,7 @@ const PostDetail = React.createClass({
     return newEndIdx >= oldStartIdx && newEndIdx <= oldEndIdx;
   },
   _newHighlightFullOverlap(newStartIdx, newEndIdx, oldStartIdx, oldEndIdx) {
-    return oldStartIdx >= newStartIdx && oldEndIdx <= oldStartIdx;
+    return newStartIdx <= oldStartIdx && oldEndIdx <= newEndIdx;
   },
   _createHighlight(startIdx, endIdx) {
     var highlight = {};
