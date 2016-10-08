@@ -100,6 +100,7 @@ const NavbarComponent = React.createClass({
                 type="text"
                 placeholder="Search"
                 value={this.state.searchInput}
+                onClick={SearchActions.fetchAllSearches}
                 onChange={this.update('searchInput')}/>
             </FormGroup>
             {' '}
