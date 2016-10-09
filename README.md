@@ -6,14 +6,14 @@
 
 If you would like to play around with the site locally, follow the below commands:
 
-`git clone https://github.com/tomc944/Trippr.git
- cd Trippr
- bundle install
- npm install
- rake db:migrate
- rake db:seed
- webpack --watch
- rails s`
+`git clone https://github.com/tomc944/Trippr.git`
+`cd Trippr`
+`bundle install`
+`npm install`
+`rake db:migrate`
+`rake db:seed`
+`webpack --watch`
+`rails s`
 
 ### Description and Motivation
 
