@@ -12,7 +12,7 @@
 #
 
 class Photo < ApplicationRecord
-	validates :url, presence: true
+	validates :url, :thumbnail_url, presence: true
 
 	belongs_to :post, dependent: :destroy
 	belongs_to :author, class_name: "User"

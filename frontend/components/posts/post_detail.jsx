@@ -40,6 +40,7 @@ const PostDetail = React.createClass({
     var overallFocusOffset = this._getHighlightOffset(highlight.focusNode.parentElement) + highlight.focusOffset;
     var startIndex;
     var endIndex;
+
     if (overallAnchorOffset < overallFocusOffset) {
       startIndex = overallAnchorOffset;
       endIndex = overallFocusOffset;
@@ -77,29 +78,34 @@ const PostDetail = React.createClass({
     }
   },
   _handleHighlight(startIdx, endIdx) {
-    var overlappingHighlight = this._overlappingHighlight(startIdx,endIdx)
-    if (overlappingHighlight) {
-      this._addPhotoToHighlight(overlappingHighlight);
-    } else {
+    if (!this._isOverlappingHighlight(startIdx, endIdx)) {
       this._createHighlight(startIdx, endIdx);
     }
   },
-  _overlappingHighlight(startIdx, endIdx) {
-    var overlappedHighlight;
+  _isOverlappingHighlight(startIdx, endIdx) {
+    var overLapping = false;
+
     this.state.post.highlights.forEach(function(highlight) {
-      if (startIdx >= highlight.start_idx && startIdx <= highlight.end_idx) {
-        overlappedHighlight = highlight;
-      } else if (endIdx >= highlight.start_idx && endIdx <= highlight.end_idx) {
-        overlappedHighlight = highlight;
-      } else if (highlight.start_idx >= startIdx && highlight.end_idx <= endIdx) {
-        overlappedHighlight = highlight;
+      if (this._isOverLapping(startIdx, endIdx, highlight.start_idx, highlight.end_idx)) {
+        overLapping = true;
       }
-    })
-    if (overlappedHighlight) {
-      return overlappedHighlight;
-    } else {
-      return false;
-    }
+    }.bind(this))
+
+    return overLapping;
+  },
+  _isOverLapping(newStartIdx, newEndIdx, oldStartIdx, oldEndIdx) {
+    return this._newHighlightLeftOverlap(newStartIdx, oldStartIdx, oldEndIdx) ||
+           this._newHighlightRightOverlap(newEndIdx, oldStartIdx, oldEndIdx) ||
+           this._newHighlightFullOverlap(newStartIdx, newEndIdx, oldStartIdx, oldEndIdx);
+  },
+  _newHighlightLeftOverlap(newStartIdx, oldStartIdx, oldEndIdx) {
+    return newStartIdx >= oldStartIdx && newStartIdx <= oldEndIdx;
+  },
+  _newHighlightRightOverlap(newEndIdx, oldStartIdx, oldEndIdx) {
+    return newEndIdx >= oldStartIdx && newEndIdx <= oldEndIdx;
+  },
+  _newHighlightFullOverlap(newStartIdx, newEndIdx, oldStartIdx, oldEndIdx) {
+    return newStartIdx <= oldStartIdx && oldEndIdx <= newEndIdx;
   },
   _createHighlight(startIdx, endIdx) {
     var highlight = {};
